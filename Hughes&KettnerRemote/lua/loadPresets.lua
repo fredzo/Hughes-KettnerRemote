@@ -8,7 +8,7 @@ loadPresets = function(mod, value)
 		return
 	end
 
-	local fileToRead = utils.openFileWindow("Load library from disk", File(""), "*.gm36;*.gm36memory;*.gm40;*.gm40memory", true)
+	local fileToRead = utils.openFileWindow("Load library from disk", File(""), "*.gm36;*.gm36memory;*.gm40;*.gm40memory;*.bs200;*.bsmemory", true)
 
 	-- Check if the file exists
 	if fileToRead:existsAsFile() then

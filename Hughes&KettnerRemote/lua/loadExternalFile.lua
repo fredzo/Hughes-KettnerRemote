@@ -7,7 +7,7 @@ loadExternalFile = function(--[[ CtrlrModulator --]] modulator, --[[ number --]]
 	if panel:getBootstrapState() or notMouseOver(modulator) then
 		return
 	end
-	local fileToRead = utils.openFileWindow("Load external file from disk", File(""), "*.gm36;*.gm36memory;*.gm40;*.gm40memory", true)
+	local fileToRead = utils.openFileWindow("Load external file from disk", File(""), "*.gm36;*.gm36memory;*.gm40;*.gm40memory;*.bs200;*.bsmemory", true)
 
 	-- Check if the file exists
 	if fileToRead:existsAsFile() then

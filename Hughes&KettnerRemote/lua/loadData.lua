@@ -46,8 +46,9 @@ loadFromFile = function(path,saveIfBinary)
 	local isBinary = false
 	local file = File(path)
 	local shouldSave = false
+    local isBlackSpirit = string.ends(path,".bsmemory")
 	if file:exists() then
-		if string.ends(path,".gm36memory") or string.ends(path,".gm40memory") then
+		if string.ends(path,".gm36memory") or string.ends(path,".gm40memory") or isBlackSpirit then
 			data = MemoryBlock(file:getSize())
 			file:loadFileAsData(data)
 			isBinary = true
@@ -68,11 +69,12 @@ loadFromFile = function(path,saveIfBinary)
 	end
 	local result
 	if isBinary then
-		result = loadFromBinary(data)
+		result = loadFromBinary(data,isBlackSpirit)
 		if ((result ~= nil) and saveIfBinary) then
 			-- Binary is only for library
 			currentLibraryFile = string.gsub(currentLibraryFile,"%.gm36memory",".gm36")
 			currentLibraryFile = string.gsub(currentLibraryFile,"%.gm40memory",".gm40")
+			currentLibraryFile = string.gsub(currentLibraryFile,"%.bsmemory",".bs200")
 			savePresetsToFile(currentLibraryFile,result)
 			libraryDirty = false
 			lastPresetDirty = false
@@ -209,7 +211,7 @@ topObject = 0
 offsetTableOffset = 0
 
 
-function loadFromBinary(data)
+function loadFromBinary(data,isBlackSpirit)
 	local magic = data:getRange(0,8)
 	local magicString = magic:toString()
 	-- console("Magic :"..magicString)
@@ -295,39 +297,39 @@ function loadFromBinary(data)
 						myPreset["name"]=name
 						-- console("Preset("..myPresetNumnber..")= "..name)
 						-- Gain
-						local value = convertValue255(presetDict["gain"])
+						local value = convertValue255(presetDict["gain"],isBlackSpirit)
 						myPreset["gain"]=value
 
 						-- Bass
-						value = convertValue255(presetDict["bass"])
+						value = convertValue255(presetDict["bass"],isBlackSpirit)
 						myPreset["bass"]=value
 
 						-- Mid
-						value = convertValue255(presetDict["mid"])
+						value = convertValue255(presetDict["mid"],isBlackSpirit)
 						myPreset["mid"]=value
 
 						-- Volume
-						value = convertValue255(presetDict["volume"])
+						value = convertValue255(presetDict["volume"],isBlackSpirit)
 						myPreset["volume"]=value
 
 						-- Treble
-						value = convertValue255(presetDict["treble"])
+						value = convertValue255(presetDict["treble"],isBlackSpirit)
 						myPreset["treble"]=value
 
 						-- Resonance
-						value = convertValue255(presetDict["resonance"])
+						value = convertValue255(presetDict["resonance"],isBlackSpirit)
 						myPreset["resonance"]=value
 
 						-- Presence
-						value = convertValue255(presetDict["presence"])
+						value = convertValue255(presetDict["presence"],isBlackSpirit)
 						myPreset["presence"]=value
 
 						-- Reverb
-						value = convertValue255(presetDict["reverbLevel"])
+						value = convertValue255(presetDict["reverbLevel"],isBlackSpirit)
 						myPreset["reverb"]=value
 
 						-- Delay level
-						value = convertValue255(presetDict["delayLevel"])
+						value = convertValue255(presetDict["delayLevel"],isBlackSpirit)
 						myPreset["delayLevel"]=value
 
 						-- Delay Time
@@ -336,39 +338,76 @@ function loadFromBinary(data)
 						myPreset["delayTime"]=value
 
 						-- Delay Feedback
-						value = convertValue255(presetDict["delayFeedback"])
+						value = convertValue255(presetDict["delayFeedback"],isBlackSpirit)
 						myPreset["delayFeedback"]=value
 
-						-- Mod intensity
-						value = convertValue255(presetDict["modIntensity"])
-						myPreset["modIntensity"]=value
+                        if presetDict["modIntensity"] ~= nil then
+                            -- Grandmeister style => modIntensity + modType + modRate
+						    -- Mod intensity
+						    value = convertValue255(presetDict["modIntensity"],isBlackSpirit)
+						    myPreset["modIntensity"]=value
 
-						-- Mod rate / type
-						value = presetDict["modType"]*64+convertValue63(presetDict["modRate"])
-						myPreset["modType"]=value
+						    -- Mod rate / type
+						    value = presetDict["modType"]*64+convertValue63(presetDict["modRate"])
+						    myPreset["modType"]=value
+                        else
+                            -- BlackSpirit style => modulationIntensity + modulationType + modulationRate
+						    -- Mod intensity
+						    value = convertValue255(presetDict["modulationIntensity"],isBlackSpirit)
+						    myPreset["modIntensity"]=value
+
+						    -- Mod rate / type
+						    value = presetDict["modulationType"]*64+convertValue63(presetDict["modulationRate"])
+						    myPreset["modType"]=value
+                        end
 
 						-- Preamp channel
 						value = convertValue4(presetDict["soundChannel"])
 						myPreset["channelType"]=value
 
 						-- Pream boost
-						value = convertValue2(presetDict["boost"])
-						myPreset["channelBoost"]=value
+                        if presetDict["boost"] ~= nil then
+                            -- Grandmeister style
+						    value = convertValue2(presetDict["boost"])
+						    myPreset["channelBoost"]=value
+                        else
+                            -- BlackSpirit style
+						    value = convertValue2(presetDict["boostEnabled"])
+						    myPreset["channelBoost"]=value
+                        end
 
 						-- Fx loop
-						value = convertValue2(presetDict["fxLoop"])
-						myPreset["fxLoop"]=value
+                        if presetDict["fxLoop"] ~= nil then
+                            -- Grandmeister style
+						    value = convertValue2(presetDict["fxLoop"])
+						    myPreset["fxLoop"]=value
+                        else
+                            -- BlackSpirit style
+						    value = convertValue2(presetDict["fxLoopEnabled"])
+						    myPreset["fxLoop"]=value
+                        end
 
 						-- Power soak
-						if presetDict["speakerOff"] then
-							myPreset["powerSoak"]=0
-						else
-							myPreset["powerSoak"]=convertValue5(presetDict["speakerPower"]+1)
-						end
+                        if presetDict["speakerPower"] ~= nil then
+    						if presetDict["speakerOff"] then
+							    myPreset["powerSoak"]=0
+						    else
+							    myPreset["powerSoak"]=convertValue5(presetDict["speakerPower"]+1)
+						    end
+                        else
+						    myPreset["powerSoak"]=0
+                        end
 						
 						-- Noise Gate
-						value = convertValue2(presetDict["noiseGate"])
-						myPreset["noiseGate"]=value
+                        if presetDict["noiseGate"] ~= nil then
+                            -- Grandmeister style
+						    value = convertValue2(presetDict["noiseGate"])
+						    myPreset["noiseGate"]=value
+                        else
+                            -- BlackSpirit style
+						    value = convertValue2(presetDict["noiseGateEnabled"])
+						    myPreset["noiseGate"]=value
+                        end
 
 						-- Store preset
 						myPresets[myPresetNumnber]=myPreset
@@ -394,8 +433,12 @@ function loadFromBinary(data)
 	return myPresets
 end
 
-function convertValue255(value)
-	return math.floor((value*255/100)+0.5)
+function convertValue255(value,isBlackSpirit)
+    if isBlackSpirit then
+	    return math.floor(value*255)
+    else
+	    return math.floor((value*255/100)+0.5)
+    end
 end
 
 function convertValue63(value)
