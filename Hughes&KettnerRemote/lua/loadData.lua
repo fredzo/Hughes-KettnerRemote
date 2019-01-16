@@ -648,8 +648,14 @@ end
 --      print(buffer(startPos + strOffset, length):len())
 --      print(buffer(startPos + strOffset, length):ustring())
 --      return "UTF16String"
-
-      return data:getRange(startPos + strOffset, length):toString()
+      local utf16String = ""
+      for i = 0, length-1, 2 do
+        local wch = extractChar(data,startPos + strOffset + i)
+        utf16String = utf16String..utf8(wch)
+      end
+      console("UTF-16 String start pos: "..startPos.." offset "..strOffset.." length "..length.." content "..utf16String)
+      
+      return utf16String
 
 -- UTF8 String        
     elseif objType == 0x7 then -- UTF-8
@@ -667,6 +673,7 @@ end
         length = extractData(data,startPos + 2, intLength)
       end
 
+      --console("UTF-8 String :"..(data:getRange(startPos + strOffset, length):toString()))
       return data:getRange(startPos + strOffset, length):toString()
 
 -- Array        
@@ -734,6 +741,11 @@ end
 -- Unkown type return error message
     return "Error : Unknown object type - " .. objType
 
+  end
+
+  function utf8(decimal)
+    if decimal<128 then return string.char(decimal) end
+    return "'"
   end
 
 

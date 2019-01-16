@@ -27,7 +27,7 @@
        luaPanelSaveState="saveData" luaPanelRestoreState="loadData"
        luaPanelMidiSnapshotPost="-- None" luaPanelMidiSnapshotPre="-- None"
        luaAudioProcessBlock="-- None" luaPanelOSCReceived="-- None"
-       panelFilePath="D:\perso\dev\Hughes&amp;KettnerRemote\Hughes&amp;KettnerRemote.panel"
+       panelFilePath="D:\home\dev\Hughes&amp;KettnerRemote\Hughes&amp;KettnerRemote.panel"
        panelUID="8.9hOSdulECpN" panelInstanceUID="IX4a" panelInstanceManufacturerID="2dRE"
        panelModulatorListColumns="&lt;TABLELAYOUT sortedCol=&quot;605&quot; sortForwards=&quot;0&quot;&gt;&lt;COLUMN id=&quot;604&quot; visible=&quot;1&quot; width=&quot;163&quot;/&gt;&lt;COLUMN id=&quot;1&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;603&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;605&quot; visible=&quot;1&quot; width=&quot;163&quot;/&gt;&lt;COLUMN id=&quot;119&quot; visible=&quot;1&quot; width=&quot;151&quot;/&gt;&lt;COLUMN id=&quot;123&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;124&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;131&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;547&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;544&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;548&quot; visible=&quot;1&quot; width=&quot;163&quot;/&gt;&lt;COLUMN id=&quot;18&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;19&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;/TABLELAYOUT&gt;"
        panelModulatorListCsvDelimiter="," panelModulatorListXmlRoot="ctrlrModulatorList"
@@ -50,7 +50,7 @@
       <uiChildWindowContentState/>
     </uiChildWindow>
     <uiChildWindow uiChildWindowName="LuaMethodEditor" uiChildWindowState="fs 0 0 800 500">
-      <uiChildWindowContentState luaMethodEditor="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&#13;&#10;&lt;OPEN id=&quot;LUA&quot; scrollPos=&quot;684&quot;&gt;&#13;&#10;  &lt;OPEN id=&quot;Built-In&quot;/&gt;&#13;&#10;  &lt;SELECTED id=&quot;/LUA/loadExternalFile&quot;/&gt;&#13;&#10;&lt;/OPEN&gt;&#13;&#10;;7b52e2c96aa94a4da7d1508ebfe6d1af:687de20c34cb487d9b0022df180389fd:fe0f6f8c52574676b326ed7f33c93f71:3d2b3d9d1e7f40159d61b00c4ce8d3a9:27d97b7306de483cbd617b1538b02417:c290c4451b214e599b93fc2aaa92ff82:6fc0e26ffe2a4f0e9a3b373be212fd45"/>
+      <uiChildWindowContentState luaMethodEditor="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&#13;&#10;&lt;OPEN id=&quot;LUA&quot; scrollPos=&quot;106&quot;&gt;&#13;&#10;  &lt;OPEN id=&quot;Built-In&quot;/&gt;&#13;&#10;  &lt;SELECTED id=&quot;/LUA/loadData&quot;/&gt;&#13;&#10;&lt;/OPEN&gt;&#13;&#10;;7b52e2c96aa94a4da7d1508ebfe6d1af:687de20c34cb487d9b0022df180389fd:fe0f6f8c52574676b326ed7f33c93f71:3d2b3d9d1e7f40159d61b00c4ce8d3a9:27d97b7306de483cbd617b1538b02417:6fc0e26ffe2a4f0e9a3b373be212fd45:c290c4451b214e599b93fc2aaa92ff82"/>
     </uiChildWindow>
     <uiChildWindow uiChildWindowName="LuaConsole" uiChildWindowState="2101 262 800 500">
       <uiChildWindowContentState/>
@@ -202,56 +202,56 @@
     </luaManagerMethods>
   </luaManager>
   <panelResources>
-    <resource resourceHash="-119805985295704969" resourceLoadedTime="1547655243359"
+    <resource resourceHash="6348227294226378784" resourceLoadedTime="1547672370121"
               resourceSize="28501" resourceFile="blue-led.png" resourceSourceFile="blue-led.png"
               resourceName="blue-led" resourceType="Image"/>
-    <resource resourceHash="5270837575833458173" resourceLoadedTime="1547655243359"
+    <resource resourceHash="-6707873219399365690" resourceLoadedTime="1547672370122"
               resourceSize="35802" resourceFile="factory.gm36" resourceSourceFile="factory.gm36"
               resourceName="factory" resourceType="Data"/>
-    <resource resourceHash="-4459332601201669072" resourceLoadedTime="1547655243360"
+    <resource resourceHash="-8056722159850220750" resourceLoadedTime="1547672370122"
               resourceSize="35475" resourceFile="factory40.gm40" resourceSourceFile="factory40.gm40"
               resourceName="factory40" resourceType="Data"/>
-    <resource resourceHash="7825937883353234962" resourceLoadedTime="1547655243503"
+    <resource resourceHash="1428355904053230113" resourceLoadedTime="1547672370170"
               resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
               resourceName="grandmeister" resourceType="Image"/>
-    <resource resourceHash="-1149646585843999408" resourceLoadedTime="1547655243504"
+    <resource resourceHash="6485659102923138292" resourceLoadedTime="1547672370170"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
-    <resource resourceHash="2910823912256833842" resourceLoadedTime="1547655243505"
+    <resource resourceHash="7815743392538525058" resourceLoadedTime="1547672370171"
               resourceSize="2189" resourceFile="help.png" resourceSourceFile="help.png"
               resourceName="help" resourceType="Image"/>
-    <resource resourceHash="-7144534480765107108" resourceLoadedTime="1547655243924"
+    <resource resourceHash="490771204549446640" resourceLoadedTime="1547672370311"
               resourceSize="5936493" resourceFile="knob-blue.png" resourceSourceFile="knob-blue.png"
               resourceName="knob-blue" resourceType="Image"/>
-    <resource resourceHash="-2627694074823202541" resourceLoadedTime="1547655244335"
+    <resource resourceHash="3840339201199071312" resourceLoadedTime="1547672370445"
               resourceSize="5929476" resourceFile="knob-red.png" resourceSourceFile="knob-red.png"
               resourceName="knob-red" resourceType="Image"/>
-    <resource resourceHash="5880954689559434580" resourceLoadedTime="1547655244337"
+    <resource resourceHash="-373834656771461138" resourceLoadedTime="1547672370445"
               resourceSize="25536" resourceFile="led-button-blue-red.png" resourceSourceFile="led-button-blue-red.png"
               resourceName="led-button-blue-red" resourceType="Image"/>
-    <resource resourceHash="7978259517039391116" resourceLoadedTime="1547655244339"
+    <resource resourceHash="223140874764489814" resourceLoadedTime="1547672370446"
               resourceSize="25156" resourceFile="led-button-blue.png" resourceSourceFile="led-button-blue.png"
               resourceName="led-button-blue" resourceType="Image"/>
-    <resource resourceHash="-2330204642172071381" resourceLoadedTime="1547655244341"
+    <resource resourceHash="6009354273415944338" resourceLoadedTime="1547672370447"
               resourceSize="24767" resourceFile="led-button-red-red.png" resourceSourceFile="led-button-red-red.png"
               resourceName="led-button-red-red" resourceType="Image"/>
-    <resource resourceHash="7202011171716016131" resourceLoadedTime="1547655244343"
+    <resource resourceHash="-8399259643041769429" resourceLoadedTime="1547672370448"
               resourceSize="24339" resourceFile="led-button-red.png" resourceSourceFile="led-button-red.png"
               resourceName="led-button-red" resourceType="Image"/>
-    <resource resourceHash="4733375761340207994" resourceLoadedTime="1547655244345"
+    <resource resourceHash="7171749218774011558" resourceLoadedTime="1547672370448"
               resourceSize="27431" resourceFile="red-led.png" resourceSourceFile="red-led.png"
               resourceName="red-led" resourceType="Image"/>
-    <resource resourceHash="-7744490094007381166" resourceLoadedTime="1547655244364"
+    <resource resourceHash="7104864482782162876" resourceLoadedTime="1547672370455"
               resourceSize="198923" resourceFile="rotary-red.png" resourceSourceFile="rotary-red.png"
               resourceName="rotary-red" resourceType="Image"/>
-    <resource resourceHash="5088230686955965530" resourceLoadedTime="1547655244386"
+    <resource resourceHash="-5846088702665679162" resourceLoadedTime="1547672370462"
               resourceSize="215439" resourceFile="rotary.png" resourceSourceFile="rotary.png"
               resourceName="rotary" resourceType="Image"/>
-    <resource resourceHash="-6040905373696519831" resourceLoadedTime="1547655244387"
+    <resource resourceHash="-3860544200263811199" resourceLoadedTime="1547672370462"
               resourceSize="6276" resourceFile="switch-toggle-led-dis.png"
               resourceSourceFile="switch-toggle-led-dis.png" resourceName="switch-toggle-led-dis"
               resourceType="Image"/>
-    <resource resourceHash="2932470883005626268" resourceLoadedTime="1547655244388"
+    <resource resourceHash="-7395497836515063820" resourceLoadedTime="1547672370462"
               resourceSize="6522" resourceFile="switch-toggle-led.png" resourceSourceFile="switch-toggle-led.png"
               resourceName="switch-toggle-led" resourceType="Image"/>
   </panelResources>
@@ -269,8 +269,8 @@
                  uiPanelTooltipCornerRound="1" uiPanelTooltipPlacement="2" uiPanelTooltipFont="&lt;Sans-Serif&gt;;15;1;0;0;0;0;3"
                  uiPanelZoom="1.3" uiPanelMidiToolbarVisible="0" uiPanelDisableCombosOnEdit="0"
                  uiPanelToolbarPosition="8 8 800 40" uiPanelRotation="0" uiPanelToolbarVisible="1"
-                 lastBrowsedComponentDir="D:\Fichiers\Seven\Documents" uiPanelPropertiesSize="305"
-                 uiPanelViewPortSize="1223">
+                 lastBrowsedComponentDir="D:\Fichiers\Seven\Documents" uiPanelPropertiesSize="382"
+                 uiPanelViewPortSize="1530">
     <uiPanelCanvasLayer uiPanelCanvasLayerName="Components" uiPanelCanvasLayerUid="40828ca4020000001896d00656f25599"
                         uiPanelCanvasLayerColour="0x000000" uiPanelCanvasLayerVisibility="1"
                         uiPanelCanvasLayerIndex="1"/>
@@ -870,7 +870,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="ff4b0000"
                uiLabelTextColour="ffd12000" uiLabelOutline="1" uiLabelOutlineColour="ff845505"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLCDLabelFont="5"
-               uiLCDLabelFontHeight="30" uiLabelText="8" uiLabelDisplaysAllValues="0"
+               uiLCDLabelFontHeight="30" uiLabelText="1" uiLabelDisplaysAllValues="0"
                uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
                uiLabelInputHighlightColour="ffd12000" uiLabelEditOnSingleClick="1"
                uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
@@ -895,7 +895,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="0"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%d" luaModulatorValueChange="-- None"
-             name="presetStep" modulatorMin="1" modulatorValue="8">
+             name="presetStep" modulatorMin="1" modulatorValue="1">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="26" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -944,7 +944,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="29"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="reverbLevel"
-             modulatorMin="0" modulatorValue="1">
+             modulatorMin="0" modulatorValue="74">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="29" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1014,7 +1014,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="25"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="powerPresence"
-             modulatorMin="0" modulatorValue="1">
+             modulatorMin="0" modulatorValue="123">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="25" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1053,7 +1053,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="24"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="powerResonance"
-             modulatorMin="0" modulatorValue="2">
+             modulatorMin="0" modulatorValue="205">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="24" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1188,7 +1188,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="22"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="preampMid"
-             modulatorMin="0" modulatorValue="2">
+             modulatorMin="0" modulatorValue="156">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="22" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1227,7 +1227,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="23"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="preampTreble"
-             modulatorMin="0" modulatorValue="2">
+             modulatorMin="0" modulatorValue="163">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="23" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1266,7 +1266,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="21"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="preampBass"
-             modulatorMin="0" modulatorValue="2">
+             modulatorMin="0" modulatorValue="185">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="21" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1336,7 +1336,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="57"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="channelVolume"
-             modulatorMin="0" modulatorValue="2">
+             modulatorMin="0" modulatorValue="169">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="7" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1375,7 +1375,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="56"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="channelGain"
-             modulatorMin="0" modulatorValue="2">
+             modulatorMin="0" modulatorValue="230">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="20" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1914,10 +1914,10 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="ff4b0000"
                uiLabelTextColour="ffd12000" uiLabelOutline="1" uiLabelOutlineColour="ff845505"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLCDLabelFont="5"
-               uiLCDLabelFontHeight="30" uiLabelText="MODERN AMERICAN CRUNCH"
-               uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
-               uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="ffd12000"
-               uiLabelEditOnSingleClick="1" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="0"
+               uiLCDLabelFontHeight="30" uiLabelText="CLEAN" uiLabelDisplaysAllValues="0"
+               uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
+               uiLabelInputHighlightColour="ffd12000" uiLabelEditOnSingleClick="1"
+               uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="0"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="presetNameChanged"
                componentBubbleRoundAngle="10" componentBubbleBackgroundColour1="0x9cffffff"
                componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundGradientType="1"
@@ -1936,7 +1936,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="0"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="setPresetCombo"
-             name="presetCombo" modulatorMin="0" modulatorValue="6">
+             name="presetCombo" modulatorMin="0" modulatorValue="0">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -2437,10 +2437,10 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="left" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="D:/downloads/001 - Factory presets.gm40" uiLabelDisplaysAllValues="0"
-               uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
-               uiLabelInputHighlightColour="0xff0000ff" uiLabelEditOnSingleClick="0"
-               uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
+               uiLabelText="D:/Fichiers/Seven/Documents/black-spirit/001 - Factory presets.bs200"
+               uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="0xff0000ff"
+               uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
                componentBubbleRoundAngle="10" componentBubbleBackgroundColour1="0x9cffffff"
                componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundGradientType="1"
@@ -8282,7 +8282,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="ff4b0000"
                uiLabelTextColour="ffd12000" uiLabelOutline="1" uiLabelOutlineColour="ff845505"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLCDLabelFont="5"
-               uiLCDLabelFontHeight="16" uiLabelText="2 - D" uiLabelDisplaysAllValues="0"
+               uiLCDLabelFontHeight="16" uiLabelText="1 - A" uiLabelDisplaysAllValues="0"
                uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
                uiLabelInputHighlightColour="ffd12000" uiLabelEditOnSingleClick="0"
                uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="0"
@@ -8330,4 +8330,7 @@
                componentLayerUid="40828ca4020000001896d00656f25599" componentTabName="tabs"
                componentTabId="4"/>
   </modulator>
+  <panelCustomData currentPresetNumber="1" currentLibraryFile="D:\Fichiers\Seven\Documents\black-spirit\001 - Factory presets.bs200"
+                   ingoredVersionUpdate="" globalPowerSoak="127" currentExternalFile=""
+                   ampType="?"/>
 </panel>
