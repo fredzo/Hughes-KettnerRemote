@@ -651,9 +651,9 @@ end
       local utf16String = ""
       for i = 0, length-1, 2 do
         local wch = extractChar(data,startPos + strOffset + i)
-        utf16String = utf16String..utf8(wch)
+        utf16String = utf16String..toUtf8String(wch)
       end
-      console("UTF-16 String start pos: "..startPos.." offset "..strOffset.." length "..length.." content "..utf16String)
+      --console("UTF-16 String start pos: "..startPos.." offset "..strOffset.." length "..length.." content "..utf16String)
       
       return utf16String
 
@@ -743,8 +743,8 @@ end
 
   end
 
-  function utf8(decimal)
-    if decimal<128 then return string.char(decimal) end
+  function toUtf8String(decimal)
+    if decimal<256 then return string.char(decimal) end
     return "'"
   end
 
