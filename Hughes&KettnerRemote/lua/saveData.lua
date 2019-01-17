@@ -492,10 +492,29 @@ end
 
 function writeString(entry)
 	--console("wrinting string "..entry)
-  	writeIntHeader(0x5, string.len(entry));
+    local hasUtf = false
 	for i = 1, string.len(entry) do
-    	writeByte(string.byte(entry,i))
+    	if string.byte(entry,i) >=  128 then 
+            hasUtf = true
+            break
+        end
 	end
+    if hasUtf then
+	    --console("wrinting UTF string "..entry)
+        -- Use UTF16 format
+  	    writeIntHeader(0x6, string.len(entry));
+	    for i = 1, string.len(entry) do
+    	    writeByte(0x00)
+    	    writeByte(string.byte(entry,i))
+            --console("Wringing UTF char : "..string.byte(entry,i))
+	    end
+    else
+        -- Use ASCII format
+        writeIntHeader(0x5, string.len(entry));
+	    for i = 1, string.len(entry) do
+    	    writeByte(string.byte(entry,i))
+	    end
+    end
 end
 
 function writeData(entry)
