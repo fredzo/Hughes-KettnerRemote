@@ -409,6 +409,26 @@ function loadFromBinary(data,isBlackSpirit)
 						    myPreset["noiseGate"]=value
                         end
 
+                        -- Noise Gate Level
+                        if presetDict["noiseGateLevel"] ~= nil then
+                            -- BlackSpirit
+						    value = convertValue255(presetDict["noiseGateLevel"],isBlackSpirit)
+						    myPreset["noiseGateLevel"]=value
+                        else
+                            -- Grandmeister
+						    myPreset["noiseGateLevel"]=0
+                        end
+
+                        -- Sagging
+                        if presetDict["sagging"] ~= nil then
+                            -- BlackSpirit
+						    value = convertValue8(presetDict["sagging"])
+						    myPreset["sagging"]=value
+                        else
+                            -- Grandmeister
+						    myPreset["sagging"]=0
+                        end
+
 						-- Store preset
 						myPresets[myPresetNumnber]=myPreset
 					end
@@ -451,6 +471,10 @@ end
 
 function convertValue5(value)
 	return value*31
+end
+
+function convertValue8(value)
+	return value*36
 end
 
 function convertValue2(value)
