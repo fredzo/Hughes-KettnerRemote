@@ -92,7 +92,7 @@ reverb=22
 fxLoop=0
 [preset]
 number=5
-name=50´S OLD AMERICAN STYLE
+name=50'S OLD AMERICAN STYLE
 modIntensity=0
 powerSoak=0
 delayTime=15
@@ -115,7 +115,7 @@ reverb=52
 fxLoop=0
 [preset]
 number=6
-name=60´S CRUNCH (USE CC PEDAL FOR GAIN)
+name=60'S CRUNCH (USE CC PEDAL FOR GAIN)
 modIntensity=0
 powerSoak=0
 delayTime=58
@@ -1058,7 +1058,7 @@ reverb=77
 fxLoop=0
 [preset]
 number=47
-name=LATIN ROCK OF THE 70´S
+name=LATIN ROCK OF THE 70'S
 modIntensity=52
 powerSoak=0
 delayTime=40
@@ -1564,7 +1564,7 @@ reverb=56
 fxLoop=0
 [preset]
 number=69
-name=50´S OLD AMERICAN STYLE
+name=50'S OLD AMERICAN STYLE
 modIntensity=0
 powerSoak=0
 delayTime=15
@@ -1587,7 +1587,7 @@ reverb=52
 fxLoop=0
 [preset]
 number=70
-name=60´S CRUNCH (USE CC pEDAL FOR GAIN)
+name=60'S CRUNCH (USE CC pEDAL FOR GAIN)
 modIntensity=0
 powerSoak=0
 delayTime=58
@@ -2530,7 +2530,7 @@ reverb=77
 fxLoop=0
 [preset]
 number=111
-name=LATIN ROCK OF THE 70´S
+name=LATIN ROCK OF THE 70'S
 modIntensity=52
 powerSoak=0
 delayTime=40

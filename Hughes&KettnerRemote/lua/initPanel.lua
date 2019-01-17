@@ -954,14 +954,17 @@ function switchAmpType(newAmpType)
 			factoryPresetNames = factoryPresetNamesGm40
             controllers = controllersGrandMeister
 			currentLibraryFile = string.gsub(currentLibraryFile,"/gm36/factory%.gm36","/gm40/factory.gm40")
+			currentLibraryFile = string.gsub(currentLibraryFile,"/bs200/factory%.bs200","/gm40/factory.gm40")
 		elseif isBs200() then
 			factoryPresetNames = factoryPresetNamesBs200
             controllers = controllersBlackSpirit
-			currentLibraryFile = string.gsub(currentLibraryFile,"/bs200/factory%.bs200","/bs200/factory.bs200")
+			currentLibraryFile = string.gsub(currentLibraryFile,"/gm36/factory%.gm36","/bs200/factory.bs200")
+			currentLibraryFile = string.gsub(currentLibraryFile,"/gm40/factory%.gm40","/bs200/factory.bs200")
 		else
 			factoryPresetNames = factoryPresetNamesGm36
             controllers = controllersGrandMeister
 			currentLibraryFile = string.gsub(currentLibraryFile,"/gm40/factory%.gm40","/gm36/factory.gm36")
+			currentLibraryFile = string.gsub(currentLibraryFile,"/bs200/factory%.bs200","/gm36/factory.gm36")
 		end
 		-- Update library if needed
 		--console("Current "..currentLibraryFile.." original "..originalLibraryFile)

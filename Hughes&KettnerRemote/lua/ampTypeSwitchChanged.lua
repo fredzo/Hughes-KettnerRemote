@@ -2,11 +2,8 @@
 --
 --
 ampTypeSwitchChanged = function(--[[ CtrlrModulator --]] modulator, --[[ number --]] numericModulatorValue)
-	if panel:getBootstrapState() or notMouseOver(modulator) then
-		return
-	end
-	if not externalPresetsLoaded then
-		return
+	if panel:getBootstrapState() or panel:getRestoreState() then
+		return numericModulatorValue
 	end
     local newAmpType
     if numericModulatorValue == 0 then
@@ -16,6 +13,7 @@ ampTypeSwitchChanged = function(--[[ CtrlrModulator --]] modulator, --[[ number 
     else
         newAmpType = "BS200"
     end
+    --console("Switching amp type to "..newAmpType)
     switchAmpType(newAmpType)
     return numericModulatorValue
 end
