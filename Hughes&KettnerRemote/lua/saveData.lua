@@ -75,11 +75,15 @@ savePresetsToFile = function(path,presetsToSave)
 		content = content.."name".."="..presetName.."\n"
 		-- And finally iterate on controllers
 		for kk, vv in pairs(controllers) do
-			content = content..vv.."="..(v[vv]).."\n"
+            if v[vv] ~= nil then
+			    content = content..vv.."="..(v[vv]).."\n"
+            else
+                console("Nil value for parameter "..vv.." in preset #"..v["number"])
+            end
 		end
 	end
 	if content ~= "" then
-		--console(content)
+		-- console(content)
 		if file:replaceWithText (content, false, false) == false then
 			utils.warnWindow ("File write", "Failed to write data to file: "..file:getFullPathName())
 		end

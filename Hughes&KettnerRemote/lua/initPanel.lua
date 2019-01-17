@@ -297,9 +297,9 @@ factoryPresetNamesBs200 =
 "YY POP",
 "COME4PUMP"}
 
-factoryPresetNames = factoryPresetNamesGm36
+factoryPresetNames = factoryPresetNamesBs200
 
-controllers = {
+controllersGrandMeister = {
 [1]="modIntensity",
 [4]="delayTime",
 [12]="modType",
@@ -321,6 +321,29 @@ controllers = {
 [63]="noiseGate",
 [64]="channelBoost"
 }
+
+controllersBlackSpirit = {
+[1]="modIntensity",
+[4]="delayTime",
+[12]="modType",
+[21]="bass",
+[22]="mid",
+[23]="treble",
+[24]="resonance",
+[25]="presence",
+[27]="delayFeedback",
+[28]="delayLevel",
+[29]="reverb",
+[30]="powerSoak",
+[31]="channelType",
+[55]="fxLoop",
+[56]="gain",
+[57]="volume",
+[63]="noiseGate",
+[64]="channelBoost"
+}
+
+controllers = controllersBlackSpirit
 
 -- Preset data
 presets = {}
@@ -373,7 +396,7 @@ isLibrary = true
 libraryDirty = false
 lastPresetDirty = false
 
-ampType = "?"
+ampType = "BS200"
 
 firmwareVersion = "?"
 
@@ -416,7 +439,7 @@ initPanel = function()
 	
 	if currentLibraryFile == nil or currentLibraryFile == "" then
 		-- Set default library file
-		currentLibraryFile = File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/gm36/factory.gm36"
+		currentLibraryFile = File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/bs200/factory.bs200"
 	end
 		-- Init preset numbers
 	currentPresetNumber = 1
@@ -929,12 +952,15 @@ function switchAmpType(newAmpType)
 		local originalLibraryFile = currentLibraryFile
 		if isGm40() then
 			factoryPresetNames = factoryPresetNamesGm40
+            controllers = controllersGrandMeister
 			currentLibraryFile = string.gsub(currentLibraryFile,"/gm36/factory%.gm36","/gm40/factory.gm40")
 		elseif isBs200() then
 			factoryPresetNames = factoryPresetNamesBs200
+            controllers = controllersBlackSpirit
 			currentLibraryFile = string.gsub(currentLibraryFile,"/bs200/factory%.bs200","/bs200/factory.bs200")
 		else
 			factoryPresetNames = factoryPresetNamesGm36
+            controllers = controllersGrandMeister
 			currentLibraryFile = string.gsub(currentLibraryFile,"/gm40/factory%.gm40","/gm36/factory.gm36")
 		end
 		-- Update library if needed
