@@ -23,6 +23,8 @@ end
 saveAmpToFile = function()
 	if isGm40() then
 		savePresetsToFile(File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/gm40/amp.store",ampPresets)
+	elseif isBs200() then
+		savePresetsToFile(File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/bs200/amp.store",ampPresets)
 	else
 		savePresetsToFile(File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/gm36/amp.store",ampPresets)
 	end

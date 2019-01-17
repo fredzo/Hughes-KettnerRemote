@@ -32,6 +32,8 @@ end
 loadAmpFromFile = function()
 	if isGm40() then
 		return loadFromFile(File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/gm40/amp.store",false)
+	elseif isBs200() then
+		return loadFromFile(File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/bs200/amp.store",false)
 	else
 		return loadFromFile(File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/gm36/amp.store",false)
 	end
@@ -61,6 +63,8 @@ loadFromFile = function(path,saveIfBinary)
 		local factoryResource
 		if isGm40() then
 			factoryResource = resources:getResource("factory40")
+		elseif isBs200() then
+			factoryResource = resources:getResource("factory200")
 		else
 			factoryResource = resources:getResource("factory")
 		end

@@ -903,9 +903,19 @@ function isGm40()
 	end
 end
 
+function isBs200()
+	if ampType == "BS200" then
+ 		return true
+	else
+ 		return false
+	end
+end
+
 function getAmpTypeExtension()
 	if ampType == "GM40" then
 		return "*.gm40"
+	elseif ampType == "BS200" then
+		return "*.bs200"
 	else
 		return "*.gm36"
 	end
@@ -920,6 +930,9 @@ function switchAmpType(newAmpType)
 		if isGm40() then
 			factoryPresetNames = factoryPresetNamesGm40
 			currentLibraryFile = string.gsub(currentLibraryFile,"/gm36/factory%.gm36","/gm40/factory.gm40")
+		elseif isBs200() then
+			factoryPresetNames = factoryPresetNamesBs200
+			currentLibraryFile = string.gsub(currentLibraryFile,"/bs200/factory%.bs200","/bs200/factory.bs200")
 		else
 			factoryPresetNames = factoryPresetNamesGm36
 			currentLibraryFile = string.gsub(currentLibraryFile,"/gm40/factory%.gm40","/gm36/factory.gm36")

@@ -18,7 +18,7 @@ onMidiMessage = function(midi)
 			and midiData:getByte(4) == 0x00
 			and midiData:getByte(5) == 0x10
 			and midiData:getByte(6) == 0x00
-			and ((midiData:getByte(7) == 0x06) or (midiData:getByte(7) == 0x0A))
+			and ((midiData:getByte(7) == 0x06) or (midiData:getByte(7) == 0x0A) or (midiData:getByte(7) == 0x0C))
 			and midiData:getByte(8) == 0x00 then
 			-- Detect command type
 			commandType = midiData:getByte(9)
@@ -237,6 +237,8 @@ onMidiMessage = function(midi)
 				local ampId = midiData:getByte(7)
 				if ampId == 0x0A then
 					switchAmpType("GM40")
+                elseif ampId == 0x0C then
+					switchAmpType("BS200")
 				else
 					switchAmpType("GM36")
 				end
