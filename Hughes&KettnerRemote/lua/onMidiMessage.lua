@@ -22,7 +22,7 @@ onMidiMessage = function(midi)
 			and midiData:getByte(8) == 0x00 then
 			-- Detect command type
 			commandType = midiData:getByte(9)
-			if commandType == 0x04 then
+			if (commandType == 0x04) or (commandType == 0x44) then
 				-- Parameter change
 				--console("Param change")
 				paramType = midiData:getByte(10)
