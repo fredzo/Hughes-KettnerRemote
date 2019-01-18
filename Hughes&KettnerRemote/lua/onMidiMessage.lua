@@ -112,6 +112,7 @@ onMidiMessage = function(midi)
 				elseif paramType == 0x39 then
 					--console("Channel Volume")
 					modulator = panel:getModulator("channelVolume")
+                -- TODO : cab type 0x3A and sagging 0x3B and NoisGate Level 0x3E
 				elseif paramType == 0x3F then
 					--console("Noise Gate")
 					msb = midiData:getByte(11)
@@ -411,12 +412,22 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	-- Fx loop
 	value = (math.floor(rrByte/8) % 2) * 127
 	preset["fxLoop"]=value
-	-- Power soak
-	value = (math.floor(rrByte/16) % 8) * 31
-	preset["powerSoak"]=value
-	-- Noise Gate
-	value = (qqByte % 2) * 127
-	preset["noiseGate"]=value
+    if isBs200() then
+        -- TODO
+	    -- Power soak
+	    value = (math.floor(rrByte/16) % 8) * 31
+	    preset["powerSoak"]=value
+	    -- Noise Gate
+	    value = (qqByte % 2) * 127
+	    preset["noiseGate"]=value
+    else
+	    -- Power soak
+	    value = (math.floor(rrByte/16) % 8) * 31
+	    preset["powerSoak"]=value
+	    -- Noise Gate
+	    value = (qqByte % 2) * 127
+	    preset["noiseGate"]=value
+    end
 	if updatePresets then
 		presets[number]=preset
 	end

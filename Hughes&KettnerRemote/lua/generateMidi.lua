@@ -42,6 +42,12 @@ generateMidi = function(modulator, numericModulatorValue)
 				highlight(paramName)
 			end
 		end
+        -- Handle BlackSpirit chanel type specific values (0-256 instead of 0-127)
+        if isBs200() then
+            if paramName == "channelType" then
+                numericModulatorValue = numericModulatorValue*2
+            end
+        end
 	end
 	sendParameter(paramNumber, numericModulatorValue)
 	return numericModulatorValue
