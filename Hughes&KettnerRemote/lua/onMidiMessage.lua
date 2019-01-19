@@ -442,6 +442,7 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	    value = convertToInt(midiData:getByte(startIndex+26),midiData:getByte(startIndex+27))
 	    preset["noiseGateLevel"]=value
 	    local config2 = midiData:getByte(startIndex+29)
+	    local config1H = midiData:getByte(startIndex+30)
 	    local config1 = midiData:getByte(startIndex+31)
 	    -- Sagging
 	    value = (config2 % 8) * 31
@@ -468,7 +469,8 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	    value = (math.floor(config1/64) % 2) * 127
 	    preset["modulationStatus"]=value
 	    -- Noise Gate
-	    value = (math.floor(config1/128) % 2) * 127
+	    value = (config1H % 2) * 127
+        --console("noiseGateValue from amp="..value)
 	    preset["noiseGate"]=value
 	    preset["powerSoak"]=0
     else
@@ -574,15 +576,38 @@ loadPreset = function(preset,setNumber)
 	-- Fx loop
 	value = preset["fxLoop"]
 	setStatusModulatorValue("fxLoopStatus",value)
-	-- Power soak
-	if (isLibrary or isGm40()) and (powerSoakGlobal == 1) then
-		value = globalPowerSoakValue
-	else
-		value = preset["powerSoak"]
-	end
-	setModulatorValue("powerSoak",value,false,false)
+    if isBs200() then
+	    -- Sagging
+	    value = preset["sagging"]
+	    -- TODO setStatusModulatorValue("sagging",value)
+	    -- Noise gate level
+	    value = preset["noiseGateLevel"]
+	    -- TODO setStatusModulatorValue("noiseGateLevel",value)
+	    -- Cab type
+	    value = preset["cabinetType"]
+	    -- TODO setStatusModulatorValue("cabinetType",value)
+        
+	    -- Modulation status
+	    value = preset["modulationStatus"]
+	    setStatusModulatorValue("modulationStatus",value)
+	    -- Modulation status
+	    value = preset["delayStatus"]
+	    setStatusModulatorValue("delayStatus",value)
+	    -- Modulation status
+	    value = preset["reverbStatus"]
+	    setStatusModulatorValue("reverbStatus",value)
+    else
+	    -- Power soak
+	    if (isLibrary or isGm40()) and (powerSoakGlobal == 1) then
+		    value = globalPowerSoakValue
+	    else
+		    value = preset["powerSoak"]
+	    end
+	    setModulatorValue("powerSoak",value,false,false)
+    end
 	-- Noise Gate
 	value = preset["noiseGate"]
+    --console("noiseGateValue from preset="..value)
 	setStatusModulatorValue("noiseGateStatus",value)
 	--console("Load preset done")
 end
