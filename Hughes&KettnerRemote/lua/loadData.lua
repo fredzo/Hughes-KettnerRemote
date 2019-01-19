@@ -433,6 +433,46 @@ function loadFromBinary(data,isBlackSpirit)
 						    myPreset["sagging"]=0
                         end
 
+                        -- Cab type
+                        if presetDict["cabinetType"] ~= nil then
+                            -- BlackSpirit
+						    value = convertValue8(presetDict["cabinetType"])
+						    myPreset["cabinetType"]=value
+                        else
+                            -- Grandmeister
+						    myPreset["cabinetType"]=0
+                        end
+
+                        -- Modulation Status
+                        if presetDict["modulationEnabled"] ~= nil then
+                            -- BlackSpirit
+						    value = convertValue2(presetDict["modulationEnabled"])
+						    myPreset["modulationStatus"]=value
+                        else
+                            -- Grandmeister
+						    myPreset["modulationStatus"]=0
+                        end
+
+                        -- Delay Status
+                        if presetDict["delayEnabled"] ~= nil then
+                            -- BlackSpirit
+						    value = convertValue2(presetDict["delayEnabled"])
+						    myPreset["delayStatus"]=value
+                        else
+                            -- Grandmeister
+						    myPreset["delayStatus"]=0
+                        end
+
+                        -- Reverb Status
+                        if presetDict["reverbEnabled"] ~= nil then
+                            -- BlackSpirit
+						    value = convertValue2(presetDict["reverbEnabled"])
+						    myPreset["reverbStatus"]=value
+                        else
+                            -- Grandmeister
+						    myPreset["reverbStatus"]=0
+                        end
+
 						-- Store preset
 						myPresets[myPresetNumnber]=myPreset
 					end
@@ -819,6 +859,13 @@ loadFromJSon = function(data)
 		else
 			myPreset["channelBoost"]=0
 		end
+        -- Default values for BS200
+        myPreset["cabinetType"]=0
+        myPreset["sagging"]=0
+        myPreset["noiseGateLevel"]=0
+        myPreset["modulationStatus"]=0
+        myPreset["reverbStatus"]=0
+        myPreset["delayStatus"]=0
 
 		myPresets[myPresetNumnber]=myPreset
 	end

@@ -181,18 +181,22 @@ function showCompare()
 	if editedValue ~= originalValue then
 		setBlueLedModulatorValue("fxLoopStatus",value,true)
 	end
-	-- Power soak
-	if (not isLibrary and not isGm40()) or not (powerSoakGlobal == 1) then
-		editedValue = editBuffer["powerSoak"]
-		originalValue = originalBuffer["powerSoak"]
-		value = getCompareValue(editedValue,originalValue)
-		if editedValue ~= originalValue then
-			panel:getComponent("powerSoak"):setPropertyString("uiSliderTrackColour","FF7F0D13")
-			if not connected then
-				setModulatorValue("powerSoak",value,false,false)
-			end
-		end
-	end
+    if isBs200() then
+        -- TODO Noise Gate Level, Sagging and cab type
+    else
+	    -- Power soak
+	    if (not isLibrary and not isGm40()) or not (powerSoakGlobal == 1) then
+		    editedValue = editBuffer["powerSoak"]
+		    originalValue = originalBuffer["powerSoak"]
+		    value = getCompareValue(editedValue,originalValue)
+		    if editedValue ~= originalValue then
+			    panel:getComponent("powerSoak"):setPropertyString("uiSliderTrackColour","FF7F0D13")
+			    if not connected then
+				    setModulatorValue("powerSoak",value,false,false)
+			    end
+		    end
+	    end
+    end
 	-- Noise Gate
 	editedValue = editBuffer["noiseGate"]
 	originalValue = originalBuffer["noiseGate"]
@@ -249,6 +253,7 @@ function hideCompare()
 	panel:getComponent("fxLoopStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Power soak
 	panel:getComponent("powerSoak"):setPropertyString("uiSliderTrackColour","FF409FCB")
+    -- TODO BS200
 	-- Noise Gate
 	panel:getComponent("noiseGateStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Disable compare
@@ -296,6 +301,7 @@ function highlight(paramName)
 		if not isLibrary or not (powerSoakGlobal == 1) then
 			panel:getComponent("powerSoak"):setPropertyString("uiSliderTrackColour","FF7F0D13")
 		end
+    -- TODO BS200
 	elseif paramName == "noiseGate" then
 		panel:getComponent("noiseGateStatus"):setPropertyString("uiImageButtonResource","led-button-blue-red")
 	end

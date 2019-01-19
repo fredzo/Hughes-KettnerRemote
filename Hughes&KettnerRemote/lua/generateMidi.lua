@@ -24,6 +24,11 @@ generateMidi = function(modulator, numericModulatorValue)
 				preventModify = true
 			end
 		end
+		if paramName == "cabinetType" then
+			if (cabinetTypeGlobal == 1) then
+				preventModify = true
+			end
+		end
 		-- In library mode we update current preset too
 		if isLibrary then
 			if not preventModify and (presets[currentPresetNumber] ~= nil) then
@@ -157,6 +162,7 @@ sendSystemConfig = function()
 	message[11] = (midiChannel-1) + (omniMode*16)
 	message[12] = mutes
 	message[13] = midiLearn + (powerEqGlobal*4) + (powerSoakGlobal*32)
+    -- TODO BS200
 	-- Checksum
 	local checksum = 0
 	for i=1,14 do
@@ -376,6 +382,7 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	-- Fx loop
 	value = preset["fxLoop"]
 	local fxLoop = math.floor(value/127)
+    -- TODO BS200
 	-- Power soak
 	if withGlobalSoak then
 		value = globalPowerSoakValue

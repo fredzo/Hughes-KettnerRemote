@@ -334,11 +334,16 @@ controllersBlackSpirit = {
 [27]="delayFeedback",
 [28]="delayLevel",
 [29]="reverb",
-[30]="powerSoak",
 [31]="channelType",
+[52]="modulationStatus",
+[53]="delayStatus",
+[54]="reverbStatus",
 [55]="fxLoop",
 [56]="gain",
 [57]="volume",
+[58]="cabinetType",
+[58]="sagging",
+[62]="noiseGateLevel",
 [63]="noiseGate",
 [64]="channelBoost"
 }
@@ -366,10 +371,14 @@ mutes=0x00
 powerEqGlobal=0
 powerSoakGlobal=0
 globalPowerSoakValue=127 -- Default to 36W
+cabinetTypeGlobal=0
 midiLearn=0
 speakerConnected=0
 modified=0
 fxAccess=0
+globalResonance=0
+globalPresence=0
+globalCabinetType = 0
 
 -- Edit buffer data
 editBuffer = {}
@@ -454,6 +463,11 @@ initPanel = function()
 	local modulator = panel:getModulator("powerSoakMode")
 	if modulator ~= nil then
 		powerSoakGlobal = modulator:getValue()
+	end
+	-- Global cabinet type value
+	local modulator = panel:getModulator("cabinetTypeMode")
+	if modulator ~= nil then
+		cabinetTypeGlobal = modulator:getValue()
 	end
 	-- Init presets
 	initPresets()

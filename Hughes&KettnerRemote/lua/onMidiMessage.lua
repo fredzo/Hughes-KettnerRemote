@@ -112,7 +112,15 @@ onMidiMessage = function(midi)
 				elseif paramType == 0x39 then
 					--console("Channel Volume")
 					modulator = panel:getModulator("channelVolume")
-                -- TODO : cab type 0x3A and sagging 0x3B and NoisGate Level 0x3E
+				elseif paramType == 0x3A then
+					--console("Channel Volume")
+					modulator = panel:getModulator("cabinetType")
+				elseif paramType == 0x3B then
+					--console("Channel Volume")
+					modulator = panel:getModulator("sagging")
+				elseif paramType == 0x3E then
+					--console("Channel Volume")
+					modulator = panel:getModulator("noiseGateLevel")
 				elseif paramType == 0x3F then
 					--console("Noise Gate")
 					msb = midiData:getByte(11)
@@ -164,6 +172,12 @@ onMidiMessage = function(midi)
 					end
 					if (paramName == "powerSoak") then
 						if (isLibrary or isGm40()) and (powerSoakGlobal == 1) then
+							-- Preset is not modified since we are in glabal mode
+							presetModified = false
+						end
+					end
+					if paramName == "cabinetType" then
+						if not isLibrary and (cabinetTypeGlobal == 1) then
 							-- Preset is not modified since we are in glabal mode
 							presetModified = false
 						end
@@ -244,35 +258,57 @@ onMidiMessage = function(midi)
 					switchAmpType("GM36")
 				end
 				local midi = midiData:getByte(10)
-				mutes = midiData:getByte(11)
-				local mode = midiData:getByte(12)
-				local configState = midiData:getByte(13)
 				omniMode=(math.floor(midi/16) % 2)
 				midiChannel=((midi % 16)+1)
-				powerEqGlobal=(math.floor(mode/4) % 2)
-				if isGm40() then
-					powerSoakGlobal=(math.floor(mode/32) % 2)
-				end
-				midiLearn=(mode % 2)
-				speakerConnected=(configState % 2)
-				modified=(math.floor(configState/2) % 2)
-				fxAccess=(math.floor(configState/4) % 2)
+                if isBs200() then
+                    local conf2 = midiData:getByte(11)
+                    -- Mute is bit 5
+				    local globalMute = (math.floor(conf2/32) % 2)
+				    setStatusModulatorValue("globalMute",globalMute)
+                    -- Global EQ is bit 0
+                    powerEqGlobal=(conf2 % 2)
+                    -- Global redbox is bit 1
+                    cabinetTypeGolbal = (math.floor(conf2/2) % 2)
+                    -- Global cab type is bits 2-4
+                    globalCabinetType = (math.floor(conf2/4) % 8)
+                    local conf2 = midiData:getByte(11)
+                    local globResLsb = midiData:getByte(12)
+                    local globResMsb = midiData:getByte(13)
+                    globalResonance = convertToInt(globResMsb,globResLsb)
+                    local globPresLsb = midiData:getByte(14)
+                    local globPresMsb = midiData:getByte(15)
+                    globalPresence = convertToInt(globPresMsb,globPresLsb)
+                else
+				    mutes = midiData:getByte(11)
+				    local mode = midiData:getByte(12)
+				    local configState = midiData:getByte(13)
+				    powerEqGlobal=(math.floor(mode/4) % 2)
+				    if isGm40() then
+					    powerSoakGlobal=(math.floor(mode/32) % 2)
+				    end
+				    midiLearn=(mode % 2)
+				    speakerConnected=(configState % 2)
+				    modified=(math.floor(configState/2) % 2)
+				    fxAccess=(math.floor(configState/4) % 2)
+				    -- Process mutes
+				    local fxMute = (mutes % 2)
+				    local delayMute = (math.floor(mutes/2) % 2)
+				    local reverbMute = (math.floor(mutes/4) % 2)
+				    local globalMute = (math.floor(mutes/8) % 2)
+				    setStatusModulatorValue("globalMute",globalMute)
+				    setStatusModulatorValue("modulationStatus",opposite(fxMute))
+				    setStatusModulatorValue("delayStatus",opposite(delayMute))
+				    setStatusModulatorValue("reverbStatus",opposite(reverbMute))
+                end
 				-- Update modulators
 				panel:getModulator("omniMode"):setValue(omniMode,true,true)
 				panel:getModulator("midiChannel"):setValue(midiChannel,true,true)
 				panel:getModulator("powerEqMode"):setValue(powerEqGlobal,true,true)
 				if isGm40() then
 					panel:getModulator("powerSoakMode"):setValue(powerSoakGlobal,true,true)
+                elseif isBs200() then
+					panel:getModulator("powerSoakMode"):setValue(cabinetTypeGolbal,true,true)
 				end
-				-- Process mutes
-				local fxMute = (mutes % 2)
-				local delayMute = (math.floor(mutes/2) % 2)
-				local reverbMute = (math.floor(mutes/4) % 2)
-				local globalMute = (math.floor(mutes/8) % 2)
-				setStatusModulatorValue("globalMute",globalMute)
-				setStatusModulatorValue("modulationStatus",opposite(fxMute))
-				setStatusModulatorValue("delayStatus",opposite(delayMute))
-				setStatusModulatorValue("reverbStatus",opposite(reverbMute))
 				-- Send id request now
 				--sendIdRequest()
 				if state == 0 then
@@ -401,32 +437,63 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	-- Mod type
 	value = convertToInt(midiData:getByte(startIndex+24),midiData:getByte(startIndex+25))
 	preset["modType"]=value
-	local qqByte = midiData:getByte(startIndex+30)
-	local rrByte = midiData:getByte(startIndex+31)
-	-- Preamp channel
-	value = (rrByte % 4) * 42
-	preset["channelType"]=value
-	-- Pream boost
-	value = (math.floor(rrByte/4) % 2) * 127
-	preset["channelBoost"]=value
-	-- Fx loop
-	value = (math.floor(rrByte/8) % 2) * 127
-	preset["fxLoop"]=value
     if isBs200() then
-        -- TODO
-	    -- Power soak
-	    value = (math.floor(rrByte/16) % 8) * 31
-	    preset["powerSoak"]=value
+	    -- Noise gate Level
+	    value = convertToInt(midiData:getByte(startIndex+26),midiData:getByte(startIndex+27))
+	    preset["noiseGateLevel"]=value
+	    local config2 = midiData:getByte(startIndex+29)
+	    local config1 = midiData:getByte(startIndex+31)
+	    -- Sagging
+	    value = (config2 % 8) * 31
+	    preset["sagging"]=value
+	    -- cabinet type
+	    value = (math.floor(config2/8) % 8) * 31
+	    preset["cabinetType"]=value
+	    -- Preamp channel
+	    value = (config1 % 4) * 42
+	    preset["channelType"]=value
+	    -- Pream boost
+	    value = (math.floor(config1/4) % 2) * 127
+	    preset["channelBoost"]=value
+	    -- Fx loop
+	    value = (math.floor(config1/8) % 2) * 127
+	    preset["fxLoop"]=value
+	    -- Reverb status
+	    value = (math.floor(config1/16) % 2) * 127
+	    preset["reverbStatus"]=value
+	    -- Delay satus
+	    value = (math.floor(config1/32) % 2) * 127
+	    preset["delayStatus"]=value
+	    -- Delay satus
+	    value = (math.floor(config1/64) % 2) * 127
+	    preset["modulationStatus"]=value
 	    -- Noise Gate
-	    value = (qqByte % 2) * 127
+	    value = (math.floor(config1/128) % 2) * 127
 	    preset["noiseGate"]=value
+	    preset["powerSoak"]=0
     else
+	    local qqByte = midiData:getByte(startIndex+30)
+	    local rrByte = midiData:getByte(startIndex+31)
+	    -- Preamp channel
+	    value = (rrByte % 4) * 42
+	    preset["channelType"]=value
+	    -- Pream boost
+	    value = (math.floor(rrByte/4) % 2) * 127
+	    preset["channelBoost"]=value
+	    -- Fx loop
+	    value = (math.floor(rrByte/8) % 2) * 127
+	    preset["fxLoop"]=value
 	    -- Power soak
 	    value = (math.floor(rrByte/16) % 8) * 31
 	    preset["powerSoak"]=value
 	    -- Noise Gate
 	    value = (qqByte % 2) * 127
 	    preset["noiseGate"]=value
+        -- For comatibility with BS200 mode
+	    preset["noiseGateLevel"]=0
+	    preset["reverbStatus"]=0
+	    preset["delayStatus"]=0
+	    preset["modulationStatus"]=0
     end
 	if updatePresets then
 		presets[number]=preset
