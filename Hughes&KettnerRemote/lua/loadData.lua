@@ -15,17 +15,25 @@ loadData = function(stateData)
 		globalPowerSoakValue = tonumber(value)
 	end
 
-	currentLibraryFile = stateData:getProperty("currentLibraryFile")
-	currentExternalFile = stateData:getProperty("currentLibraryFile")
+    local shouldLoadPresets
+	value = stateData:getProperty("currentLibraryFile")
+	if value ~= nil and value ~= "" then
+		currentLibraryFile = value
+        currentExternalFile = value
+        shouldLoadPresets = true
+	end
 	-- Restore ampType if available
 	local value = stateData:getProperty("ampType")
 	if value ~= nil and value ~= "" then
 		ampType = value
+        switchAmpType(ampType)
 	end
 	--loadFromFile(presets)
 	
-	-- Init presets and ui again now that we have restored data (we need to do it twice since load data is not called on first launch
-	initPresets()
+    if shouldLoadPresets then
+        -- Init presets and ui again now that we have restored data (we need to do it twice since load data is not called on first launch
+	    initPresets()
+    end
 	initUi()
 end
 
@@ -40,6 +48,7 @@ loadAmpFromFile = function()
 end
 
 loadLibraryFromFile = function()
+	--console("Loading library from file :"..currentLibraryFile)
 	return loadFromFile(currentLibraryFile,true)
 end
 

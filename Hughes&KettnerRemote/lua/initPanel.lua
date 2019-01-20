@@ -551,7 +551,6 @@ end
 
 function updateSettingsLabel()
     local settingsText = panel:getComponent("settingsLabels"):getComponentText()
-    what(settingsText)
     local ampSwitchValue = panel:getModulator("ampTypeSwitch"):getValue()
     if ampSwitchValue == 2 then
         -- BS 200
@@ -1019,6 +1018,11 @@ function switchAmpType(newAmpType)
 		if currentLibraryFile ~= originalLibraryFile then
 			libraryPresets = loadLibraryFromFile()
 			ampPresets = loadAmpFromFile()
+            if isLibrary then
+                presets = libraryPresets
+            else
+                presets = ampPresets
+            end
 			setLibraryFileName()
 		end
 		-- Update combo
