@@ -993,6 +993,7 @@ end
 
 function switchAmpType(newAmpType)
 	if newAmpType ~= ampType then
+        local oldAmpWasBs200 = isBs200()
 		ampType = newAmpType
 		updateAmpTypeSwitch()
 		-- Update factory preset names
@@ -1029,7 +1030,26 @@ function switchAmpType(newAmpType)
 		initPresetCombo()
 		-- Update Power Soak labels
 		setPowerSoakLabels()
+        -- If we change from BS 200 to GrandMeister or viceversa we need to update UI
+        if (oldAmpWasBs200 or isBs200()) then
+            updateUiForAmp()
+        end
 	end
+end
+
+function updateUiForAmp()
+    local noiseGateLevelLabelComp = panel:getComponent("noiseGateLevelLabel")
+    local noiseGateLevelComp = panel:getComponent("noiseGateLevel")
+    local noiseGateStatusComp = panel:getComponent("noiseGateStatus")
+    if isBs200() then
+        noiseGateLevelLabelComp:setVisible(true)
+        noiseGateLevelComp:setVisible(true)
+        noiseGateStatusComp:setPropertyString("componentRectangle","2 2 35 35")
+    else
+        noiseGateLevelLabelComp:setVisible(false)
+        noiseGateLevelComp:setVisible(false)
+        noiseGateStatusComp:setPropertyString("componentRectangle","32 48 35 35")
+    end
 end
 
 function setPowerSoakLabels()
