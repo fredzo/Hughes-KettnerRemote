@@ -523,11 +523,44 @@ function initUi()
 	libraryDirty = false
 	setLibraryFileName(true)
 	-- Init amp type
-	panel:getComponent("ampType"):setComponentText(ampType)
+    updateAmpTypeSwitch()
 	-- Init firmware version
 	panel:getComponent("firmwareVersion"):setComponentText(firmwareVersion)
 	-- Init power soak values
 	setPowerSoakLabels()
+end
+
+function updateAmpTypeSwitch()
+    local ampTypeSwitchValue
+    if ampType == "GM36" then
+        ampTypeSwitchValue = 0
+    elseif ampType == "GM40" then
+        ampTypeSwitchValue = 1
+    else
+        ampTypeSwitchValue = 2
+    end
+	panel:getModulator("ampTypeSwitch"):setValue(ampTypeSwitchValue,true,true)
+    local ampTypeSwitchComponent = panel:getComponent("settingsLabels")
+    if connected then
+        ampTypeSwitchComponent:setEnabled(false)
+    else
+        ampTypeSwitchComponent:setEnabled(true)
+    end
+end
+
+
+function updateSettingsLabel()
+    local settingsText = panel:getComponent("settingsLabels"):getComponentText()
+    what(settingsText)
+    local ampSwitchValue = panel:getModulator("ampTypeSwitch"):getValue()
+    if ampSwitchValue == 2 then
+        -- BS 200
+        settingsText = settingsText:replace("Power Soak","Cabinet Type",false)
+    else
+        -- GrandMeisters
+        settingsText = settingsText:replace("Cabinet Type","Power Soak",false)
+    end
+    panel:getComponent("settingsLabels"):setComponentText(settingsText)
 end
 
 initPresetCombo = function()
@@ -703,6 +736,7 @@ function switchToProgressTab()
 end
 
 function switchToSettingsTab()
+    updateSettingsLabel()
 	switchToTab(3)
 	setSettingsVisible(false)
 end
@@ -961,7 +995,7 @@ end
 function switchAmpType(newAmpType)
 	if newAmpType ~= ampType then
 		ampType = newAmpType
-		panel:getComponent("ampType"):setComponentText(ampType)
+		updateAmpTypeSwitch()
 		-- Update factory preset names
 		local originalLibraryFile = currentLibraryFile
 		if isGm40() then

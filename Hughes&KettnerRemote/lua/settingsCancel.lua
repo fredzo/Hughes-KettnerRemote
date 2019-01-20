@@ -7,5 +7,6 @@ settingsCancel = function(--[[ CtrlrModulator --]] mod, --[[ number --]] value)
 	if panel:getBootstrapState() or notMouseOver(mod) then
 		return
 	end
+    updateAmpTypeSwitch()
 	switchToEditorTab()
 end
