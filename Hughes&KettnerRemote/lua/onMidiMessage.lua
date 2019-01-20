@@ -546,13 +546,17 @@ loadPreset = function(preset,setNumber)
 	-- Reverb
 	value = preset["reverb"]
 	setModulatorValue("reverbLevel",value,false,true)
-	-- This is global setting, not preset
-	--setStatusModulatorValue("reverbStatus",value)
+	-- This is global setting, not preset exept for BS200
+    if isBs200() then
+	    setStatusModulatorValue("reverbStatus",value)
+    end
 	-- Delay level
 	value = preset["delayLevel"]
 	setModulatorValue("delayLevel",value,false,true)
-	-- This is global setting, not preset
-	-- setStatusModulatorValue("delayStatus",value)
+	-- This is global setting, not preset exept for BS200
+    if isBs200() then
+	    setStatusModulatorValue("delayStatus",value)
+    end
 	-- Delay Time
 	value = preset["delayTime"]
 	setDelayTime(value,true,true,false,true)
@@ -562,8 +566,10 @@ loadPreset = function(preset,setNumber)
 	-- Mod intensity
 	value = preset["modIntensity"]
 	setModulatorValue("modulationIntensity",value,false,true)
-	-- This is global setting, not preset
-	-- setStatusModulatorValue("modulationStatus",value)
+	-- This is global setting, not preset exept for BS200
+    if isBs200() then
+	    setStatusModulatorValue("modulationStatus",value)
+    end
 	-- Mod type
 	value = preset["modType"]
 	setModulation(value,false,true)
@@ -579,10 +585,10 @@ loadPreset = function(preset,setNumber)
     if isBs200() then
 	    -- Sagging
 	    value = preset["sagging"]
-	    -- TODO setStatusModulatorValue("sagging",value)
+	    setStatusModulatorValue("sagging",value)
 	    -- Noise gate level
 	    value = preset["noiseGateLevel"]
-	    -- TODO setStatusModulatorValue("noiseGateLevel",value)
+	    setStatusModulatorValue("noiseGateLevel",value)
 	    -- Cab type
 	    value = preset["cabinetType"]
 	    -- TODO setStatusModulatorValue("cabinetType",value)

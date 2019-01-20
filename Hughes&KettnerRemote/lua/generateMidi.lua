@@ -389,24 +389,27 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	-- Fx loop
 	value = preset["fxLoop"]
 	local fxLoop = math.floor(value/127)
-    -- TODO BS200
-	-- Power soak
-	if withGlobalSoak then
-		value = globalPowerSoakValue
-	else
-		value = preset["powerSoak"]
-	end
-	local powerSoak = math.floor(value/31)
+    if isBs200() then
+        -- TODO BS200
+    else
+	    -- Power soak
+	    if withGlobalSoak then
+		    value = globalPowerSoakValue
+	    else
+		    value = preset["powerSoak"]
+	    end
+	    local powerSoak = math.floor(value/31)
 
-	rrByte = channelType + (channelBoost*4) + (fxLoop*8) + (powerSoak*16)
+	    rrByte = channelType + (channelBoost*4) + (fxLoop*8) + (powerSoak*16)
 
-	-- Noise Gate
-	value = preset["noiseGate"]
-	local noiseGate = math.floor(value/127)
-	qqByte = noiseGate
+	    -- Noise Gate
+	    value = preset["noiseGate"]
+	    local noiseGate = math.floor(value/127)
+	    qqByte = noiseGate
 
-	buffer[startIndex+30]=qqByte
-	buffer[startIndex+31]=rrByte
+	    buffer[startIndex+30]=qqByte
+	    buffer[startIndex+31]=rrByte
+    end
 end
 
 writeIntToBuffer = function(value,buffer,startIndex)

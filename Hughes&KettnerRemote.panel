@@ -152,7 +152,7 @@
       <luaMethod luaMethodName="settings" luaMethodSourcePath="settings.lua" luaMethodSource="1"
                  uuid="53baad1ad37b498aaf91df0228c6bf1e" luaMethodValid="1"/>
       <luaMethod luaMethodName="settingsOk" luaMethodSourcePath="settingsOk.lua"
-                 luaMethodSource="1" uuid="d0b3228b515b4f8781bacc58b6cee29e" luaMethodValid="0"/>
+                 luaMethodSource="1" uuid="d0b3228b515b4f8781bacc58b6cee29e" luaMethodValid="1"/>
       <luaMethod luaMethodName="settingsCancel" luaMethodSourcePath="settingsCancel.lua"
                  luaMethodSource="1" uuid="05a6aa8d22544b539a231c5b974bbb33" luaMethodValid="1"/>
       <luaMethod luaMethodName="settingsDefault" luaMethodSourcePath="settingsDefault.lua"
@@ -204,59 +204,59 @@
     </luaManagerMethods>
   </luaManager>
   <panelResources>
-    <resource resourceHash="6348227294226378784" resourceLoadedTime="1548017731263"
+    <resource resourceHash="6348227294226378784" resourceLoadedTime="1548021835139"
               resourceSize="28501" resourceFile="blue-led.png" resourceSourceFile="blue-led.png"
               resourceName="blue-led" resourceType="Image"/>
-    <resource resourceHash="-6707873219399365690" resourceLoadedTime="1548017731263"
+    <resource resourceHash="-6707873219399365690" resourceLoadedTime="1548021835139"
               resourceSize="35802" resourceFile="factory.gm36" resourceSourceFile="factory.gm36"
               resourceName="factory" resourceType="Data"/>
-    <resource resourceHash="-6415346107396977728" resourceLoadedTime="1548017731263"
+    <resource resourceHash="-6415346107396977728" resourceLoadedTime="1548021835139"
               resourceSize="39828" resourceFile="factory200.bs200" resourceSourceFile="factory200.bs200"
               resourceName="factory200" resourceType="Data"/>
-    <resource resourceHash="-8056722159850220750" resourceLoadedTime="1548017731264"
+    <resource resourceHash="-8056722159850220750" resourceLoadedTime="1548021835139"
               resourceSize="35475" resourceFile="factory40.gm40" resourceSourceFile="factory40.gm40"
               resourceName="factory40" resourceType="Data"/>
-    <resource resourceHash="1428355904053230113" resourceLoadedTime="1548017731309"
+    <resource resourceHash="1428355904053230113" resourceLoadedTime="1548021835181"
               resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
               resourceName="grandmeister" resourceType="Image"/>
-    <resource resourceHash="6485659102923138292" resourceLoadedTime="1548017731309"
+    <resource resourceHash="6485659102923138292" resourceLoadedTime="1548021835182"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
-    <resource resourceHash="7815743392538525058" resourceLoadedTime="1548017731310"
+    <resource resourceHash="7815743392538525058" resourceLoadedTime="1548021835182"
               resourceSize="2189" resourceFile="help.png" resourceSourceFile="help.png"
               resourceName="help" resourceType="Image"/>
-    <resource resourceHash="490771204549446640" resourceLoadedTime="1548017731434"
+    <resource resourceHash="490771204549446640" resourceLoadedTime="1548021835298"
               resourceSize="5936493" resourceFile="knob-blue.png" resourceSourceFile="knob-blue.png"
               resourceName="knob-blue" resourceType="Image"/>
-    <resource resourceHash="3840339201199071312" resourceLoadedTime="1548017731560"
+    <resource resourceHash="3840339201199071312" resourceLoadedTime="1548021835414"
               resourceSize="5929476" resourceFile="knob-red.png" resourceSourceFile="knob-red.png"
               resourceName="knob-red" resourceType="Image"/>
-    <resource resourceHash="-373834656771461138" resourceLoadedTime="1548017731560"
+    <resource resourceHash="-373834656771461138" resourceLoadedTime="1548021835415"
               resourceSize="25536" resourceFile="led-button-blue-red.png" resourceSourceFile="led-button-blue-red.png"
               resourceName="led-button-blue-red" resourceType="Image"/>
-    <resource resourceHash="223140874764489814" resourceLoadedTime="1548017731561"
+    <resource resourceHash="223140874764489814" resourceLoadedTime="1548021835415"
               resourceSize="25156" resourceFile="led-button-blue.png" resourceSourceFile="led-button-blue.png"
               resourceName="led-button-blue" resourceType="Image"/>
-    <resource resourceHash="6009354273415944338" resourceLoadedTime="1548017731562"
+    <resource resourceHash="6009354273415944338" resourceLoadedTime="1548021835416"
               resourceSize="24767" resourceFile="led-button-red-red.png" resourceSourceFile="led-button-red-red.png"
               resourceName="led-button-red-red" resourceType="Image"/>
-    <resource resourceHash="-8399259643041769429" resourceLoadedTime="1548017731562"
+    <resource resourceHash="-8399259643041769429" resourceLoadedTime="1548021835417"
               resourceSize="24339" resourceFile="led-button-red.png" resourceSourceFile="led-button-red.png"
               resourceName="led-button-red" resourceType="Image"/>
-    <resource resourceHash="7171749218774011558" resourceLoadedTime="1548017731563"
+    <resource resourceHash="7171749218774011558" resourceLoadedTime="1548021835417"
               resourceSize="27431" resourceFile="red-led.png" resourceSourceFile="red-led.png"
               resourceName="red-led" resourceType="Image"/>
-    <resource resourceHash="7104864482782162876" resourceLoadedTime="1548017731568"
+    <resource resourceHash="7104864482782162876" resourceLoadedTime="1548021835422"
               resourceSize="198923" resourceFile="rotary-red.png" resourceSourceFile="rotary-red.png"
               resourceName="rotary-red" resourceType="Image"/>
-    <resource resourceHash="-5846088702665679162" resourceLoadedTime="1548017731574"
+    <resource resourceHash="-5846088702665679162" resourceLoadedTime="1548021835427"
               resourceSize="215439" resourceFile="rotary.png" resourceSourceFile="rotary.png"
               resourceName="rotary" resourceType="Image"/>
-    <resource resourceHash="-3860544200263811199" resourceLoadedTime="1548017731574"
+    <resource resourceHash="-3860544200263811199" resourceLoadedTime="1548021835428"
               resourceSize="6276" resourceFile="switch-toggle-led-dis.png"
               resourceSourceFile="switch-toggle-led-dis.png" resourceName="switch-toggle-led-dis"
               resourceType="Image"/>
-    <resource resourceHash="-7395497836515063820" resourceLoadedTime="1548017731574"
+    <resource resourceHash="-7395497836515063820" resourceLoadedTime="1548021835428"
               resourceSize="6522" resourceFile="switch-toggle-led.png" resourceSourceFile="switch-toggle-led.png"
               resourceName="switch-toggle-led" resourceType="Image"/>
   </panelResources>
@@ -290,7 +290,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="54"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="reverbStatus"
-             modulatorMin="0" modulatorValue="1">
+             modulatorMin="0" modulatorValue="0">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="54" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -345,11 +345,11 @@
                componentTabId="0"/>
   </modulator>
   <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
-             name="modulator-5" modulatorVstExported="0" modulatorValue="0">
+             name="fxLoopGroup" modulatorVstExported="0" modulatorValue="0">
     <component componentLabelPosition="top" componentLabelJustification="centred"
                componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="0"
                componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
-               componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName="modulator-2"
+               componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName="fxLoopGroup"
                componentMouseCursor="0" componentGroupName="" componentGroupped="1"
                componentSnapSize="8" componentIsLocked="0" componentDisabled="0"
                componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
@@ -357,7 +357,7 @@
                componentEffectOffsetX="1" componentEffectOffsetY="1" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiGroupText="FX Loop"
+               componentLuaMouseDoubleClick="-- None" uiGroupText="Sagging"
                uiGroupTextColour="ff409fcb" uiGroupOutlineColour1="ff409fcb"
                uiGroupOutlineColour2="0xffffffff" uiGroupBackgroundColour1="ffffff"
                uiGroupBackgroundColour2="0xffffffff" uiGroupOutlineGradientType="0xffffffff"
@@ -393,7 +393,7 @@
                componentLabelHeight="12" componentLabelWidth="50" componentLabelVisible="1"
                componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
                componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName=" "
-               componentMouseCursor="0" componentGroupName="modulator-5" componentGroupped="1"
+               componentMouseCursor="0" componentGroupName="fxLoopGroup" componentGroupped="1"
                componentSnapSize="1" componentIsLocked="0" componentDisabled="0"
                componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
                componentEffect="0" componentEffectRadius="0" componentEffectColour="0xff000000"
@@ -401,7 +401,7 @@
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
                componentLuaMouseDoubleClick="-- None" uiImageButtonMode="0"
-               uiImageButtonResource="led-button-blue" componentRectangle="32 60 35 35"
+               uiImageButtonResource="led-button-blue" componentRectangle="10 6 35 35"
                resourceImageWidth="120" resourceImageHeight="120" resourceImagePaintMode="1"
                resourceImageOrientation="0" uiImageButtonTextColour="0xff000000"
                uiImageButtonContent="0&#10;1" uiImageButtonTextPosition="none"
@@ -1453,7 +1453,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="31"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="channelType"
-             modulatorMin="0" modulatorValue="0">
+             modulatorMin="0" modulatorValue="84">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="31" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1628,7 +1628,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="30"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="powerSoak"
-             modulatorMin="0" modulatorValue="0">
+             modulatorMin="0" modulatorValue="124">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="30" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1740,7 +1740,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="20W" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelText="18W" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
@@ -1768,7 +1768,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="40W" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelText="36W" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
@@ -1874,7 +1874,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="12"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="modulationType"
-             modulatorMin="0" modulatorValue="0">
+             modulatorMin="0" modulatorValue="1">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="12" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1919,7 +1919,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="ff4b0000"
                uiLabelTextColour="ffd12000" uiLabelOutline="1" uiLabelOutlineColour="ff845505"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLCDLabelFont="5"
-               uiLCDLabelFontHeight="30" uiLabelText="Airey Clean" uiLabelDisplaysAllValues="0"
+               uiLCDLabelFontHeight="30" uiLabelText="CLEAN" uiLabelDisplaysAllValues="0"
                uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
                uiLabelInputHighlightColour="ffd12000" uiLabelEditOnSingleClick="1"
                uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="0"
@@ -2442,7 +2442,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="left" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="C:/Users/fred/gm40/factory.gm40 (*)" uiLabelDisplaysAllValues="0"
+               uiLabelText="C:/Users/fred/bs200/factory.bs200 (*)" uiLabelDisplaysAllValues="0"
                uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
                uiLabelInputHighlightColour="0xff0000ff" uiLabelEditOnSingleClick="0"
                uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
@@ -3485,7 +3485,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="topRight" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="Omni Mode&#10;&#10;&#10;Midi Channel&#10;&#10;&#10;Power EQ mode&#10;&#10;&#10;Power Soak mode&#10;&#10;&#10;Amp type&#10;&#10;Firmware Version"
+               uiLabelText="Omni Mode&#10;&#10;&#10;Midi Channel&#10;&#10;&#10;Power EQ mode&#10;&#10;&#10;Cabinet Type mode&#10;&#10;&#10;Amp type&#10;&#10;Firmware Version"
                uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="ff409fcb" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
@@ -8317,7 +8317,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="ampTypeSwitch"
-             modulatorMin="0" modulatorValue="1">
+             modulatorMin="0" modulatorValue="2">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="30" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -8453,7 +8453,7 @@
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="noiseGateLevel"
              modulatorMin="0" modulatorValue="0">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
-          midiMessageCtrlrNumber="24" midiMessageCtrlrValue="1" midiMessageMultiList=""
+          midiMessageCtrlrNumber="62" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
     <component componentLabelPosition="top" componentLabelJustification="centred"
                componentLabelHeight="15" componentLabelWidth="0" componentLabelVisible="1"
@@ -8509,7 +8509,71 @@
                componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="13 88 76 21"
                uiType="uiLabel"/>
   </modulator>
-  <panelCustomData currentPresetNumber="1" currentLibraryFile="C:\Users\fred/gm40/factory.gm40"
-                   ingoredVersionUpdate="" globalPowerSoak="127" currentExternalFile="C:\Users\fred/bs200/factory.bs200"
-                   ampType="GM40"/>
+  <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
+             name="fxLoopLabel" modulatorVstExported="0" modulatorValue="0">
+    <component componentLabelPosition="top" componentLabelJustification="centred"
+               componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="0"
+               componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
+               componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName="fxLoopLabel"
+               componentMouseCursor="2" componentGroupName="fxLoopGroup" componentGroupped="1"
+               componentSnapSize="0" componentIsLocked="0" componentDisabled="0"
+               componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
+               componentEffect="0" componentEffectRadius="1" componentEffectColour="0xff000000"
+               componentEffectOffsetX="0" componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
+               componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
+               componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
+               componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
+               uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
+               uiLabelJustification="left" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
+               uiLabelText="FX Loop" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="0xff0000ff"
+               uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
+               uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
+               componentBubbleRoundAngle="10" componentBubbleBackgroundColour1="0x9cffffff"
+               componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundGradientType="1"
+               componentBubbleValueColour="0xff000000" componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
+               componentBubbleValueJustification="centred" componentBubbleNameColour="0xff000000"
+               componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameJustification="centred"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="42 13 46 21"
+               uiType="uiLabel"/>
+  </modulator>
+  <modulator modulatorVstExported="1" modulatorMax="255" vstIndex="87" modulatorIsStatic="1"
+             modulatorGlobalVariable="-1" modulatorMuteOnStart="0" modulatorMute="0"
+             modulatorExcludeFromSnapshot="0" modulatorValueExpression="modulatorValue"
+             modulatorValueExpressionReverse="midiValue" modulatorControllerExpression="value/8"
+             luaModulatorGetValueForMIDI="generateMidi" luaModulatorGetValueFromMIDI="-- None"
+             modulatorLinkedToPanelProperty="-- None" modulatorLinkedToModulatorProperty="-- None"
+             modulatorLinkedToModulator="-- None" modulatorLinkedToModulatorSource="1"
+             modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="59"
+             modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
+             modulatorVstNameFormat="%n" luaModulatorValueChange="" name="sagging"
+             modulatorMin="0" modulatorValue="1">
+    <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
+          midiMessageCtrlrNumber="59" midiMessageCtrlrValue="1" midiMessageMultiList=""
+          midiMessageSysExFormula=""/>
+    <component componentLabelPosition="top" componentLabelJustification="centred"
+               componentLabelHeight="15" componentLabelWidth="0" componentLabelVisible="1"
+               componentLabelAlwaysOnTop="0" componentSentBack="0" componentLabelColour="ff409fcb"
+               componentLabelFont="&lt;Sans-Serif&gt;;1;0;0;0;0;1;3" componentVisibleName=""
+               componentMouseCursor="0" componentGroupName="fxLoopGroup" componentGroupped="1"
+               componentSnapSize="1" componentIsLocked="0" componentDisabled="0"
+               componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
+               componentEffect="0" componentEffectRadius="0" componentEffectColour="0"
+               componentEffectOffsetX="0" componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
+               componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
+               componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
+               componentLuaMouseDoubleClick="-- None" uiSliderStyle="RotaryVerticalDrag"
+               uiImageSliderResource="knob-blue" resourceImageWidth="120" resourceImageHeight="120"
+               resourceImagePaintMode="128" resourceImageOrientation="1" uiSliderMin="0"
+               uiSliderMax="255" uiSliderInterval="32" uiSliderDoubleClickEnabled="1"
+               uiSliderDoubleClickValue="0" uiSliderValuePosition="4" uiSliderValueHeight="14"
+               uiSliderValueWidth="64" uiSliderValueTextColour="ff409fcb" uiSliderValueBgColour="ffffff"
+               uiSliderValueFont="&lt;Sans-Serif&gt;;1;1;0;0;0;0;3" uiSliderValueTextJustification="centred"
+               uiSliderValueHighlightColour="0xff0000ff" uiSliderValueOutlineColour="ffffff"
+               uiSliderVelocitySensitivity="1" uiSliderVelocityThreshold="1"
+               uiSliderVelocityOffset="0" uiSliderVelocityMode="0" uiSliderVelocityModeKeyTrigger="1"
+               uiSliderSpringMode="0" uiSliderSpringValue="0" uiSliderMouseWheelInterval="32"
+               uiSliderPopupBubble="0" componentLayerUid="40828ca4020000001896d00656f25599"
+               componentRectangle="16 42 64 94" uiType="uiImageSlider"/>
+  </modulator>
 </panel>

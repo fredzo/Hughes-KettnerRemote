@@ -1041,14 +1041,29 @@ function updateUiForAmp()
     local noiseGateLevelLabelComp = panel:getComponent("noiseGateLevelLabel")
     local noiseGateLevelComp = panel:getComponent("noiseGateLevel")
     local noiseGateStatusComp = panel:getComponent("noiseGateStatus")
+    local saggingComp = panel:getComponent("sagging")
+    local fxLoopGroupComp = panel:getComponent("fxLoopGroup")
+    local fxLoopStatusComp = panel:getComponent("fxLoopStatus")
+    local fxLoopLabelComp = panel:getComponent("fxLoopLabel")
     if isBs200() then
+        -- Noise gate
         noiseGateLevelLabelComp:setVisible(true)
         noiseGateLevelComp:setVisible(true)
         noiseGateStatusComp:setPropertyString("componentRectangle","2 2 35 35")
+        -- Sagging
+        fxLoopLabelComp:setVisible(true)
+        saggingComp:setVisible(true)
+        fxLoopStatusComp:setPropertyString("componentRectangle","10 6 35 35")
+        fxLoopGroupComp:setComponentText("Sagging")
     else
         noiseGateLevelLabelComp:setVisible(false)
         noiseGateLevelComp:setVisible(false)
         noiseGateStatusComp:setPropertyString("componentRectangle","32 48 35 35")
+        -- Sagging
+        fxLoopLabelComp:setVisible(false)
+        saggingComp:setVisible(false)
+        fxLoopStatusComp:setPropertyString("componentRectangle","32 60 35 35")
+        fxLoopGroupComp:setComponentText("FX Loop")
     end
 end
 
