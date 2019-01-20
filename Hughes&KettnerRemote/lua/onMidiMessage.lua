@@ -432,8 +432,6 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	-- Mod intensity
 	value = convertToInt(midiData:getByte(startIndex+22),midiData:getByte(startIndex+23))
 	preset["modIntensity"]=value
-	-- This is global setting, not preset
-	-- setStatusModulatorValue("modulationStatus",value)
 	-- Mod type
 	value = convertToInt(midiData:getByte(startIndex+24),midiData:getByte(startIndex+25))
 	preset["modType"]=value
@@ -445,7 +443,7 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	    local config1H = midiData:getByte(startIndex+30)
 	    local config1 = midiData:getByte(startIndex+31)
 	    -- Sagging
-	    value = (config2 % 8) * 31
+	    value = (config2 % 8) * 36
 	    preset["sagging"]=value
 	    -- cabinet type
 	    value = (math.floor(config2/8) % 8) * 31
@@ -585,10 +583,10 @@ loadPreset = function(preset,setNumber)
     if isBs200() then
 	    -- Sagging
 	    value = preset["sagging"]
-	    setStatusModulatorValue("sagging",value)
+	    setModulatorValue("sagging",value,false,true)
 	    -- Noise gate level
 	    value = preset["noiseGateLevel"]
-	    setStatusModulatorValue("noiseGateLevel",value)
+	    setModulatorValue("noiseGateLevel",value,false,true)
 	    -- Cab type
 	    value = preset["cabinetType"]
 	    -- TODO setStatusModulatorValue("cabinetType",value)
