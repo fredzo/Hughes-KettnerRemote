@@ -159,10 +159,17 @@ sendSystemConfig = function()
  		message[8] = 0x0B 
 	end
 	-- Set data
-	message[11] = (midiChannel-1) + (omniMode*16)
-	message[12] = mutes
-	message[13] = midiLearn + (powerEqGlobal*4) + (powerSoakGlobal*32)
-    -- TODO BS200
+    if isBs200 then
+	    message[11] = (midiChannel-1) + (omniMode*16)
+        -- In Bs200 mode, powerSoakGlobal controller is used for cabinetType global status
+	    message[12] = (powerEqGlobal%2) + ((powerSoakGlobal%2)*2) + ((globalCabinetType%8)*4)
+        message[13] = globalResonance % 128;
+        message[14] = globalPresence % 128;
+    else
+	    message[11] = (midiChannel-1) + (omniMode*16)
+	    message[12] = mutes
+	    message[13] = midiLearn + ((powerEqGlobal%2)*4) + ((powerSoakGlobal%2)*32)
+    end
 	-- Checksum
 	local checksum = 0
 	for i=1,14 do
