@@ -446,7 +446,7 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	    value = (config2 % 8) * 36
 	    preset["sagging"]=value
 	    -- cabinet type
-	    value = (math.floor(config2/8) % 8) * 31
+	    value = (math.floor(config2/8) % 8) * 36
 	    preset["cabinetType"]=value
 	    -- Preamp channel
 	    value = (config1 % 4) * 42

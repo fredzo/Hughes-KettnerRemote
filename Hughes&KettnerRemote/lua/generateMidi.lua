@@ -377,9 +377,6 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	value = preset["modType"]
 	writeIntToBuffer(value,buffer,startIndex+24);
 
-	local qqByte
-	local rrByte
-
 	-- Preamp channel
 	value = preset["channelType"]
 	local channelType = math.floor(value/42)
@@ -389,9 +386,37 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	-- Fx loop
 	value = preset["fxLoop"]
 	local fxLoop = math.floor(value/127)
+	-- Nois Gate
+    value = preset["noiseGate"]
+    local noiseGate = math.floor(value/127)
     if isBs200() then
-        -- TODO BS200
+		-- Noise Gate Level
+		value = preset["noiseGateLevel"]
+		writeIntToBuffer(value,buffer,startIndex+26);
+		-- Sagging
+		value = preset["sagging"]
+		local sagging = math.floor(value/36)
+		-- Cab type
+		value = preset["cabinetType"]
+		local cabinetType = math.floor(value/36)
+		-- Mutes
+	    value = preset["reverbStatus"]
+		local reverbStatus = math.floor(value/127)
+	    value = preset["modulationStatus"]
+		local modulationStatus = math.floor(value/127)
+	    value = preset["delayStatus"]
+		local delayStatus = math.floor(value/127)
+        -- Config 1/2
+		local config2LByte = sagging + (cabinetType*8)
+		local config1HByte = channelType + (channelBoost*4) + (fxLoop*8) + (reverbStatus*16) + (delayStatus*32) + (modulationStatus*64)
+		local config1LByte = noiseGate
+	    buffer[startIndex+29]=config2LByte
+	    buffer[startIndex+30]=config1HByte
+	    buffer[startIndex+31]=config1LByte
     else
+		local qqByte
+		local rrByte
+
 	    -- Power soak
 	    if withGlobalSoak then
 		    value = globalPowerSoakValue
@@ -403,8 +428,6 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	    rrByte = channelType + (channelBoost*4) + (fxLoop*8) + (powerSoak*16)
 
 	    -- Noise Gate
-	    value = preset["noiseGate"]
-	    local noiseGate = math.floor(value/127)
 	    qqByte = noiseGate
 
 	    buffer[startIndex+30]=qqByte
