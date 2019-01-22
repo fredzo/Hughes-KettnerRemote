@@ -101,7 +101,6 @@ function showCompare()
 	value = getCompareValue(editedValue,originalValue)
 	if editedValue ~= originalValue then
 		setKknobModulatorValue("reverbLevel",value,false,true,true)
-		--setBlueLedModulatorValue("reverbStatus",value,true)
 	end
 	-- Delay level
 	editedValue = editBuffer["delayLevel"]
@@ -109,7 +108,6 @@ function showCompare()
 	value = getCompareValue(editedValue,originalValue)
 	if editedValue ~= originalValue then
 		setKknobModulatorValue("delayLevel",value,false,true,true)
-		--setBlueLedModulatorValue("delayStatus",value,true)
 	end
 	-- Delay Time
 	editedValue = editBuffer["delayTime"]
@@ -134,7 +132,6 @@ function showCompare()
 	value = getCompareValue(editedValue,originalValue)
 	if editedValue ~= originalValue then
 		setKknobModulatorValue("modulationIntensity",value,false,true,true)
-		--setBlueLedModulatorValue("modulationStatus",value,true)
 	end
 	-- Mod rate / type
 	editedValue = editBuffer["modType"]
@@ -182,7 +179,42 @@ function showCompare()
 		setBlueLedModulatorValue("fxLoopStatus",value,true)
 	end
     if isBs200() then
-        -- TODO Noise Gate Level, Sagging and cab type
+        -- TODO Cab type
+		-- Noise gate level
+		editedValue = editBuffer["noiseGateLevel"]
+		originalValue = originalBuffer["noiseGateLevel"]
+		value = getCompareValue(editedValue,originalValue)
+		if editedValue ~= originalValue then
+			setKknobModulatorValue("noiseGateLevel",value,false,true,true)
+		end
+		-- Sagging
+		editedValue = editBuffer["sagging"]
+		originalValue = originalBuffer["sagging"]
+		value = getCompareValue(editedValue,originalValue)
+		if editedValue ~= originalValue then
+			setKknobModulatorValue("sagging",value,false,true,true)
+		end
+		-- Reverb satus
+		editedValue = editBuffer["reverbStatus"]
+		originalValue = originalBuffer["reverbStatus"]
+		value = getCompareValue(editedValue,originalValue)
+		if editedValue ~= originalValue then
+			setBlueLedModulatorValue("reverbStatus",value,true)
+		end
+		-- Delay satus
+		editedValue = editBuffer["delayStatus"]
+		originalValue = originalBuffer["delayStatus"]
+		value = getCompareValue(editedValue,originalValue)
+		if editedValue ~= originalValue then
+			setBlueLedModulatorValue("delayStatus",value,true)
+		end
+		-- Modulation satus
+		editedValue = editBuffer["modulationStatus"]
+		originalValue = originalBuffer["modulationStatus"]
+		value = getCompareValue(editedValue,originalValue)
+		if editedValue ~= originalValue then
+			setBlueLedModulatorValue("modulationStatus",value,true)
+		end
     else
 	    -- Power soak
 	    if (not isLibrary and not isGm40()) or not (powerSoakGlobal == 1) then
@@ -231,17 +263,14 @@ function hideCompare()
 	panel:getComponent("powerPresence"):setPropertyString("uiImageSliderResource","knob-blue")
 	-- Reverb
 	panel:getComponent("reverbLevel"):setPropertyString("uiImageSliderResource","knob-blue")
-	--panel:getComponent("reverbStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Delay level
 	panel:getComponent("delayLevel"):setPropertyString("uiImageSliderResource","knob-blue")
-	--panel:getComponent("delayStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Delay Time
 	panel:getComponent("delayTime"):setPropertyString("uiImageSliderResource","knob-blue")
 	-- Delay Feedback
 	panel:getComponent("delayFeedback"):setPropertyString("uiImageSliderResource","knob-blue")
 	-- Mod intensity
 	panel:getComponent("modulationIntensity"):setPropertyString("uiImageSliderResource","knob-blue")
-	--panel:getComponent("modulationStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Mod type
 	panel:getComponent("modulationType"):setPropertyString("uiImageSliderResource","rotary")
 	panel:getComponent("modulationRate"):setPropertyString("uiImageSliderResource","knob-blue")
@@ -253,7 +282,18 @@ function hideCompare()
 	panel:getComponent("fxLoopStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Power soak
 	panel:getComponent("powerSoak"):setPropertyString("uiSliderTrackColour","FF409FCB")
-    -- TODO BS200
+	-- Sagging
+	panel:getComponent("sagging"):setPropertyString("uiImageSliderResource","knob-blue")
+	-- Noise gate level
+	panel:getComponent("noiseGateLevel"):setPropertyString("uiImageSliderResource","knob-blue")
+	-- Cabinet type
+	-- TODO panel:getComponent("cabinetType"):setPropertyString("uiImageSliderResource","knob-blue")
+	-- Reverb led
+	panel:getComponent("reverbStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
+	-- Delay led
+	panel:getComponent("delayStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
+	-- Modulation led
+	panel:getComponent("modulationStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Noise Gate
 	panel:getComponent("noiseGateStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Disable compare
@@ -301,7 +341,17 @@ function highlight(paramName)
 		if not isLibrary or not (powerSoakGlobal == 1) then
 			panel:getComponent("powerSoak"):setPropertyString("uiSliderTrackColour","FF7F0D13")
 		end
-    -- TODO BS200
+	elseif paramName == "reverbStatus" then
+		panel:getComponent("reverbStatus"):setPropertyString("uiImageButtonResource","led-button-blue-red")
+	elseif paramName == "delayStatus" then
+		panel:getComponent("delayStatus"):setPropertyString("uiImageButtonResource","led-button-blue-red")
+	elseif paramName == "modulationStatus" then
+		panel:getComponent("modulationStatus"):setPropertyString("uiImageButtonResource","led-button-blue-red")
+	elseif paramName == "sagging" then
+		panel:getComponent("sagging"):setPropertyString("uiImageSliderResource","knob-red")
+	elseif paramName == "noiseGateLevel" then
+		panel:getComponent("noiseGateLevel"):setPropertyString("uiImageSliderResource","knob-red")
+    -- TODO cab type
 	elseif paramName == "noiseGate" then
 		panel:getComponent("noiseGateStatus"):setPropertyString("uiImageButtonResource","led-button-blue-red")
 	end

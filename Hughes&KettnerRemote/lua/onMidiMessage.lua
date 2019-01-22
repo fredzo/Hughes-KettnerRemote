@@ -182,6 +182,12 @@ onMidiMessage = function(midi)
 							presetModified = false
 						end
 					end
+					-- Reverb, delay and modulation status are only modifiable per preset for Bs200
+					if (paramName == "reverbStatus") or (paramName == "delayStatus") or (paramName == "modulationStatus") then
+						if not isBs200() then
+							presetModified = false
+						end
+					end
 					if presetModified then
 						-- Set modified status
 						setModified(true)

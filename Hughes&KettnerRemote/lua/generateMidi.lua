@@ -29,6 +29,12 @@ generateMidi = function(modulator, numericModulatorValue)
 				preventModify = true
 			end
 		end
+		-- Reverb, delay and modulation status are only modifiable per preset for Bs200
+		if (paramName == "reverbStatus") or (paramName == "delayStatus") or (paramName == "modulationStatus") then
+			if not isBs200() then
+				preventModify = true
+			end
+		end
 		-- In library mode we update current preset too
 		if isLibrary then
 			if not preventModify and (presets[currentPresetNumber] ~= nil) then
