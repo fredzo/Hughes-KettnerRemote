@@ -631,6 +631,7 @@ setModulatorValue = function(modulatorName, modulatorValue, sendMidi, animate)
 	local modulator = panel:getModulator(modulatorName)
 	if modulator ~= nil then
 		--console("Set "..modulatorName..": Value = "..modulatorValue)
+		--if modulatorValue == nil then utils.warnWindow ("Nil value for modulator "..modulatorName, "Nil value.") end
 		if animate then
 			local currentValue = modulator:getValue()
 			animations[modulatorName] = {modulator,currentValue,modulatorValue,sendMidi}
