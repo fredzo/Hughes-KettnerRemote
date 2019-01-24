@@ -316,8 +316,6 @@ controllersGrandMeister = {
 [55]="fxLoop",
 [56]="gain",
 [57]="volume",
-[59]="sagging",
-[62]="noiseGateLevel",
 [63]="noiseGate",
 [64]="channelBoost"
 }
