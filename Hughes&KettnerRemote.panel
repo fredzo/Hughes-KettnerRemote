@@ -27,7 +27,7 @@
        luaPanelSaveState="saveData" luaPanelRestoreState="loadData"
        luaPanelMidiSnapshotPost="-- None" luaPanelMidiSnapshotPre="-- None"
        luaAudioProcessBlock="-- None" luaPanelOSCReceived="-- None"
-       panelFilePath="D:\perso\dev\Hughes&amp;KettnerRemote\Hughes&amp;KettnerRemote.panel"
+       panelFilePath="D:\home\dev\Hughes&amp;KettnerRemote\Hughes&amp;KettnerRemote.panel"
        panelUID="8.9hOSdulECpN" panelInstanceUID="IX4a" panelInstanceManufacturerID="2dRE"
        panelModulatorListColumns="&lt;TABLELAYOUT sortedCol=&quot;605&quot; sortForwards=&quot;0&quot;&gt;&lt;COLUMN id=&quot;604&quot; visible=&quot;1&quot; width=&quot;163&quot;/&gt;&lt;COLUMN id=&quot;1&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;603&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;605&quot; visible=&quot;1&quot; width=&quot;163&quot;/&gt;&lt;COLUMN id=&quot;119&quot; visible=&quot;1&quot; width=&quot;151&quot;/&gt;&lt;COLUMN id=&quot;123&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;124&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;131&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;547&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;544&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;548&quot; visible=&quot;1&quot; width=&quot;163&quot;/&gt;&lt;COLUMN id=&quot;18&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;COLUMN id=&quot;19&quot; visible=&quot;1&quot; width=&quot;139&quot;/&gt;&lt;/TABLELAYOUT&gt;"
        panelModulatorListCsvDelimiter="," panelModulatorListXmlRoot="ctrlrModulatorList"
@@ -204,59 +204,59 @@
     </luaManagerMethods>
   </luaManager>
   <panelResources>
-    <resource resourceHash="-119805985295704969" resourceLoadedTime="1548318509518"
+    <resource resourceHash="6348227294226378784" resourceLoadedTime="1548362656138"
               resourceSize="28501" resourceFile="blue-led.png" resourceSourceFile="blue-led.png"
               resourceName="blue-led" resourceType="Image"/>
-    <resource resourceHash="5270837575833458173" resourceLoadedTime="1548318509519"
+    <resource resourceHash="-6707873219399365690" resourceLoadedTime="1548362656139"
               resourceSize="35802" resourceFile="factory.gm36" resourceSourceFile="factory.gm36"
               resourceName="factory" resourceType="Data"/>
-    <resource resourceHash="-17764001261445349" resourceLoadedTime="1548318509520"
-              resourceSize="47350" resourceFile="factory200.bs200" resourceSourceFile="factory200.bs200"
+    <resource resourceHash="-6415346107396977728" resourceLoadedTime="1548362656139"
+              resourceSize="39828" resourceFile="factory200.bs200" resourceSourceFile="factory200.bs200"
               resourceName="factory200" resourceType="Data"/>
-    <resource resourceHash="-4459332601201669072" resourceLoadedTime="1548318509522"
+    <resource resourceHash="-8056722159850220750" resourceLoadedTime="1548362656139"
               resourceSize="35475" resourceFile="factory40.gm40" resourceSourceFile="factory40.gm40"
               resourceName="factory40" resourceType="Data"/>
-    <resource resourceHash="7825937883353234962" resourceLoadedTime="1548318509715"
+    <resource resourceHash="1428355904053230113" resourceLoadedTime="1548362656179"
               resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
               resourceName="grandmeister" resourceType="Image"/>
-    <resource resourceHash="-1149646585843999408" resourceLoadedTime="1548318509719"
+    <resource resourceHash="6485659102923138292" resourceLoadedTime="1548362656180"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
-    <resource resourceHash="2910823912256833842" resourceLoadedTime="1548318509720"
+    <resource resourceHash="7815743392538525058" resourceLoadedTime="1548362656180"
               resourceSize="2189" resourceFile="help.png" resourceSourceFile="help.png"
               resourceName="help" resourceType="Image"/>
-    <resource resourceHash="-7144534480765107108" resourceLoadedTime="1548318510294"
+    <resource resourceHash="490771204549446640" resourceLoadedTime="1548362656293"
               resourceSize="5936493" resourceFile="knob-blue.png" resourceSourceFile="knob-blue.png"
               resourceName="knob-blue" resourceType="Image"/>
-    <resource resourceHash="-2627694074823202541" resourceLoadedTime="1548318510928"
+    <resource resourceHash="3840339201199071312" resourceLoadedTime="1548362656404"
               resourceSize="5929476" resourceFile="knob-red.png" resourceSourceFile="knob-red.png"
               resourceName="knob-red" resourceType="Image"/>
-    <resource resourceHash="5880954689559434580" resourceLoadedTime="1548318510934"
+    <resource resourceHash="-373834656771461138" resourceLoadedTime="1548362656404"
               resourceSize="25536" resourceFile="led-button-blue-red.png" resourceSourceFile="led-button-blue-red.png"
               resourceName="led-button-blue-red" resourceType="Image"/>
-    <resource resourceHash="7978259517039391116" resourceLoadedTime="1548318510938"
+    <resource resourceHash="223140874764489814" resourceLoadedTime="1548362656405"
               resourceSize="25156" resourceFile="led-button-blue.png" resourceSourceFile="led-button-blue.png"
               resourceName="led-button-blue" resourceType="Image"/>
-    <resource resourceHash="-2330204642172071381" resourceLoadedTime="1548318510941"
+    <resource resourceHash="6009354273415944338" resourceLoadedTime="1548362656406"
               resourceSize="24767" resourceFile="led-button-red-red.png" resourceSourceFile="led-button-red-red.png"
               resourceName="led-button-red-red" resourceType="Image"/>
-    <resource resourceHash="7202011171716016131" resourceLoadedTime="1548318510945"
+    <resource resourceHash="-8399259643041769429" resourceLoadedTime="1548362656406"
               resourceSize="24339" resourceFile="led-button-red.png" resourceSourceFile="led-button-red.png"
               resourceName="led-button-red" resourceType="Image"/>
-    <resource resourceHash="4733375761340207994" resourceLoadedTime="1548318510948"
+    <resource resourceHash="7171749218774011558" resourceLoadedTime="1548362656407"
               resourceSize="27431" resourceFile="red-led.png" resourceSourceFile="red-led.png"
               resourceName="red-led" resourceType="Image"/>
-    <resource resourceHash="-7744490094007381166" resourceLoadedTime="1548318510972"
+    <resource resourceHash="7104864482782162876" resourceLoadedTime="1548362656412"
               resourceSize="198923" resourceFile="rotary-red.png" resourceSourceFile="rotary-red.png"
               resourceName="rotary-red" resourceType="Image"/>
-    <resource resourceHash="5088230686955965530" resourceLoadedTime="1548318511008"
+    <resource resourceHash="-5846088702665679162" resourceLoadedTime="1548362656417"
               resourceSize="215439" resourceFile="rotary.png" resourceSourceFile="rotary.png"
               resourceName="rotary" resourceType="Image"/>
-    <resource resourceHash="-6040905373696519831" resourceLoadedTime="1548318511010"
+    <resource resourceHash="-3860544200263811199" resourceLoadedTime="1548362656417"
               resourceSize="6276" resourceFile="switch-toggle-led-dis.png"
               resourceSourceFile="switch-toggle-led-dis.png" resourceName="switch-toggle-led-dis"
               resourceType="Image"/>
-    <resource resourceHash="2932470883005626268" resourceLoadedTime="1548318511011"
+    <resource resourceHash="-7395497836515063820" resourceLoadedTime="1548362656417"
               resourceSize="6522" resourceFile="switch-toggle-led.png" resourceSourceFile="switch-toggle-led.png"
               resourceName="switch-toggle-led" resourceType="Image"/>
   </panelResources>
@@ -274,8 +274,8 @@
                  uiPanelTooltipCornerRound="1" uiPanelTooltipPlacement="2" uiPanelTooltipFont="&lt;Sans-Serif&gt;;15;1;0;0;0;0;3"
                  uiPanelZoom="1.3" uiPanelMidiToolbarVisible="0" uiPanelDisableCombosOnEdit="0"
                  uiPanelToolbarPosition="8 8 800 40" uiPanelRotation="0" uiPanelToolbarVisible="1"
-                 lastBrowsedComponentDir="D:\Fichiers\Seven\Documents" uiPanelPropertiesSize="305"
-                 uiPanelViewPortSize="1223">
+                 lastBrowsedComponentDir="D:\Fichiers\Seven\Documents" uiPanelPropertiesSize="382"
+                 uiPanelViewPortSize="1530">
     <uiPanelCanvasLayer uiPanelCanvasLayerName="Components" uiPanelCanvasLayerUid="40828ca4020000001896d00656f25599"
                         uiPanelCanvasLayerColour="0x000000" uiPanelCanvasLayerVisibility="1"
                         uiPanelCanvasLayerIndex="1"/>
@@ -488,7 +488,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="53"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="delayStatus"
-             modulatorMin="0" modulatorValue="0">
+             modulatorMin="0" modulatorValue="1">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="53" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -522,7 +522,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="27"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="delayFeedback"
-             modulatorMin="0" modulatorValue="82">
+             modulatorMin="0" modulatorValue="0">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="27" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -766,7 +766,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="52"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="modulationStatus"
-             modulatorMin="0" modulatorValue="0">
+             modulatorMin="0" modulatorValue="1">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="52" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1419,7 +1419,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="64"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="channelBoost"
-             modulatorMin="0" modulatorValue="1">
+             modulatorMin="0" modulatorValue="0">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="64" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -2442,7 +2442,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="left" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="C:/Users/fborry/bs200/factory.bs200 (*)" uiLabelDisplaysAllValues="0"
+               uiLabelText="C:/Users/fred/bs200/factory.bs200" uiLabelDisplaysAllValues="0"
                uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
                uiLabelInputHighlightColour="0xff0000ff" uiLabelEditOnSingleClick="0"
                uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
@@ -2722,7 +2722,7 @@
              name="modulator-1" modulatorVstExported="0" modulatorValue="0">
     <component componentLabelPosition="none" componentLabelJustification="centred"
                componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="1"
-               componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
+               componentLabelAlwaysOnTop="1" componentSentBack="1" componentLabelColour="0xff000000"
                componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;0;3" componentVisibleName=""
                componentMouseCursor="2" componentGroupName="" componentGroupped="0"
                componentSnapSize="0" componentIsLocked="0" componentDisabled="0"
@@ -4211,7 +4211,7 @@
                uiButtonTextColourOff="ffffffff" uiButtonContent="OK" uiButtonConnectedLeft="1"
                uiButtonConnectedRight="1" uiButtonConnectedTop="1" uiButtonConnectedBottom="1"
                uiButtonRepeat="0" uiButtonRepeatRate="100" uiButtonTriggerOnMouseDown="0"
-               componentInternalFunction="-- None" componentRectangle="721 357 92 22"
+               componentInternalFunction="-- None" componentRectangle="265 405 92 22"
                componentTabId="3" componentTabName="tabs" componentBubbleRoundAngle="10"
                componentBubbleBackgroundColour1="0x9cffffff" componentBubbleBackgroundColour2="0xbab9b9b9"
                componentBubbleBackgroundGradientType="1" componentBubbleValueColour="0xff000000"
@@ -4246,7 +4246,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Super Clean&#10;Fat Clean&#10;Bluesy Clean&#10;Crunchy Clean"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CLEAN&#10;CRUNCH&#10;LEAD&#10;ULTRA"
                componentRectangle="28 5 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4320,7 +4320,7 @@
                componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="3 61 20 40"
                uiType="uiLabel" componentTabName="tabs" componentTabId="3"/>
   </modulator>
-  <modulator modulatorVstExported="0" modulatorMax="3" vstIndex="" modulatorIsStatic="0"
+  <modulator modulatorVstExported="0" modulatorMax="2" vstIndex="" modulatorIsStatic="0"
              modulatorGlobalVariable="-1" modulatorMuteOnStart="0" modulatorMute="0"
              modulatorExcludeFromSnapshot="0" modulatorValueExpression="modulatorValue"
              modulatorValueExpressionReverse="midiValue" modulatorControllerExpression="value"
@@ -4346,7 +4346,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Clean Brett&#10;Rhythn Crunch&#10;Fat Crunch&#10;Boosted Crunch"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="50'S OLD AMERICAN STYLE&#10;60'S CRUNCH (USE CC PEDAL FOR GAIN)&#10;CLASSIC AMERICAN TONE&#10;MODERN AMERICAN CRUNCH"
                componentRectangle="28 53 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4386,7 +4386,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Low Gain Classic Lead&#10;Boosted Classic Lead&#10;Fat Classic Lead&#10;High Gain Classic Lead"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="FRANKY CLEAN&#10;MODERN CRUNCH&#10;MODERN CRUNCH 2&#10;POWER CRUNCH"
                componentRectangle="28 101 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4456,7 +4456,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Classic Metal&#10;High Gain Metal&#10;Modern Metal&#10;Deep Metal"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="LEAD BY DUTCH NO.1&#10;CLASSIC LEAD&#10;HEAVY LEAD&#10;HEAVY LEAD 2"
                componentRectangle="28 149 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4556,7 +4556,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Chorus Clean&#10;Rotor Chorus Clean&#10;Clean Flanger&#10;Clean Phaser"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CLEAN SPHERE&#10;ECHO PARTNER CLEAN&#10;MID OF THE SEVENTIES&#10;THE BEGINNING OF ROCK 'N' ROLL"
                componentRectangle="28 197 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4597,7 +4597,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Space Crunch 1&#10;Space Crunch 2&#10;Flanged Lead&#10;World of Lead"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="SIXTIES SMALL CABINET&#10;SIXTIES BIG CABINET&#10;CARLOS LEAD&#10;METALCORE 1"
                componentRectangle="28 245 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4668,7 +4668,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Sixties Tremolo Crunch&#10;British Tremolo Crunch&#10;Shine on Like Crazy&#10;Crunchy Flanger"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="HANDRIX HI JOE INTRO&#10;HANDRIX HI JOE SOLO&#10;HANDRIX XOXY LADY RHYTHM&#10;HANDRIX XOXY LADY SOLO"
                componentRectangle="28 293 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4739,7 +4739,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Ultra Power Chord&#10;Ultra Modulation&#10;Small Ultra Deep&#10;Ultra Deep Space"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CLASSC BRITISH CRUNCH&#10;MODERN BRITISH CRUNCH&#10;METALCORE 2&#10;METALCORE 3"
                componentRectangle="28 341 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4810,7 +4810,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Fat Clean Drive (Single Coil)&#10;Voxx Like  (Single Coil)&#10;Country Boy 1 (Single Coil)&#10;Country Boy 2 (Single Coil)"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="ARPEGGIO RICK CHORDS&#10;YOU TOO&#10;MY TREMOLO&#10;MY CHORUS"
                componentRectangle="176 53 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4850,7 +4850,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Dream Bell&#10;Warm Cave&#10;Funda Mental&#10;Spirit"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="MID CRUNCH 1&#10;MID CRUNCH 2&#10;RUNNING ON THE MOON&#10;VOLUME SWELL PAD"
                componentRectangle="176 5 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -4984,7 +4984,7 @@
                componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="151 157 20 40"
                uiType="uiLabel" componentTabName="tabs" componentTabId="3" uiGroupTextFont="&lt;Sans-Serif&gt;;14;1;0;0;0;1;3"/>
   </modulator>
-  <modulator modulatorVstExported="0" modulatorMax="3" vstIndex="" modulatorIsStatic="0"
+  <modulator modulatorVstExported="0" modulatorMax="2" vstIndex="" modulatorIsStatic="0"
              modulatorGlobalVariable="-1" modulatorMuteOnStart="0" modulatorMute="0"
              modulatorExcludeFromSnapshot="0" modulatorValueExpression="modulatorValue"
              modulatorValueExpressionReverse="midiValue" modulatorControllerExpression="value"
@@ -5010,7 +5010,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="My Tremolo&#10;My Chorus&#10;Funky phaser&#10;Clean Flanger"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="COUNTRY BOY NO.1&#10;COUNTRY BOY NO.2&#10;LATIN ROCK OF THE 70'S&#10;BOOSTED CRUNCH"
                componentRectangle="176 149 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5050,7 +5050,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Running on the Moon (Single Coil)&#10;You Too (Single Coil)&#10;Volume Swell Pad (Single Coil)&#10;Arpeggio Rick Chords (Single Coil)"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="FUNKY PHASER&#10;CLEAN FLANGER&#10;SHINE ON LIKE CRAZY&#10;LEAD BY DUTCH NO.2"
                componentRectangle="176 101 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5090,7 +5090,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Crunch!&#10;Hot Crunch 1&#10;Hot Crunch 2&#10;Classic 2nd"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="DEATH METAL (EMG) NO.1&#10;DEATH METAL (EMG) NO.2&#10;DEATH METAL (EMG) NO.3&#10;DEATH METAL (EMG) NO.4"
                componentRectangle="176 197 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5162,7 +5162,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Classic Lead&#10;High Gain Solo 1&#10;High Gain Solo 2&#10;Ultra High Gain Solo"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CRAZY WINE&#10;FAMOUS FOUR&#10;SECOND SHINE&#10;STICK IN THE HOLE"
                componentRectangle="176 245 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5234,7 +5234,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Modern Metal Rhythm&#10;Modern Metal Lead&#10;Paradise Clean&#10;Paradise Rhythm"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="YYYYYYHAAAA&#10;TEXAS SCREAM&#10;WORK ZEN&#10;INZENAME"
                componentRectangle="176 293 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5305,7 +5305,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Paradise Lead&#10;Black Hole Clean&#10;Black Hole Weird&#10;Bombtrack"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CAT NAMED LOU&#10;SO OR O?&#10;YY POP&#10;COME4PUMP"
                componentRectangle="176 341 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5376,7 +5376,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Good Love&#10;Love Solo&#10;Modern Rock Rhythm&#10;Modern Rock Lead"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="BASS GUITAR NO.1&#10;BASS GUITAR NO.2&#10;FOR ACOUSTIC GUITAR OVER FULL RANGE CAB 1&#10;FOR ACOUSTIC GUITAR OVER FULL RANGE CAB 2"
                componentRectangle="326 5 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5450,7 +5450,7 @@
                componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundColour1="0x9cffffff"
                componentBubbleRoundAngle="10" uiGroupTextFont="&lt;Sans-Serif&gt;;14;1;0;0;0;1;3"/>
   </modulator>
-  <modulator modulatorVstExported="0" modulatorMax="3" vstIndex="" modulatorIsStatic="0"
+  <modulator modulatorVstExported="0" modulatorMax="2" vstIndex="" modulatorIsStatic="0"
              modulatorGlobalVariable="-1" modulatorMuteOnStart="0" modulatorMute="0"
              modulatorExcludeFromSnapshot="0" modulatorValueExpression="modulatorValue"
              modulatorValueExpressionReverse="midiValue" modulatorControllerExpression="value"
@@ -5476,7 +5476,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 69&#10;Preset 70&#10;Preset 71&#10;Preset 72"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="50'S OLD AMERICAN STYLE&#10;60'S CRUNCH (USE CC pEDAL FOR GAIN)&#10;CLASSIC AMERICAN TONE&#10;MODERN AMERICAN CRUNCH"
                componentRectangle="326 53 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5546,7 +5546,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 73&#10;Preset 74&#10;Preset 75&#10;Preset 76"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="FRANKY CLEAN&#10;MODERN CRUNCH&#10;MODERN CRUNCH 2&#10;POWER CRUNCH"
                componentRectangle="326 101 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5617,7 +5617,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 97&#10;Preset 98&#10;Preset 99&#10;Preset 100"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="MID CRUNCH 1&#10;MID CRUNCH 2&#10;RUNNING ON THE MOON&#10;VOLUME SWELL PAD"
                componentRectangle="476 5 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5689,7 +5689,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 101&#10;Preset 102&#10;Preset 103&#10;Preset 104"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="ARPEGGIO RICK CHORDS&#10;YOU TOO&#10;MY TREMOLO&#10;MY CHORUS"
                componentRectangle="476 53 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5760,7 +5760,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 105&#10;Preset 106&#10;Preset 107&#10;Preset 108"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="FUNKY PHASER&#10;CLEAN FLANGER&#10;SHINE ON LIKE CRAZY&#10;LEAD BY DUTCH NO.2"
                componentRectangle="476 101 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5830,7 +5830,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 77&#10;Preset 78&#10;Preset 79&#10;Preset 80"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="LEAD BY DUTCH NO.1&#10;CLASSIC LEAD&#10;HEAVY LEAD&#10;HEAVY LEAD 2"
                componentRectangle="326 149 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5875,7 +5875,7 @@
                componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundColour1="0x9cffffff"
                componentBubbleRoundAngle="10"/>
   </modulator>
-  <modulator modulatorVstExported="0" modulatorMax="3" vstIndex="" modulatorIsStatic="0"
+  <modulator modulatorVstExported="0" modulatorMax="2" vstIndex="" modulatorIsStatic="0"
              modulatorGlobalVariable="-1" modulatorMuteOnStart="0" modulatorMute="0"
              modulatorExcludeFromSnapshot="0" modulatorValueExpression="modulatorValue"
              modulatorValueExpressionReverse="midiValue" modulatorControllerExpression="value"
@@ -5901,7 +5901,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 109&#10;Preset 110&#10;Preset 111&#10;Preset 112"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="COUNTRY BOY NO.1&#10;COUNTRY BOY NO.2&#10;LATIN ROCK OF THE 70'S&#10;BOOSTED CRUNCH"
                componentRectangle="476 149 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -5971,7 +5971,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 81&#10;Preset 82&#10;Preset 83&#10;Preset 84"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CLEAN SPHERE&#10;ECHO PARTNER CLEAN&#10;MID OF THE SEVENTIES&#10;THE BEGINNING OF ROCK 'N' ROLL"
                componentRectangle="326 197 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6041,7 +6041,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 113&#10;Preset 114&#10;Preset 115&#10;Preset 116"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="DEATH METAL (EMG) NO.1&#10;DEATH METAL (EMG) NO.2&#10;DEATH METAL (EMG) NO.3&#10;DEATH METAL (EMG) NO.4"
                componentRectangle="476 197 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6111,7 +6111,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 85&#10;Preset 86&#10;Preset 87&#10;Preset 88"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="SIXTIES SMALL CABINET&#10;SIXTIES BIG CABINET&#10;CARLOS LEAD&#10;METALCORE 1"
                componentRectangle="326 245 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6181,7 +6181,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 117&#10;Preset 118&#10;Preset 119&#10;Preset 120"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CRAZY WINE&#10;FAMOUS FOUR&#10;SECOND SHINE&#10;STICK IN THE HOLE"
                componentRectangle="476 245 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6252,7 +6252,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 89&#10;Preset 90&#10;Preset 91&#10;Preset 92"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="HANDRIX HI JOE INTRO&#10;HANDRIX HI JOE SOLO&#10;HANDRIX XOXY LADY RHYTHM&#10;HANDRIX XOXY LADY SOLO"
                componentRectangle="326 293 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6322,7 +6322,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 121&#10;Preset 122&#10;Preset 123&#10;Preset 124"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="YYYYYYHAAAA&#10;TEXAS SCREAM&#10;WORK ZEN&#10;INZENAME"
                componentRectangle="476 293 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6392,7 +6392,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 93&#10;Preset 94&#10;Preset 95&#10;Preset 96"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CLASSC BRITISH CRUNCH&#10;MODERN BRITISH CRUNCH&#10;METALCORE 2&#10;METALCORE 3"
                componentRectangle="326 341 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6462,7 +6462,7 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiListBoxContent="Preset 125&#10;Preset 126&#10;Preset 127&#10;Preset 128"
+               componentLuaMouseDoubleClick="-- None" uiListBoxContent="CAT NAMED LOU&#10;SO OR O?&#10;YY POP&#10;COME4PUMP"
                componentRectangle="476 341 123 48" uiListBoxRowHeight="10" uiListBoxBackgroundColour="ff3b3b3b"
                uiListBoxHighlightBgColour="ff409fcb" uiListBoxHighlightFgColour="ffffffff"
                uiListBoxTextColour="bab9b9b9" uiListBoxFont="&lt;Sans-Serif&gt;;10;0;0;0;0;1;3"
@@ -6535,7 +6535,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="centredTop" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;10;0;1;0;0;1;3"
-               uiLabelText="~ Use esc + mouse click or shift + arrow keys for multiple selection ~"
+               uiLabelText="~ Use shift + mouse click or shift + arrow keys for multiple selection ~"
                uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="ff409fcb" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
@@ -6729,7 +6729,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="ff454545"
                uiLabelTextColour="FF409FCB" uiLabelOutline="1" uiLabelOutlineColour="ff409fcb"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
-               uiLabelText="Super Clean" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelText="CLEAN" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="ff409fcb"
                uiLabelEditOnSingleClick="true" uiLabelEditOnDoubleClick="0"
                uiLabelEditFocusDiscardsChanges="0" uiLabelInputAllowedChars=""
@@ -6747,7 +6747,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="0"
              modulatorCustomName="reverb" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-reverb" modulatorMin="0" modulatorValue="92">
+             name="library-reverb" modulatorMin="0" modulatorValue="74">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -6835,7 +6835,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="presence" modulatorCustomIndexGroup="0"
              modulatorCustomNameGroup="" modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-presence" modulatorMin="0" modulatorValue="148">
+             name="library-presence" modulatorMin="0" modulatorValue="123">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -6879,7 +6879,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="resonance" modulatorCustomIndexGroup="0"
              modulatorCustomNameGroup="" modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-resonance" modulatorMin="0" modulatorValue="58">
+             name="library-resonance" modulatorMin="0" modulatorValue="205">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -6923,7 +6923,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="treble" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-treble" modulatorMin="0" modulatorValue="50">
+             name="library-treble" modulatorMin="0" modulatorValue="163">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -6967,7 +6967,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="mid" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-mid" modulatorMin="0" modulatorValue="241">
+             name="library-mid" modulatorMin="0" modulatorValue="156">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -7011,7 +7011,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="bass" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-bass" modulatorMin="0" modulatorValue="98">
+             name="library-bass" modulatorMin="0" modulatorValue="185">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -7055,7 +7055,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="volume" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-volume" modulatorMin="0" modulatorValue="249">
+             name="library-volume" modulatorMin="0" modulatorValue="169">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -7099,7 +7099,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex=""
              modulatorCustomName="gain" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="libraryModulatorValueChanged"
-             name="library-gain" modulatorMin="0" modulatorValue="81">
+             name="library-gain" modulatorMin="0" modulatorValue="230">
     <midi midiMessageType="9" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="1" midiMessageCtrlrValue="0" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -7800,7 +7800,7 @@
                uiButtonTextColourOff="ff409fcb" uiButtonContent="Copy" uiButtonConnectedLeft="1"
                uiButtonConnectedRight="1" uiButtonConnectedTop="1" uiButtonConnectedBottom="1"
                uiButtonRepeat="0" uiButtonRepeatRate="100" uiButtonTriggerOnMouseDown="0"
-               componentInternalFunction="-- None" componentRectangle="616 280 68 22"
+               componentInternalFunction="-- None" componentRectangle="616 332 68 22"
                uiGroupTextFont="&lt;Sans-Serif&gt;;14;1;0;0;0;1;3" componentLayerUid="40828ca4020000001896d00656f25599"
                uiType="uiButton" componentBubbleNameJustification="centred"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameColour="0xff000000"
@@ -7841,7 +7841,7 @@
                uiButtonTextColourOff="ff409fcb" uiButtonContent="Paste" uiButtonConnectedLeft="1"
                uiButtonConnectedRight="1" uiButtonConnectedTop="1" uiButtonConnectedBottom="1"
                uiButtonRepeat="0" uiButtonRepeatRate="100" uiButtonTriggerOnMouseDown="0"
-               componentInternalFunction="-- None" componentRectangle="689 280 68 22"
+               componentInternalFunction="-- None" componentRectangle="689 332 68 22"
                uiGroupTextFont="&lt;Sans-Serif&gt;;14;1;0;0;0;1;3" componentLayerUid="40828ca4020000001896d00656f25599"
                uiType="uiButton" componentBubbleNameJustification="centred"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameColour="0xff000000"
@@ -7882,7 +7882,7 @@
                uiButtonTextColourOff="ff409fcb" uiButtonContent="Undo" uiButtonConnectedLeft="1"
                uiButtonConnectedRight="1" uiButtonConnectedTop="1" uiButtonConnectedBottom="1"
                uiButtonRepeat="0" uiButtonRepeatRate="100" uiButtonTriggerOnMouseDown="0"
-               componentInternalFunction="-- None" componentRectangle="762 280 48 22"
+               componentInternalFunction="-- None" componentRectangle="762 332 48 22"
                uiGroupTextFont="&lt;Sans-Serif&gt;;14;1;0;0;0;1;3" componentTabId="3"
                componentTabName="tabs" componentBubbleRoundAngle="10" componentBubbleBackgroundColour1="0x9cffffff"
                componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundGradientType="1"
@@ -7912,7 +7912,7 @@
                uiLabelInputHighlightTextColour="ff409fcb" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
-               componentTabId="1" componentTabName="tabs" uiType="uiLabel" componentRectangle="617 259 52 16"
+               componentTabId="1" componentTabName="tabs" uiType="uiLabel" componentRectangle="617 311 52 16"
                componentLayerUid="40828ca4020000001896d00656f25599" componentBubbleNameJustification="centred"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameColour="0xff000000"
                componentBubbleValueJustification="centred" componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
@@ -7947,7 +7947,7 @@
                componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleValueJustification="centred" componentBubbleNameColour="0xff000000"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameJustification="centred"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="670 259 139 16"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="670 311 139 16"
                uiType="uiLabel" componentTabName="tabs" componentTabId="1"/>
   </modulator>
   <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
@@ -7967,11 +7967,11 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="centredTop" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;10;0;1;0;0;1;3"
-               uiLabelText="shift + c" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelText="ctrl + c" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="ff409fcb" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
-               componentTabId="3" componentTabName="tabs" uiType="uiLabel" componentRectangle="616 300 66 12"
+               componentTabId="3" componentTabName="tabs" uiType="uiLabel" componentRectangle="616 352 66 12"
                componentLayerUid="40828ca4020000001896d00656f25599" componentBubbleNameJustification="centred"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameColour="0xff000000"
                componentBubbleValueJustification="centred" componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
@@ -7996,7 +7996,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="centredTop" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;10;0;1;0;0;1;3"
-               uiLabelText="shift + v" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelText="ctrl + v" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="ff409fcb" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
@@ -8005,7 +8005,7 @@
                componentBubbleValueColour="0xff000000" componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleValueJustification="centred" componentBubbleNameColour="0xff000000"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameJustification="centred"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="689 300 68 12"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="689 352 68 12"
                uiType="uiLabel" componentTabName="tabs" componentTabId="3"/>
   </modulator>
   <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
@@ -8025,7 +8025,7 @@
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
                uiLabelTextColour="ff409fcb" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
                uiLabelJustification="centredTop" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;10;0;1;0;0;1;3"
-               uiLabelText="shift + z" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
+               uiLabelText="ctrl + z" uiLabelDisplaysAllValues="0" uiLabelDisplayFormat="%n(%N) = %v(%h)"
                uiLabelInputHighlightTextColour="ff409fcb" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
@@ -8034,7 +8034,7 @@
                componentBubbleValueColour="0xff000000" componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleValueJustification="centred" componentBubbleNameColour="0xff000000"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameJustification="centred"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="762 300 48 12"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="762 352 48 12"
                uiType="uiLabel" componentTabName="tabs" componentTabId="3"/>
   </modulator>
   <modulator modulatorVstExported="0" modulatorMax="1" vstIndex="" modulatorIsStatic="0"
@@ -8100,7 +8100,7 @@
                uiLabelInputHighlightTextColour="0xffffffff" uiLabelInputHighlightColour="0xff0000ff"
                uiLabelEditOnSingleClick="0" uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="616 332 170 20"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="616 372 170 20"
                uiType="uiLabel" componentBubbleNameJustification="centred" componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleNameColour="0xff000000" componentBubbleValueJustification="centred"
                componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
@@ -8140,7 +8140,7 @@
                uiButtonTextColourOff="ffffffff" uiButtonContent="..." uiButtonConnectedLeft="1"
                uiButtonConnectedRight="1" uiButtonConnectedTop="1" uiButtonConnectedBottom="1"
                uiButtonRepeat="0" uiButtonRepeatRate="100" uiButtonTriggerOnMouseDown="0"
-               componentInternalFunction="-- None" componentRectangle="786 329 21 18"
+               componentInternalFunction="-- None" componentRectangle="786 369 21 18"
                uiType="uiButton" componentLayerUid="40828ca4020000001896d00656f25599"
                componentBubbleNameJustification="centred" componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleNameColour="0xff000000" componentBubbleValueJustification="centred"
@@ -8176,7 +8176,7 @@
                componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleValueJustification="centred" componentBubbleNameColour="0xff000000"
                componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameJustification="centred"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="616 321 100 16"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="616 361 100 16"
                uiType="uiLabel" componentTabName="tabs" componentTabId="1"/>
   </modulator>
   <modulator modulatorVstExported="0" modulatorMax="1" vstIndex="" modulatorIsStatic="1"
@@ -8200,13 +8200,13 @@
                componentMouseCursor="0" componentGroupName="libraryEditorGroup"
                componentGroupped="1" componentSnapSize="1" componentIsLocked="0"
                componentDisabled="0" componentRadioGroupId="0" componentRadioGroupNotifyMidi="1"
-               componentVisibility="1" componentEffect="No Effect" componentEffectRadius="132.4"
+               componentVisibility="1" componentEffect="No Effect" componentEffectRadius="132.40000000000000568"
                componentEffectColour="55ffffff" componentEffectOffsetX="0" componentEffectOffsetY="0"
                componentExcludedFromLabelDisplay="0" componentValueDecimalPlaces="0"
                componentLuaMouseMoved="-- None" componentLuaMouseDown="-- None"
                componentLuaMouseDrag="-- None" componentLuaMouseDoubleClick="-- None"
                uiImageButtonMode="0" uiImageButtonResource="switch-toggle-led-dis"
-               componentRectangle="640 348 44 32" resourceImageWidth="80" resourceImageHeight="56"
+               componentRectangle="640 388 44 32" resourceImageWidth="80" resourceImageHeight="56"
                resourceImagePaintMode="128" resourceImageOrientation="0" uiImageButtonTextColour="0xff000000"
                uiImageButtonContent="0&#10;1" uiImageButtonTextPosition="none"
                uiImageButtonTextWidth="0" uiImageButtonTextHeight="32" uiButtonTextFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3"
@@ -8222,7 +8222,7 @@
                componentMouseCursor="2" componentGroupName="libraryEditorGroup"
                componentGroupped="1" componentSnapSize="0" componentIsLocked="0"
                componentDisabled="0" componentRadioGroupId="0" componentRadioGroupNotifyMidi="1"
-               componentVisibility="1" componentEffect="0" componentEffectRadius="1"
+               componentVisibility="1" componentEffect="0" componentEffectRadius="132.40000000000000568"
                componentEffectColour="0xff000000" componentEffectOffsetX="0"
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
@@ -8235,7 +8235,7 @@
                uiLabelInputHighlightColour="0xff0000ff" uiLabelEditOnSingleClick="0"
                uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
                uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024" uiLabelChangedCbk="-- None"
-               uiType="uiLabel" componentRectangle="604 370 120 20" componentLayerUid="40828ca4020000001896d00656f25599"
+               uiType="uiLabel" componentRectangle="604 410 120 20" componentLayerUid="40828ca4020000001896d00656f25599"
                componentBubbleNameJustification="centred" componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                componentBubbleNameColour="0xff000000" componentBubbleValueJustification="centred"
                componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
