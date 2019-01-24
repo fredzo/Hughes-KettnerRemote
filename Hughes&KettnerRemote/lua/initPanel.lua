@@ -832,6 +832,7 @@ function updateLibraryControllers()
 			for k,v in pairs(controllers) do
 				modulator = panel:getModulator("library-"..v)
 				if modulator ~= nil then
+					--console("Set value for modulator "..v)
 					modulator:setValue(currentPreset[v],true,true)
 				end
 			end
