@@ -12,7 +12,7 @@ libraryEditorItemClicked = function(--[[ CtrlrModulator --]] modulator, --[[ num
 	local bankNumber = modulator:getPropertyInt("modulatorCustomIndex")
 	-- console("Item clicked = "..value)
 	local selectedIndex = (4 * (bankNumber-1)) + value + 1
-	if (KeyPress.isKeyCurrentlyDown(KeyPress.escapeKey) or KeyPress.isKeyCurrentlyDown(KeyPress.tabKey)) then 
+	if (KeyPress.isKeyCurrentlyDown(KeyPress.escapeKey) or KeyPress.isKeyCurrentlyDown(KeyPress.tabKey) or ModifierKeys.getCurrentModifiers():isShiftDown() or ModifierKeys.getCurrentModifiers():isCtrlDown()) then 
 		if selectedIndex < librarySelectionStart then
 			librarySelectionStart = selectedIndex
 		else
