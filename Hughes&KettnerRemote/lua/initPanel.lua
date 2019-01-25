@@ -1060,6 +1060,8 @@ function updateUiForAmp()
 	local libraryDelayStatusComp = panel:getComponent("library-delayStatus")
 	local libraryModulationStatusLabelComp = panel:getComponent("libLabelModulationStatus")
 	local libraryModulationStatusComp = panel:getComponent("library-modulationStatus")
+	local powerSoakGroupComp = panel:getComponent("powerSoakGroup")
+	local cabinetTypeGroupComp = panel:getComponent("cabinetTypeGroup")
     if isBs200() then
         -- Noise gate
         noiseGateLevelLabelComp:setVisible(true)
@@ -1070,6 +1072,9 @@ function updateUiForAmp()
         saggingComp:setVisible(true)
         fxLoopStatusComp:setPropertyString("componentRectangle","10 6 35 35")
         fxLoopGroupComp:setComponentText("Sagging")
+		-- Power soak / cab type
+		powerSoakGroupComp:setVisible(false)
+		cabinetTypeGroupComp:setVisible(true)
 		-- Library Editor 
 		-- => replace power soak by sagging
         libraryPowerSoakLabelComp:setVisible(false)
@@ -1094,6 +1099,9 @@ function updateUiForAmp()
         saggingComp:setVisible(false)
         fxLoopStatusComp:setPropertyString("componentRectangle","32 60 35 35")
         fxLoopGroupComp:setComponentText("FX Loop")
+		-- Power soak / cab type
+		powerSoakGroupComp:setVisible(true)
+		cabinetTypeGroupComp:setVisible(false)
 		-- Library Editor 
 		-- => replace sagging by power soak
         libraryPowerSoakLabelComp:setVisible(true)
