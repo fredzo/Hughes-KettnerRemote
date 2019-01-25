@@ -113,8 +113,11 @@ onMidiMessage = function(midi)
 					--console("Channel Volume")
 					modulator = panel:getModulator("channelVolume")
 				elseif paramType == 0x3A then
-					--console("Channel Volume")
-					modulator = panel:getModulator("cabinetType")
+					msb = midiData:getByte(11)
+					lsb = midiData:getByte(12)
+					value = convertToInt(msb,lsb)
+					setCabType(value,true,true,false,false)
+					modulator = nil
 				elseif paramType == 0x3B then
 					--console("Channel Volume")
 					modulator = panel:getModulator("sagging")
@@ -595,7 +598,7 @@ loadPreset = function(preset,setNumber)
 	    setModulatorValue("noiseGateLevel",value,false,true)
 	    -- Cab type
 	    value = preset["cabinetType"]
-	    -- TODO setStatusModulatorValue("cabinetType",value)
+		setCabType(value,true,true,false,true)
         
 	    -- Modulation status
 	    value = preset["modulationStatus"]

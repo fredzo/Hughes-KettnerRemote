@@ -180,6 +180,15 @@ function showCompare()
 	end
     if isBs200() then
         -- TODO Cab type
+		editedValue = editBuffer["cabinetType"]
+		originalValue = originalBuffer["cabinetType"]
+		value = getCompareValue(editedValue,originalValue)
+		if editedValue ~= originalValue then
+			setKknobModulatorValue("cabinetType",value,false,true,true)
+			if not connected then
+				setCabType(value,true,true,false,true)
+			end
+		end
 		-- Noise gate level
 		editedValue = editBuffer["noiseGateLevel"]
 		originalValue = originalBuffer["noiseGateLevel"]
