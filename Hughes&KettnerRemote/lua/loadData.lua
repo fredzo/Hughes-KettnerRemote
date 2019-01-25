@@ -821,7 +821,8 @@ end
   end
 
   function toUtf8String(decimal)
-    if decimal<256 then return string.char(decimal) end
+	if decimal == 180 then return "'" 
+    elseif decimal<256 then return string.char(decimal) end
     return "'"
   end
 

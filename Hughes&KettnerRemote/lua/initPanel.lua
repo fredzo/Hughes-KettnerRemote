@@ -780,10 +780,14 @@ function initLibraryEditor()
 	-- Init list box labels
 	local currentPresetIndex = 1
 	local currentListBoxContent
+	local currentPresetName
 	for i,currentListBox in ipairs(libraryEditorBoxes) do
 		currentListBoxContent = ""
 		for j=1,4 do
-			currentListBoxContent = currentListBoxContent..libraryEditorPresets[currentPresetIndex]["name"]
+			currentPresetName = libraryEditorPresets[currentPresetIndex]["name"]
+			-- Remove quotes that are not correctly displayed
+			currentPresetName = string.gsub(currentPresetName,"'","")
+			currentListBoxContent = currentListBoxContent..currentPresetName
 			if j < 4 then
 				currentListBoxContent = currentListBoxContent.."\n"
 			end
