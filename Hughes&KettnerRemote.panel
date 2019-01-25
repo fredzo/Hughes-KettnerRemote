@@ -204,61 +204,64 @@
     </luaManagerMethods>
   </luaManager>
   <panelResources>
-    <resource resourceHash="6348227294226378784" resourceLoadedTime="1548443980928"
+    <resource resourceHash="6348227294226378784" resourceLoadedTime="1548451033878"
               resourceSize="28501" resourceFile="blue-led.png" resourceSourceFile="blue-led.png"
               resourceName="blue-led" resourceType="Image"/>
-    <resource resourceHash="-6707873219399365690" resourceLoadedTime="1548443980928"
+    <resource resourceHash="-6707873219399365690" resourceLoadedTime="1548451033879"
               resourceSize="35802" resourceFile="factory.gm36" resourceSourceFile="factory.gm36"
               resourceName="factory" resourceType="Data"/>
-    <resource resourceHash="-6415346106797024673" resourceLoadedTime="1548443980929"
+    <resource resourceHash="-6415346106797024673" resourceLoadedTime="1548451033879"
               resourceSize="47350" resourceFile="factory200.bs200" resourceSourceFile="factory200.bs200"
               resourceName="factory200" resourceType="Data"/>
-    <resource resourceHash="-8056722159850220750" resourceLoadedTime="1548443980929"
+    <resource resourceHash="-8056722159850220750" resourceLoadedTime="1548451033879"
               resourceSize="35475" resourceFile="factory40.gm40" resourceSourceFile="factory40.gm40"
               resourceName="factory40" resourceType="Data"/>
-    <resource resourceHash="1428355904053230113" resourceLoadedTime="1548443980972"
+    <resource resourceHash="1428355904053230113" resourceLoadedTime="1548451033924"
               resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
               resourceName="grandmeister" resourceType="Image"/>
-    <resource resourceHash="6485659102923138292" resourceLoadedTime="1548443980972"
+    <resource resourceHash="6485659102923138292" resourceLoadedTime="1548451033925"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
-    <resource resourceHash="7815743392538525058" resourceLoadedTime="1548443980973"
+    <resource resourceHash="7815743392538525058" resourceLoadedTime="1548451033925"
               resourceSize="2189" resourceFile="help.png" resourceSourceFile="help.png"
               resourceName="help" resourceType="Image"/>
-    <resource resourceHash="490771204549446640" resourceLoadedTime="1548443981095"
+    <resource resourceHash="490771204549446640" resourceLoadedTime="1548451034051"
               resourceSize="5936493" resourceFile="knob-blue.png" resourceSourceFile="knob-blue.png"
               resourceName="knob-blue" resourceType="Image"/>
-    <resource resourceHash="3840339201199071312" resourceLoadedTime="1548443981215"
+    <resource resourceHash="3840339201199071312" resourceLoadedTime="1548451034175"
               resourceSize="5929476" resourceFile="knob-red.png" resourceSourceFile="knob-red.png"
               resourceName="knob-red" resourceType="Image"/>
-    <resource resourceHash="-373834656771461138" resourceLoadedTime="1548443981216"
+    <resource resourceHash="-373834656771461138" resourceLoadedTime="1548451034175"
               resourceSize="25536" resourceFile="led-button-blue-red.png" resourceSourceFile="led-button-blue-red.png"
               resourceName="led-button-blue-red" resourceType="Image"/>
-    <resource resourceHash="223140874764489814" resourceLoadedTime="1548443981217"
+    <resource resourceHash="223140874764489814" resourceLoadedTime="1548451034176"
               resourceSize="25156" resourceFile="led-button-blue.png" resourceSourceFile="led-button-blue.png"
               resourceName="led-button-blue" resourceType="Image"/>
-    <resource resourceHash="6009354273415944338" resourceLoadedTime="1548443981217"
+    <resource resourceHash="6009354273415944338" resourceLoadedTime="1548451034177"
               resourceSize="24767" resourceFile="led-button-red-red.png" resourceSourceFile="led-button-red-red.png"
               resourceName="led-button-red-red" resourceType="Image"/>
-    <resource resourceHash="-8399259643041769429" resourceLoadedTime="1548443981218"
+    <resource resourceHash="-8399259643041769429" resourceLoadedTime="1548451034177"
               resourceSize="24339" resourceFile="led-button-red.png" resourceSourceFile="led-button-red.png"
               resourceName="led-button-red" resourceType="Image"/>
-    <resource resourceHash="7171749218774011558" resourceLoadedTime="1548443981219"
+    <resource resourceHash="7171749218774011558" resourceLoadedTime="1548451034179"
               resourceSize="27431" resourceFile="red-led.png" resourceSourceFile="red-led.png"
               resourceName="red-led" resourceType="Image"/>
-    <resource resourceHash="7104864482782162876" resourceLoadedTime="1548443981224"
+    <resource resourceHash="7104864482782162876" resourceLoadedTime="1548451034185"
               resourceSize="198923" resourceFile="rotary-red.png" resourceSourceFile="rotary-red.png"
               resourceName="rotary-red" resourceType="Image"/>
-    <resource resourceHash="-5846088702665679162" resourceLoadedTime="1548443981229"
+    <resource resourceHash="-5846088702665679162" resourceLoadedTime="1548451034190"
               resourceSize="215439" resourceFile="rotary.png" resourceSourceFile="rotary.png"
               resourceName="rotary" resourceType="Image"/>
-    <resource resourceHash="-3860544200263811199" resourceLoadedTime="1548443981229"
+    <resource resourceHash="-3860544200263811199" resourceLoadedTime="1548451034191"
               resourceSize="6276" resourceFile="switch-toggle-led-dis.png"
               resourceSourceFile="switch-toggle-led-dis.png" resourceName="switch-toggle-led-dis"
               resourceType="Image"/>
-    <resource resourceHash="-7395497836515063820" resourceLoadedTime="1548443981230"
+    <resource resourceHash="-7395497836515063820" resourceLoadedTime="1548451034191"
               resourceSize="6522" resourceFile="switch-toggle-led.png" resourceSourceFile="switch-toggle-led.png"
               resourceName="switch-toggle-led" resourceType="Image"/>
+    <resource resourceHash="7171738711534454008" resourceLoadedTime="1548451489103"
+              resourceSize="46060" resourceFile="red-box.png" resourceSourceFile="red-box.png"
+              resourceName="red-box" resourceType="Image"/>
   </panelResources>
   <uiPanelEditor uiPanelCanvasRectangle="0 0 836 592" uiPanelSnapSize="4" uiPanelBackgroundColour="ffd7d7d7"
                  uiPanelBackgroundColour1="ff000000" uiPanelBackgroundColour2="ff01041d"
@@ -272,7 +275,7 @@
                  uiPanelInvisibleComponentAlpha="0.5" uiPanelTooltipBackgroundColour="0xffeeeebb"
                  uiPanelTooltipOutlineColour="0xff000000" uiPanelTooltipColour="0xff000000"
                  uiPanelTooltipCornerRound="1" uiPanelTooltipPlacement="2" uiPanelTooltipFont="&lt;Sans-Serif&gt;;15;1;0;0;0;0;3"
-                 uiPanelZoom="1.3" uiPanelViewPortSize="1311" uiPanelPropertiesSize="601"
+                 uiPanelZoom="1.3" uiPanelViewPortSize="1530" uiPanelPropertiesSize="382"
                  lastBrowsedComponentDir="D:\Fichiers\Seven\Documents" uiPanelToolbarVisible="1"
                  uiPanelRotation="0" uiPanelToolbarPosition="8 8 800 40" uiPanelDisableCombosOnEdit="0"
                  uiPanelMidiToolbarVisible="0">
@@ -522,7 +525,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="27"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="delayFeedback"
-             modulatorMin="0" modulatorValue="0">
+             modulatorMin="0" modulatorValue="62">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="27" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -1634,7 +1637,7 @@
                componentEffectOffsetX="1" componentEffectOffsetY="1" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiGroupText="Cabinet Type"
+               componentLuaMouseDoubleClick="-- None" uiGroupText=""
                uiGroupTextColour="ff409fcb" uiGroupOutlineColour1="ff409fcb"
                uiGroupOutlineColour2="0xffffffff" uiGroupBackgroundColour1="ffffff"
                uiGroupBackgroundColour2="0xffffffff" uiGroupOutlineGradientType="0xffffffff"
@@ -8930,7 +8933,7 @@
              modulatorLinkedToComponent="0" modulatorBaseValue="0" modulatorCustomIndex="59"
              modulatorCustomName="" modulatorCustomIndexGroup="0" modulatorCustomNameGroup=""
              modulatorVstNameFormat="%n" luaModulatorValueChange="" name="sagging"
-             modulatorMin="0" modulatorValue="108">
+             modulatorMin="0" modulatorValue="0">
     <midi midiMessageType="6" midiMessageChannelOverride="0" midiMessageChannel="1"
           midiMessageCtrlrNumber="59" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
@@ -8959,7 +8962,24 @@
                uiSliderPopupBubble="0" uiType="uiImageSlider" componentRectangle="16 42 64 94"
                componentLayerUid="40828ca4020000001896d00656f25599"/>
   </modulator>
+  <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
+             name="modulator-14" modulatorVstExported="0" modulatorValue="0">
+    <component componentLabelPosition="none" componentLabelJustification="centred"
+               componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="1"
+               componentLabelAlwaysOnTop="1" componentSentBack="1" componentLabelColour="0xff000000"
+               componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;0;3" componentVisibleName=""
+               componentMouseCursor="2" componentGroupName="cabinetTypeGroup"
+               componentGroupped="1" componentSnapSize="0" componentIsLocked="0"
+               componentDisabled="0" componentRadioGroupId="0" componentRadioGroupNotifyMidi="1"
+               componentVisibility="1" componentEffect="0" componentEffectRadius="1"
+               componentEffectColour="0xff000000" componentEffectOffsetX="0"
+               componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
+               componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
+               componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
+               componentLuaMouseDoubleClick="-- None" uiImageResource="red-box"
+               uiType="uiImage" componentRectangle="15 11 206 50" componentLayerUid="40828ca4020000001896d00656f25599"/>
+  </modulator>
   <panelCustomData currentPresetNumber="1" currentLibraryFile="C:\Users\fred/bs200/factory.bs200"
-                   ingoredVersionUpdate="2.2" globalPowerSoak="127" currentExternalFile="D:\Fichiers\Seven\Documents\black-spirit\001 - Factory presets.bsmemory"
+                   ingoredVersionUpdate="2.2" globalPowerSoak="127" currentExternalFile=""
                    ampType="BS200"/>
 </panel>
