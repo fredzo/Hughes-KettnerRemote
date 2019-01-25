@@ -12,7 +12,7 @@ compareModeChanged = function(--[[ CtrlrModulator --]] mod, --[[ number --]] val
 	else
 		showOriginal = true
 	end
-	console("Set compare mode : "..value)
+	--console("Set compare mode : "..value)
 	setCompareMode(true)
 	if presetChanged then
 		if showOriginal then
