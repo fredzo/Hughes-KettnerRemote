@@ -1044,6 +1044,18 @@ function updateUiForAmp()
     local fxLoopGroupComp = panel:getComponent("fxLoopGroup")
     local fxLoopStatusComp = panel:getComponent("fxLoopStatus")
     local fxLoopLabelComp = panel:getComponent("fxLoopLabel")
+	local libraryPowerSoakLabelComp = panel:getComponent("libLabelPowerSoak")
+	local libraryPowerSoakComp = panel:getComponent("library-powerSoak")
+	local librarySaggingLabelComp = panel:getComponent("libLabelSagging")
+	local librarySaggingComp = panel:getComponent("library-sagging")
+	local libraryCabinetTypeLabelComp = panel:getComponent("libLabelCabinetType")
+	local libraryCabinetTypeComp = panel:getComponent("library-cabinetType")
+	local libraryReverbStatusLabelComp = panel:getComponent("libLabelReverbStatus")
+	local libraryReverbStatusComp = panel:getComponent("library-reverbStatus")
+	local libraryDelayStatusLabelComp = panel:getComponent("libLabelDelayStatus")
+	local libraryDelayStatusComp = panel:getComponent("library-delayStatus")
+	local libraryModulationStatusLabelComp = panel:getComponent("libLabelModulationStatus")
+	local libraryModulationStatusComp = panel:getComponent("library-modulationStatus")
     if isBs200() then
         -- Noise gate
         noiseGateLevelLabelComp:setVisible(true)
@@ -1054,6 +1066,21 @@ function updateUiForAmp()
         saggingComp:setVisible(true)
         fxLoopStatusComp:setPropertyString("componentRectangle","10 6 35 35")
         fxLoopGroupComp:setComponentText("Sagging")
+		-- Library Editor 
+		-- => replace power soak by sagging
+        libraryPowerSoakLabelComp:setVisible(false)
+        libraryPowerSoakComp:setVisible(false)
+		librarySaggingLabelComp:setVisible(true)
+		librarySaggingComp:setVisible(true)
+		-- => Show extra controllers
+		libraryCabinetTypeLabelComp:setVisible(true)
+		libraryCabinetTypeComp:setVisible(true)
+		libraryReverbStatusLabelComp:setVisible(true)
+		libraryReverbStatusComp:setVisible(true)
+		libraryDelayStatusLabelComp:setVisible(true)
+		libraryDelayStatusComp:setVisible(true)
+		libraryModulationStatusLabelComp:setVisible(true)
+		libraryModulationStatusComp:setVisible(true)
     else
         noiseGateLevelLabelComp:setVisible(false)
         noiseGateLevelComp:setVisible(false)
@@ -1063,6 +1090,21 @@ function updateUiForAmp()
         saggingComp:setVisible(false)
         fxLoopStatusComp:setPropertyString("componentRectangle","32 60 35 35")
         fxLoopGroupComp:setComponentText("FX Loop")
+		-- Library Editor 
+		-- => replace sagging by power soak
+        libraryPowerSoakLabelComp:setVisible(true)
+        libraryPowerSoakComp:setVisible(true)
+		librarySaggingLabelComp:setVisible(false)
+		librarySaggingComp:setVisible(false)
+		-- => Hide extra controllers
+		libraryCabinetTypeLabelComp:setVisible(false)
+		libraryCabinetTypeComp:setVisible(false)
+		libraryReverbStatusLabelComp:setVisible(false)
+		libraryReverbStatusComp:setVisible(false)
+		libraryDelayStatusLabelComp:setVisible(false)
+		libraryDelayStatusComp:setVisible(false)
+		libraryModulationStatusLabelComp:setVisible(false)
+		libraryModulationStatusComp:setVisible(false)
     end
 end
 
