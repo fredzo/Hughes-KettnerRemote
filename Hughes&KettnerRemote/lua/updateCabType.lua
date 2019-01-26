@@ -2,19 +2,27 @@
 --
 --
 updateCabType = function(modulator, numericModulatorValue)
+	if panel:getBootstrapState() or panel:getBootstrapState() then
+		return numericModulatorValue
+	end
 	--console("Update cab type")
 	setCabType(numericModulatorValue,false,true,false)
-	generateMidi(modulator,numericModulatorValue)
 	return numericModulatorValue
 end
 
 setCabType = function(cabTypeValue,updateModulator,updateDisplay,sendMidi,animate)
 	--console("Cab type value = "..cabTypeValue)
+	-- Convert back to 1-7 based value
+	local cabIndex = math.floor(cabTypeValue/36)
+	--console("Cab type index = "..cabIndex)
 	if updateModulator then
-		setModulatorValue("cabinetType",cabTypeValue,sendMidi,animate)
+		setModulatorValue("cabTypeStepper",cabTypeValue,sendMidi,animate)
+		preventCabTypeUpdate = true
+		--console("Set cabt type combo index = "..cabIndex)
+		panel:getModulator("cabinetType"):setValue(cabIndex,true,true)
 	end
 	if updateDisplay then
-		panel:getComponent("cabinetTypeLabel"):setComponentText("CAB "..(cabTypeValue+1))
+		panel:getComponent("cabinetTypeLabel"):setComponentText("CAB "..(cabIndex+1))
 	end
 end
 

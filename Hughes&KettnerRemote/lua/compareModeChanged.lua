@@ -184,7 +184,7 @@ function showCompare()
 		originalValue = originalBuffer["cabinetType"]
 		value = getCompareValue(editedValue,originalValue)
 		if editedValue ~= originalValue then
-			setKknobModulatorValue("cabinetType",value,false,true,true)
+			--panel:getComponent("delayTime"):setPropertyString("uiImageSliderResource","knob-red")
 			if not connected then
 				setCabType(value,true,true,false,true)
 			end
