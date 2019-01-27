@@ -12,8 +12,8 @@ end
 
 setCabType = function(cabTypeValue,updateModulator,updateDisplay,sendMidi,animate)
 	--console("Cab type value = "..cabTypeValue)
-	-- Convert back to 1-7 based value
-	local cabIndex = math.floor(cabTypeValue/36)
+	-- Convert back to 1-8 based value
+	local cabIndex = math.floor((cabTypeValue/36)+0.5)
 	--console("Cab type index = "..cabIndex)
 	if updateModulator then
 		setModulatorValue("cabTypeStepper",cabTypeValue,sendMidi,animate)
