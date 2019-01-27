@@ -401,10 +401,10 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 		writeIntToBuffer(value,buffer,startIndex+26);
 		-- Sagging
 		value = preset["sagging"]
-		local sagging = math.floor(value/36)
+		local sagging = math.floor((value/36)+0.5)
 		-- Cab type
 		value = preset["cabinetType"]
-		local cabinetType = math.floor(value/36)
+		local cabinetType = math.floor((value/36)+0.5)
 		-- Mutes
 	    value = preset["reverbStatus"]
 		local reverbStatus = math.floor(value/127)
