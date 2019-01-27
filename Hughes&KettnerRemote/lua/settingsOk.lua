@@ -22,7 +22,7 @@ settingsOk = function(--[[ CtrlrModulator --]] mod, --[[ number --]] value)
 	end
 	-- Send to amp
 	sendSystemConfig()
-	if powerSoakValue ~= nil then
+	if powerSoakValue ~= nil and not isBs200() then
 		setModulatorValue("powerSoak",powerSoakValue,false,false)
 		sendParameter(30,powerSoakValue)
 	end

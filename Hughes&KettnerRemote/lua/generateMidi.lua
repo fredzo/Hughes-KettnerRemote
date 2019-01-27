@@ -154,6 +154,15 @@ sendSystemConfigRequestForAmpType = function(ampTypeToCheck)
 end
 
 sendSystemConfig = function()
+    if isBs200() then
+		sendSystemConfigBlackSpirit()
+    else
+		sendSystemConfigMeister()
+    end
+end
+
+
+sendSystemConfigMeister = function()
 	local message = {0xF0, 0x00, 0x20, 0x44, 0x00, 0x10, 0x00, 0x05, 0x00, 0x50, 
 	-- Data
 	0x00, 0x00, 0x00, 0x00,
@@ -161,27 +170,40 @@ sendSystemConfig = function()
 	0x00, 0xF7 }
 	if isGm40() then
  		message[8] = 0x09 
-	elseif isBs200() then
- 		message[8] = 0x0B 
 	end
 	-- Set data
-    if isBs200 then
-	    message[11] = (midiChannel-1) + (omniMode*16)
-        -- In Bs200 mode, powerSoakGlobal controller is used for cabinetType global status
-	    message[12] = (powerEqGlobal%2) + ((powerSoakGlobal%2)*2) + ((globalCabinetType%8)*4)
-        message[13] = globalResonance % 128;
-        message[14] = globalPresence % 128;
-    else
-	    message[11] = (midiChannel-1) + (omniMode*16)
-	    message[12] = mutes
-	    message[13] = midiLearn + ((powerEqGlobal%2)*4) + ((powerSoakGlobal%2)*32)
-    end
+	message[11] = (midiChannel-1) + (omniMode*16)
+	message[12] = mutes
+	message[13] = midiLearn + ((powerEqGlobal%2)*4) + ((powerSoakGlobal%2)*32)
 	-- Checksum
 	local checksum = 0
 	for i=1,14 do
 		checksum = (bxor(checksum,message[i]))
 	end
 	message[15] = checksum % 128
+	local requestMessage = CtrlrMidiMessage(message)
+	panel:sendMidiMessageNow (requestMessage)
+	blinkMidiOutLed()
+end
+
+sendSystemConfigBlackSpirit = function()
+	local message = {0xF0, 0x00, 0x20, 0x44, 0x00, 0x10, 0x00, 0x0B, 0x00, 0x50, 
+	-- Data
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
+	-- Footer
+	0x00, 0xF7 }
+	-- Set data
+	message[11] = (midiChannel-1) + (omniMode*16)
+	-- In Bs200 mode, powerSoakGlobal controller is used for cabinetType global status
+	message[12] = (powerEqGlobal%2) + ((powerSoakGlobal%2)*2) + ((globalCabinetType%8)*4)
+	writeIntToBuffer(globalResonance,message,13);
+	writeIntToBuffer(globalPresence,message,15);
+	-- Checksum
+	local checksum = 0
+	for i=1,16 do
+		checksum = (bxor(checksum,message[i]))
+	end
+	message[17] = checksum % 128
 	local requestMessage = CtrlrMidiMessage(message)
 	panel:sendMidiMessageNow (requestMessage)
 	blinkMidiOutLed()
