@@ -414,8 +414,8 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 		local delayStatus = math.floor(value/127)
         -- Config 1/2
 		local config2LByte = sagging + (cabinetType*8)
-		local config1HByte = channelType + (channelBoost*4) + (fxLoop*8) + (reverbStatus*16) + (delayStatus*32) + (modulationStatus*64)
-		local config1LByte = noiseGate
+		local config1HByte = noiseGate
+		local config1LByte = channelType + (channelBoost*4) + (fxLoop*8) + (reverbStatus*16) + (delayStatus*32) + (modulationStatus*64)
 	    buffer[startIndex+29]=config2LByte
 	    buffer[startIndex+30]=config1HByte
 	    buffer[startIndex+31]=config1LByte
