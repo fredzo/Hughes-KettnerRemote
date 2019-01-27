@@ -179,7 +179,7 @@ function showCompare()
 		setBlueLedModulatorValue("fxLoopStatus",value,true)
 	end
     if isBs200() then
-        -- TODO Cab type
+        -- Cab type
 		editedValue = editBuffer["cabinetType"]
 		originalValue = originalBuffer["cabinetType"]
 		value = getCompareValue(editedValue,originalValue)
@@ -362,7 +362,9 @@ function highlight(paramName)
 		panel:getComponent("sagging"):setPropertyString("uiImageSliderResource","knob-red")
 	elseif paramName == "noiseGateLevel" then
 		panel:getComponent("noiseGateLevel"):setPropertyString("uiImageSliderResource","knob-red")
-    -- TODO cab type
+	elseif paramName == "cabinetType" then
+		panel:getComponent("cabinetTypeLabel"):setPropertyString("uiLabelOutlineColour","ff845505")
+		panel:getComponent("cabinetTypeLabel"):setPropertyString("uiLabelOutline","2")
 	elseif paramName == "noiseGate" then
 		panel:getComponent("noiseGateStatus"):setPropertyString("uiImageButtonResource","led-button-blue-red")
 	end

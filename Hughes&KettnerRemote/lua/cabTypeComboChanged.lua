@@ -11,6 +11,9 @@ cabTypeComboChanged = function(modulator, value)
 	value = value * 36
 	setCabType(value,false,true,false)
 	generateMidi(modulator,value)
+	if compareMode then
+		highlight("cabinetType")
+	end
 end
 
 preventCabTypeUpdate = false
