@@ -184,7 +184,8 @@ function showCompare()
 		originalValue = originalBuffer["cabinetType"]
 		value = getCompareValue(editedValue,originalValue)
 		if editedValue ~= originalValue then
-			--panel:getComponent("delayTime"):setPropertyString("uiImageSliderResource","knob-red")
+			panel:getComponent("cabinetTypeLabel"):setPropertyString("uiLabelOutlineColour","ff845505")
+			panel:getComponent("cabinetTypeLabel"):setPropertyString("uiLabelOutline","2")
 			if not connected then
 				setCabType(value,true,true,false,true)
 			end
@@ -296,7 +297,8 @@ function hideCompare()
 	-- Noise gate level
 	panel:getComponent("noiseGateLevel"):setPropertyString("uiImageSliderResource","knob-blue")
 	-- Cabinet type
-	-- TODO panel:getComponent("cabinetType"):setPropertyString("uiImageSliderResource","knob-blue")
+	panel:getComponent("cabinetTypeLabel"):setPropertyString("uiLabelOutlineColour","FF409FCB")
+	panel:getComponent("cabinetTypeLabel"):setPropertyString("uiLabelOutline","1")
 	-- Reverb led
 	panel:getComponent("reverbStatus"):setPropertyString("uiImageButtonResource","led-button-blue")
 	-- Delay led

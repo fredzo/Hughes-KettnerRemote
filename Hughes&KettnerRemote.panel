@@ -9141,7 +9141,7 @@
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
                componentLuaMouseDoubleClick="-- None" uiLabelBgColour="ff4b0000"
-               uiLabelTextColour="ffd12000" uiLabelOutline="1" uiLabelOutlineColour="ff845505"
+               uiLabelTextColour="ffd12000" uiLabelOutline="3" uiLabelOutlineColour="FF409FCB"
                uiLabelJustification="centred" uiLabelFitFont="0" uiLCDLabelFont="5"
                uiLCDLabelFontHeight="16" uiLabelText="CAB 1" uiLabelDisplaysAllValues="0"
                uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
