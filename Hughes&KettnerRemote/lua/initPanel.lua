@@ -392,6 +392,9 @@ currentLibraryFile = nil
 -- 3 = idle
 state = 0
 
+-- File for amp backup
+ampBackupFile = nil
+
 -- Connected state
 connected = true
 -- Synced state

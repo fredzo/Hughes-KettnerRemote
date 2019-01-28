@@ -7,7 +7,6 @@ backupPresets = function(mod, value)
 	if panel:getBootstrapState() or notMouseOver(mod) then
 		return
 	end
-	-- TODO Force ampPresets update before backup
 	local fileToWrite = utils.saveFileWindow("Save Amp presets to disk", File(""), getAmpTypeExtension(), true)
 
 	if fileToWrite:isValid() == false then
@@ -29,6 +28,45 @@ backupPresets = function(mod, value)
 	else
 		-- TODO warn about existing file
 	end
+	ampBackupFile = fileToWrite
 	-- Load all amp presets
-	savePresetsToFile(fileToWrite:getFullPathName(),ampPresets)
+	getAllPresetsAndSave()
+end
+
+
+
+getAllPresetsAndSave = function()
+	-- Store callback
+	progressFinishedCallback = getAllPresetsFinished
+	-- Show progress dialog
+	startProgress("Downloading presets...","Cancel")
+	-- Send request
+	sendAllPresetsRequest()
+	-- Start progress bar and wait for midi message
+	updateAmpBackupProgressWindow(0.1,"Sending request...",false,false)
+end
+
+function updateAmpBackupProgressWindow(value,message,finished,success)
+	updateProgressValue(value)
+	updateProgressStatus(message)
+	if finished then
+		if progressFinishedCallback ~= nil then
+			progressFinishedCallback(success)
+			progressFinishedCallback = nil
+		end
+		switchToEditorTab()
+	end
+end
+
+function getAllPresetsFinished(complete)
+	if complete then
+		savePresetsToFile(ampBackupFile:getFullPathName(),ampPresets)
+		if connected then
+			-- Force combo and preset name update even if we are already in amp mode
+			isLibrary = true
+			setPresetMode(1,false)
+			changePresetMode(false,true)
+		end
+	end
+	ampBackupFile = nil
 end
