@@ -288,7 +288,7 @@ sendPresetsBufferDump = function(presetsToUpload,callback)
 	end
 	presetsToSendSize = presetsToSendSize-1
 	-- Store callback
-	uploadFinishedCallback = callback
+	progressFinishedCallback = callback
 	-- Send first preset
 	sendPresetBufferDump(presetsToSend[presetsToSendIndex],false)
 	-- Show progress dialog
@@ -308,9 +308,9 @@ function updateProgressWindow()
 		updateProgressStatus(message)
 	end
 	if presetsToSendIndex > presetsToSendSize then
-		if uploadFinishedCallback ~= nil then
-			uploadFinishedCallback(true)
-			uploadFinishedCallback = nil
+		if progressFinishedCallback ~= nil then
+			progressFinishedCallback(true)
+			progressFinishedCallback = nil
 		end
 		switchToEditorTab()
 	end

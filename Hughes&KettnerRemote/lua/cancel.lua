@@ -11,9 +11,9 @@ cancel = function(--[[ CtrlrModulator --]] mod, --[[ number --]] value)
 	presetsToSend = nil
 	presetsToSendIndex = 0
 	presetsToSendSize = 0
-	if uploadFinishedCallback ~= nil then
-		uploadFinishedCallback(completed)
-		uploadFinishedCallback = nil
+	if progressFinishedCallback ~= nil then
+		progressFinishedCallback(completed)
+		progressFinishedCallback = nil
 	end
 	switchToEditorTab()
 end

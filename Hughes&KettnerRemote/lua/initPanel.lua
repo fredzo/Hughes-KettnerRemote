@@ -357,7 +357,7 @@ ampPresets = {}
 presetsToSend = nil
 presetsToSendIndex = 0
 presetsToSendSize = 0
-uploadFinishedCallback = nil
+progressFinishedCallback = nil
 -- Current Preset numbers
 currentPresetNumber = 1
 currentAmpPresetNumber = 1
