@@ -390,7 +390,6 @@ currentLibraryFile = nil
 -- 1 = wait for edit buffer
 -- 2 = wait for all presets
 -- 3 = idle
--- lastStateChangeTime = 0
 state = 0
 
 -- Connected state

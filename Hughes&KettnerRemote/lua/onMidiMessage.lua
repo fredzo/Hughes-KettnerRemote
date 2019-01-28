@@ -209,9 +209,12 @@ onMidiMessage = function(midi)
 				--end
 				local preset = readPreset(midiData)
 				if state == 1 then
-					-- Request for a full presets dump (wait 500 ms to give time for the GM36 to boot)
-					state = 2
-					timer:startTimer (74, 1000)
+					-- No longer request full preset dump on startup => go straight to idle mode
+					state = 3
+					setSynced(true)
+					-- -- Request for a full presets dump (wait 500 ms to give time for the GM36 to boot)
+					-- state = 2
+					-- timer:startTimer (74, 1000)
 				end
 			elseif commandType == 0x41 then
 				if midiData:getSize() >= 4108 then
@@ -222,7 +225,6 @@ onMidiMessage = function(midi)
 						preset = readPresetBuffer(i,midiData,startIndex,true)
 						startIndex = startIndex + 32
 					end
-					setSynced(true)
 				end
 				if state == 2 then
 					-- Go to idle mode
