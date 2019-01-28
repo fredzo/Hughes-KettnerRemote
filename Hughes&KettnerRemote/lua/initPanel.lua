@@ -538,12 +538,6 @@ function updateAmpTypeSwitch()
         ampTypeSwitchValue = 2
     end
 	panel:getModulator("ampTypeSwitch"):setValue(ampTypeSwitchValue,true,true)
-    local ampTypeSwitchComponent = panel:getComponent("settingsLabels")
-    if connected then
-        ampTypeSwitchComponent:setEnabled(false)
-    else
-        ampTypeSwitchComponent:setEnabled(true)
-    end
 end
 
 

@@ -747,6 +747,7 @@ setConnected = function(value)
 		local component = panel:getComponent("presetMode")
 		local component2 = panel:getComponent("presetModeLibrary")
 		local component3 = panel:getComponent("presetModeAmp")
+		local ampTypeSwitchComponent = panel:getComponent("ampTypeSwitch")
 		if connected then
 			-- Hack to prevent sending preset dump on init : we mute preset combo change until timer triggers or connection is established
 			mutePresetKomboChange = false
@@ -757,6 +758,8 @@ setConnected = function(value)
 			component:setPropertyString("uiImageButtonResource","switch-toggle-led")
 			component2:setEnabled(true)
 			component3:setEnabled(true)
+			-- Disable amp type switch
+			ampTypeSwitchComponent:setEnabled(false)
 			-- Swicth to amp
 			setPresetMode(1,false)
 			changePresetMode(false,false)
@@ -769,6 +772,8 @@ setConnected = function(value)
 			component:setPropertyString("uiImageButtonResource","switch-toggle-led-dis")
 			component2:setEnabled(false)
 			component3:setEnabled(false)
+			-- Enable amp type switch
+			ampTypeSwitchComponent:setEnabled(true)
 			-- Start connection timer
 			timer:startTimer(70,1000)
 		end
