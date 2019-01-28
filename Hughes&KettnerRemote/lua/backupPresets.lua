@@ -11,6 +11,7 @@ backupPresets = function(mod, value)
 	local fileToWrite = utils.saveFileWindow("Save Amp presets to disk", File(""), getAmpTypeExtension(), true)
 
 	if fileToWrite:isValid() == false then
+		utils.warnWindow ("\n\nSorry, selected file is not valid.", "Invalid target file.")
 		return
 	end
 
@@ -25,6 +26,9 @@ backupPresets = function(mod, value)
 
 			return
 		end
+	else
+		-- TODO warn about existing file
 	end
+	-- Load all amp presets
 	savePresetsToFile(fileToWrite:getFullPathName(),ampPresets)
 end
