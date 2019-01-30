@@ -757,6 +757,9 @@ setConnected = function(value)
 		local component2 = panel:getComponent("presetModeLibrary")
 		local component3 = panel:getComponent("presetModeAmp")
 		local ampTypeSwitchComponent = panel:getComponent("ampTypeSwitch")
+		local ampTypeGm36LabelComponent = panel:getComponent("ampTypeGm36Label")
+		local ampTypeGm40LabelComponent = panel:getComponent("ampTypeGm40Label")
+		local ampTypeBs200LabelComponent = panel:getComponent("ampTypeBs200Label")
 		if connected then
 			-- Hack to prevent sending preset dump on init : we mute preset combo change until timer triggers or connection is established
 			mutePresetKomboChange = false
@@ -769,6 +772,9 @@ setConnected = function(value)
 			component3:setEnabled(true)
 			-- Disable amp type switch
 			ampTypeSwitchComponent:setEnabled(false)
+			ampTypeGm36LabelComponent:setEnabled(false)
+			ampTypeGm40LabelComponent:setEnabled(false)
+			ampTypeBs200LabelComponent:setEnabled(false)
 			-- Swicth to amp
 			setPresetMode(1,false)
 			changePresetMode(false,false)
@@ -783,6 +789,9 @@ setConnected = function(value)
 			component3:setEnabled(false)
 			-- Enable amp type switch
 			ampTypeSwitchComponent:setEnabled(true)
+			ampTypeGm36LabelComponent:setEnabled(true)
+			ampTypeGm40LabelComponent:setEnabled(true)
+			ampTypeBs200LabelComponent:setEnabled(true)
 			-- Start connection timer
 			timer:startTimer(70,1000)
 		end
