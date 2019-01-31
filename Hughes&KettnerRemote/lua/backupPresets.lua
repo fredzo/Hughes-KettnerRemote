@@ -43,7 +43,7 @@ getAllPresetsAndSave = function()
 	-- Send request
 	sendAllPresetsRequest()
 	-- Start progress bar and wait for midi message
-	updateAmpBackupProgressWindow(0.1,"Sending request...",false,false)
+	startDownloadProgressTimer()
 end
 
 function updateAmpBackupProgressWindow(value,message,finished,success)
@@ -54,11 +54,13 @@ function updateAmpBackupProgressWindow(value,message,finished,success)
 			progressFinishedCallback(success)
 			progressFinishedCallback = nil
 		end
-		switchToEditorTab()
+		--switchToEditorTab()
+		panel:getComponent("progressCancel"):setPropertyString("uiButtonContent","OK")
 	end
 end
 
 function getAllPresetsFinished(complete)
+	stopDownloadProgressTimer()
 	if complete then
 		savePresetsToFile(ampBackupFile:getFullPathName(),ampPresets)
 		if connected then

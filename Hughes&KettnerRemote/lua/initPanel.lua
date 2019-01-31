@@ -480,6 +480,7 @@ initPanel = function()
 	timer:setCallback(72, blinkMidiOutLedTimerCallback)
 	timer:setCallback(73, checkForUpdateTimerCallback)
 	timer:setCallback(74, syncedTimerCallback)
+	timer:setCallback(75, downloadProgressTimerCallback)
 	-- Update modulators with current preset
 	loadPreset(editBuffer,true)
 	-- Make sure leds are off
@@ -636,6 +637,32 @@ function syncedTimerCallback (timerId)
 		timer:stopTimer(timerId)
 		firstSyncedTimerCall = true
 	end
+end
+
+local currentDownloadProgressValue = 0
+local currentDownloadProgressIteration = 0
+function downloadProgressTimerCallback (timerId)
+	--console("timer id: "..timerId.." step: "..timerStep)
+	if timerId ~= 75 then
+		return
+	end
+	currentDownloadProgressIteration = currentDownloadProgressIteration + 1
+	if(currentDownloadProgressValue < 0.8) then
+		currentDownloadProgressValue = currentDownloadProgressValue + 0.01
+	else
+		currentDownloadProgressValue = currentDownloadProgressValue + (1 - (currentDownloadProgressValue)/2)
+	end
+	updateAmpBackupProgressWindow(currentDownloadProgressValue,"Downloading presets...",false,false)
+end
+
+function startDownloadProgressTimer()
+	currentDownloadProgressValue = 0
+	currentDownloadProgressIteration = 0
+	timer:startTimer(75,50)
+end
+
+function stopDownloadProgressTimer()
+	timer:stopTimer(75)
 end
 
 function readVersion()

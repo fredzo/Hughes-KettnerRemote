@@ -219,7 +219,6 @@ onMidiMessage = function(midi)
 			elseif commandType == 0x41 then
 				if midiData:getSize() >= 4108 then
 					-- All presets dump (header = 10 bytes, cks + F7 = 2 bytes, 128 * 32 bytes per preset)
-					updateAmpBackupProgressWindow(0.5,"Processing response...",false,false)
 					local preset
 					local startIndex = 10
 					local progress
@@ -227,9 +226,8 @@ onMidiMessage = function(midi)
 						preset = readPresetBuffer(i,midiData,startIndex,true)
 						startIndex = startIndex + 32
 						progress = (i/128)*0.5+0.5
-						updateAmpBackupProgressWindow(progress,"Preset "..preset["number"]..": "..preset["name"],false,false)
 					end
-					updateAmpBackupProgressWindow(1,"Saving file...",true,true)
+					updateAmpBackupProgressWindow(1,"Download finished, saving file...",true,true)
 				else
 					updateAmpBackupProgressWindow(1,"Presets download failed",true,false)
 				end
