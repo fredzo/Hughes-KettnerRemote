@@ -658,7 +658,7 @@ end
 function startDownloadProgressTimer()
 	currentDownloadProgressValue = 0
 	currentDownloadProgressIteration = 0
-	timer:startTimer(75,50)
+	timer:startTimer(75,20)
 end
 
 function stopDownloadProgressTimer()

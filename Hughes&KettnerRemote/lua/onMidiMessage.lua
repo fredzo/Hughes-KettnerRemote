@@ -227,9 +227,9 @@ onMidiMessage = function(midi)
 						startIndex = startIndex + 32
 						progress = (i/128)*0.5+0.5
 					end
-					updateAmpBackupProgressWindow(1,"Download finished, saving file...",true,true)
+					updateAmpBackupProgressWindow(0.9999,"Backup complete !",true,true)
 				else
-					updateAmpBackupProgressWindow(1,"Presets download failed",true,false)
+					updateAmpBackupProgressWindow(0.9999,"Presets download failed",true,false)
 				end
 				if state == 2 then
 					-- Go to idle mode
