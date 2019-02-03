@@ -646,11 +646,11 @@ function downloadProgressTimerCallback (timerId)
 	if timerId ~= 75 then
 		return
 	end
-	currentDownloadProgressIteration = currentDownloadProgressIteration + 1
-	if(currentDownloadProgressValue < 0.8) then
+	if(currentDownloadProgressValue < 0.9) then
 		currentDownloadProgressValue = currentDownloadProgressValue + 0.01
 	else
-		currentDownloadProgressValue = currentDownloadProgressValue + (1 - (currentDownloadProgressValue)/2)
+		currentDownloadProgressIteration = currentDownloadProgressIteration + 1
+		currentDownloadProgressValue = currentDownloadProgressValue + (0.01/currentDownloadProgressIteration)
 	end
 	updateAmpBackupProgressWindow(currentDownloadProgressValue,"Downloading presets...",false,false)
 end
