@@ -84,7 +84,7 @@ savePresetsToFile = function(path,presetsToSave)
 	end
 	if content ~= "" then
 		-- console(content)
-		if file:replaceWithText (content, false, false) == false then
+		if file:replaceWithText (content, false, false, nil) == false then
 			utils.warnWindow ("File write", "Failed to write data to file: "..file:getFullPathName())
 		end
 	endend

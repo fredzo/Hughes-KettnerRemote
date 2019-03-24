@@ -449,6 +449,7 @@ initPanel = function()
 	if currentLibraryFile == nil or currentLibraryFile == "" then
 		-- Set default library file
 		currentLibraryFile = File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/bs200/factory.bs200"
+	-- else -- TODO : check that file exists and can be read/write
 	end
 		-- Init preset numbers
 	currentPresetNumber = 1
