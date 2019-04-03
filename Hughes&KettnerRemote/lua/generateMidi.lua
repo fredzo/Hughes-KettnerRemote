@@ -408,16 +408,16 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	-- Preamp channel
 	value = preset["channelType"]
 	local channelType = math.floor(value/42)
-	-- Pream boost
-	value = preset["channelBoost"]
-	local channelBoost = math.floor(value/127)
-	-- Fx loop
-	value = preset["fxLoop"]
-	local fxLoop = math.floor(value/127)
-	-- Nois Gate
-    value = preset["noiseGate"]
-    local noiseGate = math.floor(value/127)
     if isBs200() then
+		-- Pream boost
+		value = preset["channelBoost"]
+		local channelBoost = math.floor(value/255)
+		-- Fx loop
+		value = preset["fxLoop"]
+		local fxLoop = math.floor(value/255)
+		-- Nois Gate
+		value = preset["noiseGate"]
+		local noiseGate = math.floor(value/255)
 		-- Noise Gate Level
 		value = preset["noiseGateLevel"]
 		writeIntToBuffer(value,buffer,startIndex+26);
@@ -429,11 +429,20 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 		local cabinetType = math.floor((value/36)+0.5)
 		-- Mutes
 	    value = preset["reverbStatus"]
-		local reverbStatus = math.floor(value/127)
+		local reverbStatus = math.floor(value/255)
 	    value = preset["modulationStatus"]
-		local modulationStatus = math.floor(value/127)
+		local modulationStatus = math.floor(value/255)
 	    value = preset["delayStatus"]
-		local delayStatus = math.floor(value/127)
+		local delayStatus = math.floor(value/255)
+		--console("Cab type"..cabinetType)
+		--console("Sagging"..sagging)
+		--console("Noise gate"..noiseGate)
+		--console("Modulation"..modulationStatus)
+		--console("Delay"..delayStatus)
+		--console("Reverb"..reverbStatus)
+		--console("Fx Loop"..fxLoop)
+		--console("Boost"..channelBoost)
+		--console("Channel"..channelType)
         -- Config 1/2
 		local config2LByte = sagging + (cabinetType*8)
 		local config1HByte = noiseGate
@@ -442,6 +451,16 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	    buffer[startIndex+30]=config1HByte
 	    buffer[startIndex+31]=config1LByte
     else
+		-- Pream boost
+		value = preset["channelBoost"]
+		local channelBoost = math.floor(value/127)
+		-- Fx loop
+		value = preset["fxLoop"]
+		local fxLoop = math.floor(value/127)
+		-- Nois Gate
+		value = preset["noiseGate"]
+		local noiseGate = math.floor(value/127)
+		
 		local qqByte
 		local rrByte
 

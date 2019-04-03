@@ -59,8 +59,8 @@ function windowCallback(result, window)
 				presets[presetNumber] = copyPreset(editBuffer)
 				-- Update preset number
 				setPresetNumber(presetNumber)
-				-- Send the store message
-				sendStoreRequest(presetNumber)
+				-- Store preset
+				sendPresetBufferDump(editBuffer,false)
 			end
 			if updateCombo then
 				-- And update combo content

@@ -468,22 +468,22 @@ readPresetBuffer = function(number,midiData,startIndex,updatePresets)
 	    value = (config1 % 4) * 42
 	    preset["channelType"]=value
 	    -- Pream boost
-	    value = (math.floor(config1/4) % 2) * 127
+	    value = (math.floor(config1/4) % 2) * 255
 	    preset["channelBoost"]=value
 	    -- Fx loop
-	    value = (math.floor(config1/8) % 2) * 127
+	    value = (math.floor(config1/8) % 2) * 255
 	    preset["fxLoop"]=value
 	    -- Reverb status
-	    value = (math.floor(config1/16) % 2) * 127
+	    value = (math.floor(config1/16) % 2) * 255
 	    preset["reverbStatus"]=value
 	    -- Delay satus
-	    value = (math.floor(config1/32) % 2) * 127
+	    value = (math.floor(config1/32) % 2) * 255
 	    preset["delayStatus"]=value
 	    -- Delay satus
-	    value = (math.floor(config1/64) % 2) * 127
+	    value = (math.floor(config1/64) % 2) * 255
 	    preset["modulationStatus"]=value
 	    -- Noise Gate
-	    value = (config1H % 2) * 127
+	    value = (config1H % 2) * 255
         --console("noiseGateValue from amp="..value)
 	    preset["noiseGate"]=value
 	    preset["powerSoak"]=0
