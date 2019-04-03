@@ -16,6 +16,7 @@ saveData = function(stateData)
 		local backupLibraryFileName = currentLibraryFile
 		backupLibraryFileName = string.gsub(backupLibraryFileName,"%.gm36",".backup.gm36")
 		backupLibraryFileName = string.gsub(backupLibraryFileName,"%.gm40",".backup.gm40")
+		backupLibraryFileName = string.gsub(backupLibraryFileName,"%.bs200",".backup.bs200")
 		savePresetsToFile(backupLibraryFileName,libraryPresets)
 	end
 end
