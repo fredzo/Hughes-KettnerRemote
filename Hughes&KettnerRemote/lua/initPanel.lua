@@ -172,8 +172,8 @@ factoryPresetNamesBs200 =
 "CRUNCH",
 "LEAD",
 "ULTRA",
-"50´S OLD AMERICAN STYLE",
-"60´S CRUNCH (USE CC PEDAL FOR GAIN)",
+"50'S OLD AMERICAN STYLE",
+"60'S CRUNCH (USE CC PEDAL FOR GAIN)",
 "CLASSIC AMERICAN TONE",
 "MODERN AMERICAN CRUNCH",
 "FRANKY CLEAN",
@@ -214,7 +214,7 @@ factoryPresetNamesBs200 =
 "LEAD BY DUTCH NO.2",
 "COUNTRY BOY NO.1",
 "COUNTRY BOY NO.2",
-"LATIN ROCK OF THE 70´S",
+"LATIN ROCK OF THE 70'S",
 "BOOSTED CRUNCH",
 "DEATH METAL (EMG) NO.1",
 "DEATH METAL (EMG) NO.2",
@@ -236,8 +236,8 @@ factoryPresetNamesBs200 =
 "BASS GUITAR NO.2",
 "FOR ACOUSTIC GUITAR OVER FULL RANGE CAB 1",
 "FOR ACOUSTIC GUITAR OVER FULL RANGE CAB 2",
-"50´S OLD AMERICAN STYLE",
-"60´S CRUNCH (USE CC pEDAL FOR GAIN)",
+"50'S OLD AMERICAN STYLE",
+"60'S CRUNCH (USE CC pEDAL FOR GAIN)",
 "CLASSIC AMERICAN TONE",
 "MODERN AMERICAN CRUNCH",
 "FRANKY CLEAN",
@@ -278,7 +278,7 @@ factoryPresetNamesBs200 =
 "LEAD BY DUTCH NO.2",
 "COUNTRY BOY NO.1",
 "COUNTRY BOY NO.2",
-"LATIN ROCK OF THE 70´S",
+"LATIN ROCK OF THE 70'S",
 "BOOSTED CRUNCH",
 "DEATH METAL (EMG) NO.1",
 "DEATH METAL (EMG) NO.2",
@@ -449,7 +449,13 @@ initPanel = function()
 	if currentLibraryFile == nil or currentLibraryFile == "" then
 		-- Set default library file
 		currentLibraryFile = File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/bs200/factory.bs200"
-	-- else -- TODO : check that file exists and can be read/write
+	else
+		-- Make sure the file exists and can be accessed
+		local file = File(currentLibraryFile)
+		if not (file:existsAsFile() and file:hasWriteAccess()) then
+			-- Set default library file
+			currentLibraryFile = File.getSpecialLocation(File.userHomeDirectory):getFullPathName().."/bs200/factory.bs200"
+		end
 	end
 		-- Init preset numbers
 	currentPresetNumber = 1
