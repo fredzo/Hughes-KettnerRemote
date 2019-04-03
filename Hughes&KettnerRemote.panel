@@ -1141,7 +1141,7 @@
           midiMessageCtrlrNumber="63" midiMessageCtrlrValue="1" midiMessageMultiList=""
           midiMessageSysExFormula=""/>
     <component componentLabelPosition="none" componentLabelJustification="centred"
-               componentLabelHeight="12" componentLabelWidth="50" componentLabelVisible="1"
+               componentLabelHeight="12" componentLabelWidth="50" componentLabelVisible="0"
                componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
                componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName="Noise Gate"
                componentMouseCursor="0" componentGroupName="modulator-17" componentGroupped="1"
