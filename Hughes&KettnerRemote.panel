@@ -221,8 +221,8 @@
               resourceSize="35475" resourceFile="factory40.gm40" resourceSourceFile="factory40.gm40"
               resourceName="factory40" resourceType="Data"/>
     <resource resourceHash="1428355904053230113" resourceLoadedTime="1548611743442"
-              resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
-              resourceName="grandmeister" resourceType="Image"/>
+              resourceSize="762436" resourceFile="handk.png" resourceSourceFile="handk.png"
+              resourceName="handk" resourceType="Image"/>
     <resource resourceHash="6485659102923138292" resourceLoadedTime="1548611743442"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
@@ -844,7 +844,7 @@
                componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
                componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName=" "
                componentMouseCursor="0" componentGroupName="" componentGroupped="1"
-               componentSnapSize="8" componentIsLocked="0" componentDisabled="0"
+               componentSnapSize="1" componentIsLocked="0" componentDisabled="0"
                componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
                componentEffect="2" componentEffectRadius="1" componentEffectColour="ff000000"
                componentEffectOffsetX="1" componentEffectOffsetY="1" componentExcludedFromLabelDisplay="0"
@@ -854,7 +854,7 @@
                uiGroupOutlineColour1="ff409fcb" uiGroupOutlineColour2="0xffffffff"
                uiGroupBackgroundColour1="ffffff" uiGroupBackgroundColour2="0xffffffff"
                uiGroupOutlineGradientType="0xffffffff" uiGroupBackgroundGradientType="Vertical"
-               uiGroupBackgroundImage="" componentRectangle="525 6 304 160"
+               uiGroupBackgroundImage="" componentRectangle="8 30 822 136"
                uiGroupBackgroundImageLayout="36" uiGroupBackgroundImageAlpha="255"
                uiGroupTextPlacement="bottomRight" uiGroupTextFont="&lt;Sans-Serif&gt;;14;1;0;0;0;1;3"
                uiGroupOutlineThickness="1" uiGroupOutlineRoundAngle="8" uiGroupTextMargin="5"
@@ -2775,8 +2775,8 @@
                componentEffectOffsetX="0" componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiImageResource="grandmeister"
-               uiType="uiImage" componentRectangle="43 22 441 125" componentLayerUid="40828ca4020000001896d00656f25599"/>
+               componentLuaMouseDoubleClick="-- None" uiImageResource="handk"
+               uiType="uiImage" componentRectangle="20 8 64 18" componentLayerUid="40828ca4020000001896d00656f25599"/>
   </modulator>
   <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
              name="modulator-30" modulatorVstExported="0" modulatorValue="0">
@@ -3733,7 +3733,7 @@
                componentValueDecimalPlaces="0" componentLuaMouseMoved="help"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
                componentLuaMouseDoubleClick="-- None" uiImageButtonMode="0"
-               uiImageButtonResource="help" componentRectangle="502 9 16 16"
+               uiImageButtonResource="help" componentRectangle="806 9 16 16"
                resourceImageWidth="50" resourceImageHeight="50" resourceImagePaintMode="36"
                resourceImageOrientation="1" uiImageButtonTextColour="0xff000000"
                uiImageButtonContent="0" uiImageButtonTextPosition="none" uiImageButtonTextWidth="0"
