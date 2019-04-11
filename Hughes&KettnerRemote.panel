@@ -222,7 +222,7 @@
               resourceSize="35475" resourceFile="factory40.gm40" resourceSourceFile="factory40.gm40"
               resourceName="factory40" resourceType="Data"/>
     <resource resourceHash="7825937883353234962" resourceLoadedTime="1554911716107"
-              resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="C:\Users\fborry\AppData\Roaming\Ctrlr\8.9hOSdulECpN\grandmeister.png"
+              resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
               resourceName="grandmeister" resourceType="Image"/>
     <resource resourceHash="-1149646585843999408" resourceLoadedTime="1554911716109"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
@@ -9304,7 +9304,7 @@
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
                componentLuaMouseDoubleClick="-- None" uiImageResource="grandmeister"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="322 0 236 72"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="316 0 248 64"
                uiType="uiImage"/>
   </modulator>
   <panelCustomData currentPresetNumber="1.00000000000000000000" currentLibraryFile="C:\Users\fborry/bs200/factory.bs200"
