@@ -224,6 +224,12 @@
     <resource resourceHash="7825937883353234962" resourceLoadedTime="1554911716107"
               resourceSize="762436" resourceFile="grandmeister.png" resourceSourceFile="grandmeister.png"
               resourceName="grandmeister" resourceType="Image"/>
+    <resource resourceHash="6673852680999689496" resourceLoadedTime="1555058167715"
+              resourceSize="48855" resourceFile="blackspirit.png" resourceSourceFile="blackspirit.png"
+              resourceName="blackspirit" resourceType="Image"/>
+    <resource resourceHash="6673852680999689496" resourceLoadedTime="1555063379625"
+              resourceSize="48855" resourceFile="blackspirit.png" resourceSourceFile="blackspirit.png"
+              resourceName="blackspirit" resourceType="Image"/>
     <resource resourceHash="-1149646585843999408" resourceLoadedTime="1554911716109"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
@@ -2826,6 +2832,36 @@
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
                componentLuaMouseDoubleClick="-- None" uiImageResource="handk"
                uiType="uiImage" componentRectangle="20 8 64 18" componentLayerUid="40828ca4020000001896d00656f25599"/>
+  </modulator>
+  <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
+             name="headerTitleLabel" modulatorVstExported="0" modulatorValue="0">
+    <component componentLabelPosition="top" componentLabelJustification="centred"
+               componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="0"
+               componentLabelAlwaysOnTop="1" componentSentBack="0" componentLabelColour="0xff000000"
+               componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;1;3" componentVisibleName="headerTitleLabel"
+               componentMouseCursor="2" componentGroupName="" componentGroupped="1"
+               componentSnapSize="0" componentIsLocked="0" componentDisabled="0"
+               componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
+               componentEffect="0" componentEffectRadius="1.00000000000000000000"
+               componentEffectColour="0xff000000" componentEffectOffsetX="0"
+               componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
+               componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
+               componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
+               componentLuaMouseDoubleClick="-- None" uiLabelBgColour="0x00000000"
+               uiLabelTextColour="ffffffff" uiLabelOutline="0" uiLabelOutlineColour="0x00000000"
+               uiLabelJustification="centred" uiLabelFitFont="0" uiLabelFont="&lt;Sans-Serif&gt;;13;1;0;0;0;1;3"
+               uiLabelText="Black Spirit 200 Remote" uiLabelDisplaysAllValues="0"
+               uiLabelDisplayFormat="%n(%N) = %v(%h)" uiLabelInputHighlightTextColour="0xffffffff"
+               uiLabelInputHighlightColour="0xff0000ff" uiLabelEditOnSingleClick="0"
+               uiLabelEditOnDoubleClick="0" uiLabelEditFocusDiscardsChanges="1"
+               uiLabelInputAllowedChars="" uiLabelInputMaxLength="1024.00000000000000000000"
+               uiLabelChangedCbk="-- None" uiType="uiLabel" componentRectangle="320 8 200 18"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentBubbleNameJustification="centred"
+               componentBubbleNameFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3" componentBubbleNameColour="0xff000000"
+               componentBubbleValueJustification="centred" componentBubbleValueFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
+               componentBubbleValueColour="0xff000000" componentBubbleBackgroundGradientType="1"
+               componentBubbleBackgroundColour2="0xbab9b9b9" componentBubbleBackgroundColour1="0x9cffffff"
+               componentBubbleRoundAngle="10.00000000000000000000"/>
   </modulator>
   <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
              name="modulator-30" modulatorVstExported="0" modulatorValue="0">
@@ -9303,8 +9339,8 @@
                componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
-               componentLuaMouseDoubleClick="-- None" uiImageResource="grandmeister"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="304 0 273 64"
+               componentLuaMouseDoubleClick="-- None" uiImageResource="blackspirit"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="304 4 273 64"
                uiType="uiImage"/>
   </modulator>
   <panelCustomData currentPresetNumber="1.00000000000000000000" currentLibraryFile="C:\Users\fborry/bs200/factory.bs200"
