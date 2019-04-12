@@ -227,9 +227,9 @@
     <resource resourceHash="6673852680999689496" resourceLoadedTime="1555058167715"
               resourceSize="48855" resourceFile="blackspirit.png" resourceSourceFile="blackspirit.png"
               resourceName="blackspirit" resourceType="Image"/>
-    <resource resourceHash="6673852680999689496" resourceLoadedTime="1555063379625"
-              resourceSize="48855" resourceFile="blackspirit.png" resourceSourceFile="blackspirit.png"
-              resourceName="blackspirit" resourceType="Image"/>
+    <resource resourceHash="-4742736253642750053" resourceLoadedTime="1555110905520"
+              resourceSize="12798" resourceFile="spirit.png" resourceSourceFile="spirit.png"
+              resourceName="spirit" resourceType="Image"/>
     <resource resourceHash="-1149646585843999408" resourceLoadedTime="1554911716109"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
