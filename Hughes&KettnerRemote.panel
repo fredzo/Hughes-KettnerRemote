@@ -9343,6 +9343,24 @@
                componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="304 4 273 64"
                uiType="uiImage"/>
   </modulator>
+  <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
+             name="spiritToneImage" modulatorVstExported="0" modulatorValue="0">
+    <component componentLabelPosition="none" componentLabelJustification="centred"
+               componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="1"
+               componentLabelAlwaysOnTop="1" componentSentBack="1" componentLabelColour="0xff000000"
+               componentLabelFont="&lt;Sans-Serif&gt;;12;0;0;0;0;0;3" componentVisibleName=""
+               componentMouseCursor="2" componentGroupName="modulator-13" componentGroupped="1"
+               componentSnapSize="0" componentIsLocked="0" componentDisabled="0"
+               componentRadioGroupId="0" componentRadioGroupNotifyMidi="1" componentVisibility="1"
+               componentEffect="0" componentEffectRadius="1.00000000000000000000"
+               componentEffectColour="0xff000000" componentEffectOffsetX="0"
+               componentEffectOffsetY="0" componentExcludedFromLabelDisplay="0"
+               componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
+               componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
+               componentLuaMouseDoubleClick="-- None" uiImageResource="spirit"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="387 117 100 12"
+               uiType="uiImage"/>
+  </modulator>
   <panelCustomData currentPresetNumber="1.00000000000000000000" currentLibraryFile="C:\Users\fborry/bs200/factory.bs200"
                    ingoredVersionUpdate="2.2" globalPowerSoak="127.00000000000000000000"
                    currentExternalFile="C:\Users\fborry/bs200/factory.bs200" ampType="BS200"/>
