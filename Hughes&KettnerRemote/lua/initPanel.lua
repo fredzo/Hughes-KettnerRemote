@@ -1026,7 +1026,6 @@ end
 
 function switchAmpType(newAmpType)
 	if newAmpType ~= ampType then
-        local oldAmpWasBs200 = isBs200()
 		ampType = newAmpType
 		updateAmpTypeSwitch()
 		-- Update factory preset names
@@ -1061,12 +1060,8 @@ function switchAmpType(newAmpType)
 		end
 		-- Update combo
 		initPresetCombo()
-		-- Update Power Soak labels
-		setPowerSoakLabels()
-        -- If we change from BS 200 to GrandMeister or viceversa we need to update UI
-        if (oldAmpWasBs200 or isBs200()) then
-            updateUiForAmp()
-        end
+        -- Update UI
+        updateUiForAmp()
 	end
 end
 
@@ -1096,6 +1091,9 @@ function updateUiForAmp()
 	local libraryModulationStatusComp = panel:getComponent("library-modulationStatus")
 	local powerSoakGroupComp = panel:getComponent("powerSoakGroup")
 	local cabinetTypeGroupComp = panel:getComponent("cabinetTypeGroup")
+	local spiritToneImage = panel:getComponent("spiritToneImage")
+	local ampNameImage = panel:getComponent("ampNameImage")
+	local headerTitleLabel = panel:getComponent("headerTitleLabel")
     if isBs200() then
         -- Noise gate
         noiseGateLevelLabelComp:setVisible(true)
@@ -1128,6 +1126,12 @@ function updateUiForAmp()
 		libraryDelayStatusComp:setVisible(true)
 		libraryModulationStatusLabelComp:setVisible(true)
 		libraryModulationStatusComp:setVisible(true)
+		-- Header title
+		headerTitleLabel:setComponentText("Black Spirit 200 Remote")
+		-- Amp title image
+		ampNameImage:setPropertyString("uiImageResource","blackspirit")
+		-- Spirit tone logo
+		spiritToneImage:setVisible(true)
     else
         noiseGateLevelLabelComp:setVisible(false)
         noiseGateLevelComp:setVisible(false)
@@ -1159,6 +1163,18 @@ function updateUiForAmp()
 		libraryDelayStatusComp:setVisible(false)
 		libraryModulationStatusLabelComp:setVisible(false)
 		libraryModulationStatusComp:setVisible(false)
+		-- Header title
+		if(isGm40()) then
+			headerTitleLabel:setComponentText("GrandMeister 40 Remote")
+		else
+			headerTitleLabel:setComponentText("GrandMeister 36 Remote")
+		end
+		-- Update Power Soak labels
+		setPowerSoakLabels()
+		-- Amp title image
+		ampNameImage:setPropertyString("uiImageResource","grandmeister")
+		-- Spirit tone logo
+		spiritToneImage:setVisible(false)
     end
 end
 

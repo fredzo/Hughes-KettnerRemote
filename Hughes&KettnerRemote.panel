@@ -9326,7 +9326,7 @@
                componentBubbleRoundAngle="10"/>
   </modulator>
   <modulator modulatorCustomIndex="0" modulatorCustomIndexGroup="0" modulatorIsStatic="1"
-             name="modulator-14" modulatorVstExported="0" modulatorValue="0">
+             name="ampNameImage" modulatorVstExported="0" modulatorValue="0">
     <component componentLabelPosition="none" componentLabelJustification="centred"
                componentLabelHeight="14" componentLabelWidth="0" componentLabelVisible="1"
                componentLabelAlwaysOnTop="1" componentSentBack="1" componentLabelColour="0xff000000"
