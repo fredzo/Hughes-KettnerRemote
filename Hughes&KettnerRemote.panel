@@ -9304,7 +9304,7 @@
                componentValueDecimalPlaces="0" componentLuaMouseMoved="-- None"
                componentLuaMouseDown="-- None" componentLuaMouseDrag="-- None"
                componentLuaMouseDoubleClick="-- None" uiImageResource="grandmeister"
-               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="316 0 248 64"
+               componentLayerUid="40828ca4020000001896d00656f25599" componentRectangle="304 0 273 64"
                uiType="uiImage"/>
   </modulator>
   <panelCustomData currentPresetNumber="1.00000000000000000000" currentLibraryFile="C:\Users\fborry/bs200/factory.bs200"
