@@ -687,7 +687,7 @@ function checkForUpdateTimerCallback (timerId)
 	-- Only check once per session
 	timer:stopTimer(timerId)
 	-- Call update url
-	local url = URL("http://ctrlr.org/?ddownload=37209")
+	local url = URL("http://ctrlr.org/?ddownload=106622")
 	latestVersionString = url:readEntireTextStream(false)
 	if latestVersionString ~= nil then
 		local latestVersion = tonumber(latestVersionString)
