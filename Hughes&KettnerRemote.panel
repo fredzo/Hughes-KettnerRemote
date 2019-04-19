@@ -2,7 +2,7 @@
 
 <panel name="Hughes &amp; Kettner Remote - v1.0" panelShowDialogs="1"
        panelMessageTime="10000.00000000000000000000" panelAuthorName="Fred Borry"
-       panelAuthorEmail="frederic.borry@gmail.com" panelAuthorUrl="http://ctrlr.org/hughes-kettner-remote"
+       panelAuthorEmail="frederic.borry@gmail.com" panelAuthorUrl="http://ctrlr.org/hughes-kettner-remote/"
        panelAuthorDesc="Hughes &amp; Kettner Desktop Remote" panelVersionMajor="1.00000000000000000000"
        panelVersionMinor="0" panelVersionName="H&amp;K" panelVendor="Hughes &amp; Kettner"
        panelDevice="GrandMeister 36 / GrandMeister Deluxe 40 / Black Spirit 200"
@@ -227,9 +227,9 @@
     <resource resourceHash="6673852680999689496" resourceLoadedTime="1555058167715"
               resourceSize="48855" resourceFile="blackspirit.png" resourceSourceFile="blackspirit.png"
               resourceName="blackspirit" resourceType="Image"/>
-    <resource resourceHash="6673852680999689496" resourceLoadedTime="1555063379625"
-              resourceSize="48855" resourceFile="blackspirit.png" resourceSourceFile="blackspirit.png"
-              resourceName="blackspirit" resourceType="Image"/>
+    <resource resourceHash="-4742736253642750053" resourceLoadedTime="1555110905520"
+              resourceSize="12798" resourceFile="spirit.png" resourceSourceFile="spirit.png"
+              resourceName="spirit" resourceType="Image"/>
     <resource resourceHash="-1149646585843999408" resourceLoadedTime="1554911716109"
               resourceSize="27978" resourceFile="green-led.png" resourceSourceFile="green-led.png"
               resourceName="green-led" resourceType="Image"/>
@@ -4106,7 +4106,7 @@
                uiHyperlinkColour="ff409fcb" uiHyperlinkFont="&lt;Sans-Serif&gt;;14;0;0;0;0;1;3"
                uiHyperlinkFitTextToSize="1" uiHyperlinkTextJustification="left"
                uiHyperlinkOpensUrl="1" componentRectangle="272 114 256 19" uiHyperlinkText="http://ctrlr.org/"
-               uiHyperlinkUrl="http://ctrlr.org/hughes-kettner-grandmeister-36/"
+               uiHyperlinkUrl="http://ctrlr.org/hughes-kettner-remote/"
                componentTabId="4" componentTabName="tabs" componentLayerUid="40828ca4020000001896d00656f25599"
                uiType="uiHyperlink"/>
   </modulator>
