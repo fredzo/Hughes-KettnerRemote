@@ -281,7 +281,7 @@
                  uiPanelBackgroundColour1="ff000000" uiPanelBackgroundColour2="ff01041d"
                  uiPanelBackgroundGradientType="1" uiPanelImageResource="" uiPanelEditMode="0"
                  uiPanelViewPortSize="1223" uiPanelPropertiesSize="305" uiPanelLock="1"
-                 uiPanelDisabledOnEdit="0" uiPanelMenuBarVisible="1" uiPanelMenuBarHideOnExport="0"
+                 uiPanelDisabledOnEdit="0" uiPanelMenuBarVisible="1" uiPanelMenuBarHideOnExport="0" uiPanelProgramsMenuHideOnExport="1"
                  uiPanelWidth="400" uiPanelHeight="400" name="Hughes &amp; Kettner Remote - v1.0"
                  uiPanelImageAlpha="255.00000000000000000000" uiPanelImageLayout="64"
                  uiPanelSnapActive="0" uiPanelPropertiesOnRight="0" luaPanelPaintBackground=""
