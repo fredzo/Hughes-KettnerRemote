@@ -3,7 +3,7 @@
 <panel name="Hughes &amp; Kettner Remote - v1.0" panelShowDialogs="1"
        panelMessageTime="10000.00000000000000000000" panelAuthorName="Fred Borry"
        panelAuthorEmail="frederic.borry@gmail.com" panelAuthorUrl="http://ctrlr.org/hughes-kettner-remote/"
-       panelAuthorDesc="Hughes &amp; Kettner Desktop Remote" panelVersionMajor="1.00000000000000000000"
+       panelAuthorDesc="Hughes &amp; Kettner Desktop Remote" panelVersionMajor="1"
        panelVersionMinor="0" panelVersionName="H&amp;K" panelVendor="Hughes &amp; Kettner"
        panelDevice="GrandMeister 36 / GrandMeister Deluxe 40 / Black Spirit 200"
        panelMidiSnapshotAfterLoad="0" panelMidiSnapshotAfterProgramChange="0"
