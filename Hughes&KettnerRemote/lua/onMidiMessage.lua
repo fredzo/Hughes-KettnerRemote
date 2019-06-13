@@ -364,7 +364,6 @@ readPreset = function(midiData)
 	local bankLsb = midiData:getByte(10)
 	local bankMsb = midiData:getByte(11)
 	local number
-	local updateEditBuffer = false
 	local updatePrests = true
 	local isEditBuffer = false
 	if bankLsb == 0x7F and bankMsb == 0x7F then
@@ -374,7 +373,6 @@ readPreset = function(midiData)
 			-- First connection => get amp preset number
  			number = midiData:getByte(12)+1
 			currentAmpPresetNumber = sanitizePresetNumber(number)
-			updateEditBuffer = true
 		else
 			-- Edit buffer => keep current preset numner
  			number = currentPresetNumber
@@ -388,21 +386,18 @@ readPreset = function(midiData)
 			changePresetMode(false,false)
 		end
  		number = midiData:getByte(12)+1
-		updateEditBuffer = true
 	end
 	local preset = readPresetBuffer(number,midiData,13,updatePrests)
-	if updateEditBuffer then
-		-- Update edit buffer
-		editBuffer = copyPreset(preset)
-		originalBuffer = copyPreset(preset)
-	end
+	-- Update edit buffer
+	editBuffer = copyPreset(preset)
+	originalBuffer = copyPreset(preset)
 	if isEditBuffer then
 		if isGm40() and (powerSoakGlobal == 1) then
 			-- Get globalPowerSoakValue from edit buffer
 			globalPowerSoakValue = preset["powerSoak"]
 		end
 	end
-	loadPreset(preset,updateEditBuffer)
+	loadPreset(preset,true)
 	return preset
 end
 
