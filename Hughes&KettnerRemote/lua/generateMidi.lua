@@ -364,6 +364,15 @@ sendStoreRequest = function(presetNumber)
 	blinkMidiOutLed()
 end
 
+convertToBool = function(value)
+    -- This is a special boolean conversion for BS200 used to support both 127 and 255 based boolean values (e.g. boost, reverbStatus, delayStats etc.)
+    if value < 127 then
+        return 0
+    else
+        return 1
+    end
+end
+
 writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 	-- Gain
 	local value = preset["gain"]
@@ -411,13 +420,13 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
     if isBs200() then
 		-- Pream boost
 		value = preset["channelBoost"]
-		local channelBoost = math.floor(value/255)
+		local channelBoost = convertToBool(value)
 		-- Fx loop
 		value = preset["fxLoop"]
-		local fxLoop = math.floor(value/255)
+		local fxLoop = convertToBool(value)
 		-- Nois Gate
 		value = preset["noiseGate"]
-		local noiseGate = math.floor(value/255)
+		local noiseGate = convertToBool(value)
 		-- Noise Gate Level
 		value = preset["noiseGateLevel"]
 		writeIntToBuffer(value,buffer,startIndex+26);
@@ -429,11 +438,11 @@ writePresetToBuffer = function(preset,buffer,startIndex,withGlobalSoak)
 		local cabinetType = math.floor((value/36)+0.5)
 		-- Mutes
 	    value = preset["reverbStatus"]
-		local reverbStatus = math.floor(value/255)
+		local reverbStatus = convertToBool(value)
 	    value = preset["modulationStatus"]
-		local modulationStatus = math.floor(value/255)
+		local modulationStatus = convertToBool(value)
 	    value = preset["delayStatus"]
-		local delayStatus = math.floor(value/255)
+		local delayStatus = convertToBool(value)
 		--console("Cab type"..cabinetType)
 		--console("Sagging"..sagging)
 		--console("Noise gate"..noiseGate)
